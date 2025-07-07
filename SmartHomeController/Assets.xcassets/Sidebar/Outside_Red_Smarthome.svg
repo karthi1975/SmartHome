@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90.041" height="87.965" viewBox="0 0 90.041 87.965">
+  <g id="Group_1176" data-name="Group 1176" transform="translate(-1620.557 -171)">
+    <g id="Ellipse_94" data-name="Ellipse 94" transform="translate(1662.244 171)" fill="none" stroke="#ae1d32" stroke-width="5">
+      <circle cx="11.527" cy="11.527" r="11.527" stroke="none"/>
+      <circle cx="11.527" cy="11.527" r="9.027" fill="none"/>
+    </g>
+    <line id="Line_140" data-name="Line 140" y1="17.43" transform="translate(1694.293 238.753)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_75" data-name="Line 75" y1="30.58" transform="translate(1624.021 225.884)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_88" data-name="Line 88" y1="26.52" transform="translate(1640.099 229.945)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_89" data-name="Line 89" y1="26.52" transform="translate(1660.361 229.945)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_84" data-name="Line 84" y1="26.131" x2="26.096" transform="translate(1624.093 199.512)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_85" data-name="Line 85" x2="26.168" y2="26.131" transform="translate(1650.582 199.512)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_83" data-name="Line 83" y1="30.187" transform="translate(1676.75 226.277)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_87" data-name="Line 87" x2="19.666" transform="translate(1640.397 229.945)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_86" data-name="Line 86" x2="51.969" transform="translate(1624.781 256.465)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+    <g id="Path_3555" data-name="Path 3555" transform="translate(1677.533 203.084)" fill="none" stroke-linecap="round">
+      <path d="M10.335,21.961H23.917l7.6,12.008a1.761,1.761,0,0,1-1.442,2.671H4.012A1.761,1.761,0,0,1,2.57,33.969Z" stroke="none"/>
+      <path d="M 13.05595207214355 26.96094131469727 L 10.03072547912598 31.63922119140625 L 24.12298965454102 31.63922119140625 L 21.16365051269531 26.96094131469727 L 13.05595207214355 26.96094131469727 M 10.33488655090332 21.96094131469727 L 23.91718673706055 21.96094131469727 L 31.51293754577637 33.96871185302734 C 32.19459533691406 35.14073944091797 31.38526725769043 36.63922119140625 30.07058715820312 36.63922119140625 L 4.012367248535156 36.63922119140625 C 2.697696685791016 36.63922119140625 1.888359069824219 35.14073944091797 2.570016860961914 33.96871185302734 L 10.33488655090332 21.96094131469727 Z" stroke="none" fill="#ae1d32"/>
+    </g>
+    <g id="Polygon_3" data-name="Polygon 3" transform="translate(1678.549 204.174)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M13.474,4.116a3,3,0,0,1,5.1,0L29.212,21.284a3,3,0,0,1-2.55,4.58H5.388a3,3,0,0,1-2.55-4.58Z" stroke="none"/>
+      <path d="M 16.02465057373047 9.493558883666992 L 8.979705810546875 20.86435508728027 L 23.06960678100586 20.86435508728027 L 16.02465057373047 9.493558883666992 M 16.0246524810791 2.696132659912109 C 17.00649833679199 2.696132659912109 17.98834228515625 3.169460296630859 18.57485961914062 4.116115570068359 L 29.21169853210449 21.28434562683105 C 30.44991874694824 23.28287506103516 29.01034736633301 25.86458206176758 26.6614875793457 25.86435508728027 L 5.387828826904297 25.86435508728027 C 3.036788940429688 25.86436653137207 1.599397659301758 23.28287506103516 2.837617874145508 21.28434562683105 L 13.47444725036621 4.116115570068359 C 14.06096267700195 3.169460296630859 15.04280853271484 2.696132659912109 16.0246524810791 2.696132659912109 Z" stroke="none" fill="#ae1d32"/>
+    </g>
+    <circle id="Ellipse_95" data-name="Ellipse 95" cx="1.968" cy="1.968" r="1.968" transform="translate(1644.813 240.721)" fill="#ae1d32"/>
+  </g>
+</svg>

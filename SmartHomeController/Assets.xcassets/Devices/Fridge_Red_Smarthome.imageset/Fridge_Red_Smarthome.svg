@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="133" height="174" viewBox="0 0 133 174">
+  <g id="Group_1209" data-name="Group 1209" transform="translate(-537 -263)">
+    <g id="Rectangle_989" data-name="Rectangle 989" transform="translate(537 263)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <rect width="133" height="162" rx="20" stroke="none"/>
+      <rect x="3.5" y="3.5" width="126" height="155" rx="16.5" fill="none"/>
+    </g>
+    <g id="Rectangle_990" data-name="Rectangle 990" transform="translate(562 418)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <rect width="82" height="19" rx="5" stroke="none"/>
+      <rect x="3.5" y="3.5" width="75" height="12" rx="1.5" fill="none"/>
+    </g>
+    <g id="Ellipse_296" data-name="Ellipse 296" transform="translate(552 385)" fill="none" stroke="#ae1d32" stroke-width="7">
+      <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+      <circle cx="12.5" cy="12.5" r="9" fill="none"/>
+    </g>
+    <line id="Line_186" data-name="Line 186" x2="121" transform="translate(544 362)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_188" data-name="Line 188" x2="118" transform="translate(544 376)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_192" data-name="Line 192" x2="17" transform="translate(556 296)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_194" data-name="Line 194" x2="17" transform="translate(556 323)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_195" data-name="Line 195" x2="17" transform="translate(556 310)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_187" data-name="Line 187" y2="93" transform="translate(603 269)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_189" data-name="Line 189" y2="27" transform="translate(588 296)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_191" data-name="Line 191" y2="27" transform="translate(556 296)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_193" data-name="Line 193" y2="27" transform="translate(573 296)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_190" data-name="Line 190" y2="27" transform="translate(617 296)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+  </g>
+</svg>

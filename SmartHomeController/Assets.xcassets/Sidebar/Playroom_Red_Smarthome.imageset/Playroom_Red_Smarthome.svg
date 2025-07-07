@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85" height="85" viewBox="0 0 85 85">
+  <g id="Group_1199" data-name="Group 1199" transform="translate(-314 -356)">
+    <g id="Rectangle_953" data-name="Rectangle 953" transform="translate(356 356)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+      <rect width="43" height="43" stroke="none"/>
+      <rect x="2.5" y="2.5" width="38" height="38" fill="none"/>
+    </g>
+    <g id="Rectangle_956" data-name="Rectangle 956" transform="translate(363 363)" fill="#ae1d32" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+      <rect width="29" height="29" stroke="none"/>
+      <rect x="3" y="3" width="23" height="23" fill="none"/>
+    </g>
+    <g id="Rectangle_954" data-name="Rectangle 954" transform="translate(314 398)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+      <rect width="43" height="43" stroke="none"/>
+      <rect x="2.5" y="2.5" width="38" height="38" fill="none"/>
+    </g>
+    <g id="Rectangle_957" data-name="Rectangle 957" transform="translate(314 356)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+      <rect width="43" height="43" stroke="none"/>
+      <rect x="2.5" y="2.5" width="38" height="38" fill="none"/>
+    </g>
+    <g id="Rectangle_955" data-name="Rectangle 955" transform="translate(356 398)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+      <rect width="43" height="43" stroke="none"/>
+      <rect x="2.5" y="2.5" width="38" height="38" fill="none"/>
+    </g>
+    <path id="Path_2945" data-name="Path 2945" d="M129.024,6.25a2.984,2.984,0,0,0-2.646,1.657l-3.016,5.941-6.352,1.144a3.048,3.048,0,0,0-2.338,2.107,3.211,3.211,0,0,0,.7,3.134l4.5,4.814-.914,6.647a3.163,3.163,0,0,0,1.2,2.964,2.891,2.891,0,0,0,3.072.274l5.8-2.964,5.792,2.964a2.9,2.9,0,0,0,3.078-.274,3.168,3.168,0,0,0,1.2-2.964l-.914-6.647,4.5-4.814a3.191,3.191,0,0,0,.7-3.134,3.04,3.04,0,0,0-2.338-2.107l-6.358-1.144L131.67,7.907a2.984,2.984,0,0,0-2.646-1.657Z" transform="translate(248.475 398.75)" fill="#ae1d32" fill-rule="evenodd"/>
+    <circle id="Ellipse_87" data-name="Ellipse 87" cx="14.5" cy="14.5" r="14.5" transform="translate(321 405)" fill="#ae1d32"/>
+    <g id="Polygon_2" data-name="Polygon 2" transform="translate(321 362.5)" fill="#ae1d32" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 27.38197135925293 28.50000190734863 L 1.618030905723572 28.50000190734863 C 1.366430997848511 28.50000190734863 1.236781001091003 28.33417320251465 1.192710995674133 28.26287269592285 C 1.148651003837585 28.19157218933105 1.058300971984863 28.00144195556641 1.170820951461792 27.77638244628906 L 14.0527811050415 2.012462854385376 C 14.13932132720947 1.839392781257629 14.3065013885498 1.73606276512146 14.50000095367432 1.73606276512146 C 14.69350051879883 1.73606276512146 14.86068058013916 1.839392781257629 14.94722080230713 2.012462854385376 L 27.82918167114258 27.77639198303223 C 27.94170188903809 28.00144195556641 27.85135078430176 28.19157218933105 27.80729103088379 28.26287269592285 C 27.76322174072266 28.33417320251465 27.63357162475586 28.50000190734863 27.38197135925293 28.50000190734863 Z" stroke="none"/>
+      <path d="M 14.50000095367432 2.236063003540039 L 1.618030548095703 28.00000381469727 L 27.38196182250977 27.99999237060547 L 14.50001049041748 2.236072540283203 C 14.50000858306885 2.236066818237305 14.50002098083496 2.236059188842773 14.50000095367432 2.236063003540039 M 14.50000095367432 1.236064910888672 C 14.85508346557617 1.236064910888672 15.21016597747803 1.420328140258789 15.39443111419678 1.788852691650391 L 28.27639007568359 27.55278205871582 C 28.60884094238281 28.21768188476562 28.12535095214844 29.00000190734863 27.38196182250977 29.00000190734863 L 1.618030548095703 29.00000190734863 C 0.8746509552001953 29.00000190734863 0.3911609649658203 28.21768188476562 0.7236003875732422 27.55278205871582 L 13.60557079315186 1.788852691650391 C 13.78983592987061 1.420328140258789 14.14491844177246 1.236064910888672 14.50000095367432 1.236064910888672 Z" stroke="none" fill="#ae1d32"/>
+    </g>
+  </g>
+</svg>

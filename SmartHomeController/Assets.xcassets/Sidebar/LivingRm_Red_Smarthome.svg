@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90.832" height="66.834" viewBox="0 0 90.832 66.834">
+  <g id="Group_1179" data-name="Group 1179" transform="translate(-702.5 -193.5)">
+    <g id="Group_1021" data-name="Group 1021" transform="translate(705 223.282)">
+      <g id="Rectangle_858" data-name="Rectangle 858" transform="translate(10.528)" fill="none" stroke="#ae1d32" stroke-linejoin="round" stroke-width="5">
+        <rect width="36.277" height="16.843" stroke="none"/>
+        <rect x="2.5" y="2.5" width="31.277" height="11.843" fill="none"/>
+      </g>
+      <line id="Line_76" data-name="Line 76" x1="5.669" transform="translate(51.5 8.689)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+      <line id="Line_78" data-name="Line 78" x1="5.5" transform="translate(0 8.689)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+      <line id="Line_80" data-name="Line 80" x1="7.974" transform="translate(46.77 27.877) rotate(45)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+      <line id="Line_81" data-name="Line 81" x1="7.974" transform="translate(4.815 33.516) rotate(-45)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+      <line id="Line_79" data-name="Line 79" x1="57.168" transform="translate(0 26.041)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+      <path id="Path_2942" data-name="Path 2942" d="M0,17.783V.5" transform="translate(0 8.256)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+      <line id="Line_75" data-name="Line 75" y1="16.939" transform="translate(57.17 9.041)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+    </g>
+    <g id="Group_1115" data-name="Group 1115" transform="translate(762.203 196)">
+      <path id="Path_2941" data-name="Path 2941" d="M7.157,0H21.472l7.157,18.132H0Z" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      <line id="Line_90" data-name="Line 90" x2="0.273" y2="34.781" transform="translate(14.314 18.132)" fill="none" stroke="#ae1d32" stroke-width="5"/>
+      <g id="Rectangle_913" data-name="Rectangle 913" transform="translate(2.86 49.339)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+        <rect width="22.881" height="13.013" stroke="none"/>
+        <rect x="2.5" y="2.5" width="17.881" height="8.013" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

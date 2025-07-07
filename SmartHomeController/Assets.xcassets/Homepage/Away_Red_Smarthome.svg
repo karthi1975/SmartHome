@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115.789" height="115.788" viewBox="0 0 115.789 115.788">
+  <g id="Group_1249" data-name="Group 1249" transform="translate(-102.106 -210)">
+    <g id="Layer_2" data-name="Layer 2" transform="translate(217.895 210) rotate(90)">
+      <g id="Layer_81" data-name="Layer 81" transform="translate(0)">
+        <ellipse id="Ellipse_77" data-name="Ellipse 77" cx="56.649" cy="56.649" rx="56.649" ry="56.649" transform="translate(1.245 1.245)" fill="#fff"/>
+        <path id="Path_2170" data-name="Path 2170" d="M57.894,115.789a57.894,57.894,0,1,1,57.894-57.894A57.96,57.96,0,0,1,57.894,115.789Zm0-113.3a55.4,55.4,0,1,0,55.4,55.4A55.468,55.468,0,0,0,57.894,2.49Z" fill="#dcdddd"/>
+      </g>
+    </g>
+    <g id="Group_1232" data-name="Group 1232" transform="translate(12.732 21.453)">
+      <g id="Group_1231" data-name="Group 1231" transform="translate(142.814 211.989)">
+        <g id="Ellipse_326" data-name="Ellipse 326" transform="translate(1.992)" fill="#ae1d32" stroke="#ae1d32" stroke-width="1">
+          <circle cx="9.144" cy="9.144" r="9.144" stroke="none"/>
+          <circle cx="9.144" cy="9.144" r="8.644" fill="none"/>
+        </g>
+        <line id="Line_233" data-name="Line 233" x2="1.829" y2="16.739" transform="translate(12.233 26.055)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="16"/>
+        <path id="Path_3563" data-name="Path 3563" d="M-1.184.395l4.289,10.42V22.98" transform="translate(19.369 45.365)" fill="#ae1d32" stroke="#ae1d32" stroke-linecap="round" stroke-width="8"/>
+        <path id="Path_3564" data-name="Path 3564" d="M-.7.4l-1.6,9.928-6.249,12.49" transform="translate(13.844 45.356)" fill="#ae1d32" stroke="#ae1d32" stroke-linecap="round" stroke-width="8"/>
+        <path id="Path_3565" data-name="Path 3565" d="M-.833,1.723l-6.284,8.13L-8.543,23.177" transform="translate(8.543 26.287)" fill="#ae1d32" stroke="#ae1d32" stroke-linecap="round" stroke-width="8"/>
+        <path id="Path_3566" data-name="Path 3566" d="M-26.744,2.229l9.16,11.657L-6.969,16.8" transform="translate(43.422 26.151)" fill="#ae1d32" stroke="#ae1d32" stroke-linecap="round" stroke-width="8"/>
+      </g>
+      <line id="Line_234" data-name="Line 234" y2="73.883" transform="translate(125.5 209.5)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="8"/>
+    </g>
+  </g>
+</svg>

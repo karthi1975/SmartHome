@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85.226" height="84.797" viewBox="0 0 85.226 84.797">
+  <g id="Group_1178" data-name="Group 1178" transform="translate(-1008 -171)">
+    <g id="Rectangle_914" data-name="Rectangle 914" transform="translate(1023.189 171)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+      <rect width="16.274" height="13.453" stroke="none"/>
+      <rect x="2.5" y="2.5" width="11.274" height="8.453" fill="none"/>
+    </g>
+    <g id="Rectangle_915" data-name="Rectangle 915" transform="translate(1008 213.774)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+      <rect width="46.025" height="42.023" stroke="none"/>
+      <rect x="2.5" y="2.5" width="41.025" height="37.023" fill="none"/>
+    </g>
+    <g id="Rectangle_917" data-name="Rectangle 917" transform="translate(1017.005 227.781)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+      <rect width="28.015" height="19.01" stroke="none"/>
+      <rect x="2.5" y="2.5" width="23.015" height="14.01" fill="none"/>
+    </g>
+    <g id="Rectangle_916" data-name="Rectangle 916" transform="translate(1050.023 213.774)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+      <rect width="43.024" height="42.023" stroke="none"/>
+      <rect x="2.5" y="2.5" width="38.024" height="37.023" fill="none"/>
+    </g>
+    <path id="Path_2941" data-name="Path 2941" d="M12.708,0h12.9L37.975,18.986H0Z" transform="translate(1012.338 182.56)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+    <circle id="Ellipse_78" data-name="Ellipse 78" cx="2.001" cy="2.001" r="2.001" transform="translate(1021.007 222.779)" fill="#ae1d32"/>
+    <circle id="Ellipse_79" data-name="Ellipse 79" cx="2.001" cy="2.001" r="2.001" transform="translate(1029.012 222.779)" fill="#ae1d32"/>
+    <circle id="Ellipse_80" data-name="Ellipse 80" cx="2.001" cy="2.001" r="2.001" transform="translate(1037.016 222.779)" fill="#ae1d32"/>
+    <line id="Line_91" data-name="Line 91" x2="13.562" transform="translate(1064.688 222.779)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_93" data-name="Line 93" x2="37.973" transform="translate(1052.754 234.469)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_92" data-name="Line 92" x2="13.562" transform="translate(1064.688 240.978)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="5"/>
+  </g>
+</svg>

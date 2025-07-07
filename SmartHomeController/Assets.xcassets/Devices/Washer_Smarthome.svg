@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="174" viewBox="0 0 154 174">
+  <g id="Group_1202" data-name="Group 1202" transform="translate(-297 -263)">
+    <g id="Rectangle_951" data-name="Rectangle 951" transform="translate(297 263)" fill="none" stroke="#403f42" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <rect width="154" height="174" rx="20" stroke="none"/>
+      <rect x="3.5" y="3.5" width="147" height="167" rx="16.5" fill="none"/>
+    </g>
+    <g id="Ellipse_81" data-name="Ellipse 81" transform="translate(328 319)" fill="none" stroke="#403f42" stroke-width="7">
+      <ellipse cx="46" cy="45.5" rx="46" ry="45.5" stroke="none"/>
+      <ellipse cx="46" cy="45.5" rx="42.5" ry="42" fill="none"/>
+    </g>
+    <g id="Ellipse_82" data-name="Ellipse 82" transform="translate(316 307)" fill="none" stroke="#403f42" stroke-width="7">
+      <circle cx="58.5" cy="58.5" r="58.5" stroke="none"/>
+      <circle cx="58.5" cy="58.5" r="55" fill="none"/>
+    </g>
+    <path id="Path_2944" data-name="Path 2944" d="M-20575.439-23383.281s15.48-15.59,42.48,0,41.992,0,41.992,0" transform="translate(20907.639 23747.783)" fill="none" stroke="#403f42" stroke-width="7"/>
+    <line id="Line_94" data-name="Line 94" x2="143.885" transform="translate(302.02 296.226)" fill="none" stroke="#403f42" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_95" data-name="Line 95" x2="6.692" transform="translate(319.865 281.726)" fill="none" stroke="#403f42" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_96" data-name="Line 96" x2="6.692" transform="translate(341.059 281.726)" fill="none" stroke="#403f42" stroke-linecap="round" stroke-width="7"/>
+  </g>
+</svg>

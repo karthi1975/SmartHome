@@ -6,6 +6,145 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A746DBCF2D761D0900CD8EBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746DBC52D761D0900CD8EBB /* ContentView.swift */; };
+		A746DBD52D761D0900CD8EBB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746DBCB2D761D0900CD8EBB /* SettingsView.swift */; };
+		A746DBD92D761D0900CD8EBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A746DBBF2D761D0900CD8EBB /* Preview Assets.xcassets */; };
+		A746DBDA2D761D0900CD8EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A746DBC12D761D0900CD8EBB /* Assets.xcassets */; };
+		A746DBDC2D761D0900CD8EBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746DBC52D761D0900CD8EBB /* ContentView.swift */; };
+		A746DBE22D761D0900CD8EBB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746DBCB2D761D0900CD8EBB /* SettingsView.swift */; };
+		A746DBE62D761D0900CD8EBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A746DBBF2D761D0900CD8EBB /* Preview Assets.xcassets */; };
+		A746DBE72D761D0900CD8EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A746DBC12D761D0900CD8EBB /* Assets.xcassets */; };
+		A746DBE92D761D0900CD8EBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746DBC52D761D0900CD8EBB /* ContentView.swift */; };
+		A746DBEF2D761D0900CD8EBB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746DBCB2D761D0900CD8EBB /* SettingsView.swift */; };
+		A746DBF32D761D0900CD8EBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A746DBBF2D761D0900CD8EBB /* Preview Assets.xcassets */; };
+		A746DBF42D761D0900CD8EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A746DBC12D761D0900CD8EBB /* Assets.xcassets */; };
+		A750A74F2DFA40B400C6055D /* DeviceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A74E2DFA40B400C6055D /* DeviceCard.swift */; };
+		A750A7502DFA40B400C6055D /* DeviceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A74E2DFA40B400C6055D /* DeviceCard.swift */; };
+		A750A7512DFA40B400C6055D /* DeviceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A74E2DFA40B400C6055D /* DeviceCard.swift */; };
+		A750A7D82DFCB85200C6055D /* AddDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A7D72DFCB85200C6055D /* AddDeviceView.swift */; };
+		A750A7D92DFCB85200C6055D /* AddDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A7D72DFCB85200C6055D /* AddDeviceView.swift */; };
+		A750A7DA2DFCB85200C6055D /* AddDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A7D72DFCB85200C6055D /* AddDeviceView.swift */; };
+		A750A7E62E01BE2800C6055D /* EntranceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A7DD2E01BE2800C6055D /* EntranceView.swift */; };
+		A750A7EF2E01BE2800C6055D /* SmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A7E52E01BE2800C6055D /* SmartDevice.swift */; };
+		A750A7F02E01BE2800C6055D /* PlayroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A7E42E01BE2800C6055D /* PlayroomView.swift */; };
+		A750A7F12E01BE2800C6055D /* EntranceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A7DD2E01BE2800C6055D /* EntranceView.swift */; };
+		A750A7FA2E01BE2800C6055D /* SmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A7E52E01BE2800C6055D /* SmartDevice.swift */; };
+		A750A7FB2E01BE2800C6055D /* PlayroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A7E42E01BE2800C6055D /* PlayroomView.swift */; };
+		A750A7FC2E01BE2800C6055D /* EntranceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A7DD2E01BE2800C6055D /* EntranceView.swift */; };
+		A750A8052E01BE2800C6055D /* SmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A7E52E01BE2800C6055D /* SmartDevice.swift */; };
+		A750A8062E01BE2800C6055D /* PlayroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A7E42E01BE2800C6055D /* PlayroomView.swift */; };
+		A750A80E2E020BE700C6055D /* HomeAssistantConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A80C2E020BE700C6055D /* HomeAssistantConfig.swift */; };
+		A750A80F2E020BE700C6055D /* DeviceHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A80A2E020BE700C6055D /* DeviceHistoryView.swift */; };
+		A750A8102E020BE700C6055D /* DeviceHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8092E020BE700C6055D /* DeviceHistory.swift */; };
+		A750A8112E020BE700C6055D /* DeviceGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8082E020BE700C6055D /* DeviceGroupView.swift */; };
+		A750A8122E020BE700C6055D /* HomeAssistantConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A80D2E020BE700C6055D /* HomeAssistantConfigView.swift */; };
+		A750A8132E020BE700C6055D /* DeviceTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A80B2E020BE700C6055D /* DeviceTemplate.swift */; };
+		A750A8142E020BE700C6055D /* DeviceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8072E020BE700C6055D /* DeviceGroup.swift */; };
+		A750A8152E020BE700C6055D /* HomeAssistantConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A80C2E020BE700C6055D /* HomeAssistantConfig.swift */; };
+		A750A8162E020BE700C6055D /* DeviceHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A80A2E020BE700C6055D /* DeviceHistoryView.swift */; };
+		A750A8172E020BE700C6055D /* DeviceHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8092E020BE700C6055D /* DeviceHistory.swift */; };
+		A750A8182E020BE700C6055D /* DeviceGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8082E020BE700C6055D /* DeviceGroupView.swift */; };
+		A750A8192E020BE700C6055D /* HomeAssistantConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A80D2E020BE700C6055D /* HomeAssistantConfigView.swift */; };
+		A750A81A2E020BE700C6055D /* DeviceTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A80B2E020BE700C6055D /* DeviceTemplate.swift */; };
+		A750A81B2E020BE700C6055D /* DeviceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8072E020BE700C6055D /* DeviceGroup.swift */; };
+		A750A81C2E020BE700C6055D /* HomeAssistantConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A80C2E020BE700C6055D /* HomeAssistantConfig.swift */; };
+		A750A81D2E020BE700C6055D /* DeviceHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A80A2E020BE700C6055D /* DeviceHistoryView.swift */; };
+		A750A81E2E020BE700C6055D /* DeviceHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8092E020BE700C6055D /* DeviceHistory.swift */; };
+		A750A81F2E020BE700C6055D /* DeviceGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8082E020BE700C6055D /* DeviceGroupView.swift */; };
+		A750A8202E020BE700C6055D /* HomeAssistantConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A80D2E020BE700C6055D /* HomeAssistantConfigView.swift */; };
+		A750A8212E020BE700C6055D /* DeviceTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A80B2E020BE700C6055D /* DeviceTemplate.swift */; };
+		A750A8222E020BE700C6055D /* DeviceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8072E020BE700C6055D /* DeviceGroup.swift */; };
+		A750A8242E0223AA00C6055D /* HomeAssistantClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8232E0223AA00C6055D /* HomeAssistantClient.swift */; };
+		A750A8252E0223AA00C6055D /* HomeAssistantClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8232E0223AA00C6055D /* HomeAssistantClient.swift */; };
+		A750A8262E0223AA00C6055D /* HomeAssistantClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8232E0223AA00C6055D /* HomeAssistantClient.swift */; };
+		A750A82C2E02751000C6055D /* TempCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A82B2E02751000C6055D /* TempCard.swift */; };
+		A750A82D2E02751000C6055D /* BlindsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8272E02751000C6055D /* BlindsCard.swift */; };
+		A750A82E2E02751000C6055D /* DishwasherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8282E02751000C6055D /* DishwasherCard.swift */; };
+		A750A82F2E02751000C6055D /* FridgeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8292E02751000C6055D /* FridgeCard.swift */; };
+		A750A8302E02751000C6055D /* OvenCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A82A2E02751000C6055D /* OvenCard.swift */; };
+		A750A8312E02751000C6055D /* TempCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A82B2E02751000C6055D /* TempCard.swift */; };
+		A750A8322E02751000C6055D /* BlindsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8272E02751000C6055D /* BlindsCard.swift */; };
+		A750A8332E02751000C6055D /* DishwasherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8282E02751000C6055D /* DishwasherCard.swift */; };
+		A750A8342E02751000C6055D /* FridgeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8292E02751000C6055D /* FridgeCard.swift */; };
+		A750A8352E02751000C6055D /* OvenCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A82A2E02751000C6055D /* OvenCard.swift */; };
+		A750A8362E02751000C6055D /* TempCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A82B2E02751000C6055D /* TempCard.swift */; };
+		A750A8372E02751000C6055D /* BlindsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8272E02751000C6055D /* BlindsCard.swift */; };
+		A750A8382E02751000C6055D /* DishwasherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8282E02751000C6055D /* DishwasherCard.swift */; };
+		A750A8392E02751000C6055D /* FridgeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8292E02751000C6055D /* FridgeCard.swift */; };
+		A750A83A2E02751000C6055D /* OvenCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A82A2E02751000C6055D /* OvenCard.swift */; };
+		A750A83D2E03C54B00C6055D /* CreateTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A83B2E03C54B00C6055D /* CreateTicketView.swift */; };
+		A750A83E2E03C54B00C6055D /* ZammadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A83C2E03C54B00C6055D /* ZammadClient.swift */; };
+		A750A83F2E03C54B00C6055D /* CreateTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A83B2E03C54B00C6055D /* CreateTicketView.swift */; };
+		A750A8402E03C54B00C6055D /* ZammadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A83C2E03C54B00C6055D /* ZammadClient.swift */; };
+		A750A8412E03C54B00C6055D /* CreateTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A83B2E03C54B00C6055D /* CreateTicketView.swift */; };
+		A750A8422E03C54B00C6055D /* ZammadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A83C2E03C54B00C6055D /* ZammadClient.swift */; };
+		A750A8442E04D86900C6055D /* ZammadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8432E04D86900C6055D /* ZammadClient.swift */; };
+		A750A8452E04D86900C6055D /* ZammadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8432E04D86900C6055D /* ZammadClient.swift */; };
+		A750A8462E04D86900C6055D /* ZammadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8432E04D86900C6055D /* ZammadClient.swift */; };
+		A750A8492E04DA0B00C6055D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8472E04DA0B00C6055D /* ImagePicker.swift */; };
+		A750A84A2E04DA0B00C6055D /* ScreenshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8482E04DA0B00C6055D /* ScreenshotHelper.swift */; };
+		A750A84B2E04DA0B00C6055D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8472E04DA0B00C6055D /* ImagePicker.swift */; };
+		A750A84C2E04DA0B00C6055D /* ScreenshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8482E04DA0B00C6055D /* ScreenshotHelper.swift */; };
+		A750A84D2E04DA0B00C6055D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8472E04DA0B00C6055D /* ImagePicker.swift */; };
+		A750A84E2E04DA0B00C6055D /* ScreenshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8482E04DA0B00C6055D /* ScreenshotHelper.swift */; };
+		A750A8502E062E7300C6055D /* TicketHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A84F2E062E7300C6055D /* TicketHistoryView.swift */; };
+		A750A8512E062E7300C6055D /* TicketHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A84F2E062E7300C6055D /* TicketHistoryView.swift */; };
+		A750A8522E062E7300C6055D /* TicketHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A84F2E062E7300C6055D /* TicketHistoryView.swift */; };
+		A76AFCB82E0B9EE000FDFD0E /* HomeControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCB72E0B9EE000FDFD0E /* HomeControlsView.swift */; };
+		A76AFCB92E0B9EE000FDFD0E /* HomeControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCB72E0B9EE000FDFD0E /* HomeControlsView.swift */; };
+		A76AFCBA2E0B9EE000FDFD0E /* HomeControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCB72E0B9EE000FDFD0E /* HomeControlsView.swift */; };
+		A76AFCBC2E0BB19F00FDFD0E /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCBB2E0BB19F00FDFD0E /* DeviceStore.swift */; };
+		A76AFCBD2E0BB19F00FDFD0E /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCBB2E0BB19F00FDFD0E /* DeviceStore.swift */; };
+		A76AFCBE2E0BB19F00FDFD0E /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCBB2E0BB19F00FDFD0E /* DeviceStore.swift */; };
+		A76AFCC22E11FF8400FDFD0E /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCC12E11FF8400FDFD0E /* CallManager.swift */; };
+		A76AFCC32E11FF8400FDFD0E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCC02E11FF8400FDFD0E /* AppState.swift */; };
+		A76AFCC42E11FF8400FDFD0E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCBF2E11FF8400FDFD0E /* App.swift */; };
+		A76AFCC52E11FF8400FDFD0E /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCC12E11FF8400FDFD0E /* CallManager.swift */; };
+		A76AFCC62E11FF8400FDFD0E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCC02E11FF8400FDFD0E /* AppState.swift */; };
+		A76AFCC72E11FF8400FDFD0E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCBF2E11FF8400FDFD0E /* App.swift */; };
+		A76AFCC82E11FF8400FDFD0E /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCC12E11FF8400FDFD0E /* CallManager.swift */; };
+		A76AFCC92E11FF8400FDFD0E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCC02E11FF8400FDFD0E /* AppState.swift */; };
+		A76AFCCA2E11FF8400FDFD0E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCBF2E11FF8400FDFD0E /* App.swift */; };
+		A76AFCCC2E1203D200FDFD0E /* CallRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCCB2E1203D200FDFD0E /* CallRecord.swift */; };
+		A76AFCCD2E1203D200FDFD0E /* CallRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCCB2E1203D200FDFD0E /* CallRecord.swift */; };
+		A76AFCCE2E1203D200FDFD0E /* CallRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCCB2E1203D200FDFD0E /* CallRecord.swift */; };
+		A76AFCD42E12FA9700FDFD0E /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCD32E12FA9700FDFD0E /* RoomView.swift */; };
+		A76AFCD52E12FA9700FDFD0E /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCD32E12FA9700FDFD0E /* RoomView.swift */; };
+		A76AFCD62E12FA9700FDFD0E /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCD32E12FA9700FDFD0E /* RoomView.swift */; };
+		A76AFCD82E13283C00FDFD0E /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCD72E13283C00FDFD0E /* MasterView.swift */; };
+		A76AFCD92E13283C00FDFD0E /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCD72E13283C00FDFD0E /* MasterView.swift */; };
+		A76AFCDA2E13283C00FDFD0E /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCD72E13283C00FDFD0E /* MasterView.swift */; };
+		A76AFCDC2E1330DB00FDFD0E /* AnimatedTempCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCDB2E1330DB00FDFD0E /* AnimatedTempCardViewModel.swift */; };
+		A76AFCDD2E1330DB00FDFD0E /* AnimatedTempCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCDB2E1330DB00FDFD0E /* AnimatedTempCardViewModel.swift */; };
+		A76AFCDE2E1330DB00FDFD0E /* AnimatedTempCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFCDB2E1330DB00FDFD0E /* AnimatedTempCardViewModel.swift */; };
+		A76AFCFF2E134DBC00FDFD0E /* Vapi in Frameworks */ = {isa = PBXBuildFile; productRef = A76AFCFE2E134DBC00FDFD0E /* Vapi */; };
+		A76AFD012E1360ED00FDFD0E /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD002E1360ED00FDFD0E /* CallManager.swift */; };
+		A76AFD022E1360ED00FDFD0E /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD002E1360ED00FDFD0E /* CallManager.swift */; };
+		A76AFD032E1360ED00FDFD0E /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD002E1360ED00FDFD0E /* CallManager.swift */; };
+		A76AFD092E15C4CB00FDFD0E /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD082E15C4CB00FDFD0E /* DeviceStore.swift */; };
+		A76AFD0A2E15C4CB00FDFD0E /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD082E15C4CB00FDFD0E /* DeviceStore.swift */; };
+		A76AFD0B2E15C4CB00FDFD0E /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD082E15C4CB00FDFD0E /* DeviceStore.swift */; };
+		A76AFD0D2E16E5A600FDFD0E /* voice_animation_MP4_WhiteVersion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A76AFD0C2E16E5A600FDFD0E /* voice_animation_MP4_WhiteVersion.mp4 */; };
+		A76AFD0E2E16E5A600FDFD0E /* voice_animation_MP4_WhiteVersion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A76AFD0C2E16E5A600FDFD0E /* voice_animation_MP4_WhiteVersion.mp4 */; };
+		A76AFD0F2E16E5A600FDFD0E /* voice_animation_MP4_WhiteVersion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A76AFD0C2E16E5A600FDFD0E /* voice_animation_MP4_WhiteVersion.mp4 */; };
+		A76AFD112E188E8A00FDFD0E /* MicrophoneAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD102E188E8A00FDFD0E /* MicrophoneAnimationView.swift */; };
+		A76AFD122E188E8A00FDFD0E /* MicrophoneAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD102E188E8A00FDFD0E /* MicrophoneAnimationView.swift */; };
+		A76AFD132E188E8A00FDFD0E /* MicrophoneAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD102E188E8A00FDFD0E /* MicrophoneAnimationView.swift */; };
+		A76F60BA2DEE503400BB7BDB /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60B92DEE503400BB7BDB /* Room.swift */; };
+		A76F60BB2DEE503400BB7BDB /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60B92DEE503400BB7BDB /* Room.swift */; };
+		A76F60BC2DEE503400BB7BDB /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60B92DEE503400BB7BDB /* Room.swift */; };
+		A76F60BE2DEE50CC00BB7BDB /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60BD2DEE50CC00BB7BDB /* SidebarView.swift */; };
+		A76F60BF2DEE50CC00BB7BDB /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60BD2DEE50CC00BB7BDB /* SidebarView.swift */; };
+		A76F60C02DEE50CC00BB7BDB /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60BD2DEE50CC00BB7BDB /* SidebarView.swift */; };
+		A76F60C22DEE50ED00BB7BDB /* HomeControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60C12DEE50ED00BB7BDB /* HomeControlsView.swift */; };
+		A76F60C32DEE50ED00BB7BDB /* HomeControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60C12DEE50ED00BB7BDB /* HomeControlsView.swift */; };
+		A76F60C42DEE50ED00BB7BDB /* HomeControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60C12DEE50ED00BB7BDB /* HomeControlsView.swift */; };
+		A76F60D22DEFE96800BB7BDB /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60D12DEFE96800BB7BDB /* HomeScene.swift */; };
+		A76F60D32DEFE96800BB7BDB /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60D12DEFE96800BB7BDB /* HomeScene.swift */; };
+		A76F60D42DEFE96800BB7BDB /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60D12DEFE96800BB7BDB /* HomeScene.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A7039B1B2D5E83460094542F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +166,55 @@
 		A7039B082D5E83440094542F /* SmartHomeController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7039B1A2D5E83460094542F /* SmartHomeControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHomeControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7039B242D5E83460094542F /* SmartHomeControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHomeControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A746DBBF2D761D0900CD8EBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A746DBC12D761D0900CD8EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A746DBC52D761D0900CD8EBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A746DBCB2D761D0900CD8EBB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A750A74E2DFA40B400C6055D /* DeviceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCard.swift; sourceTree = "<group>"; };
+		A750A7D72DFCB85200C6055D /* AddDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceView.swift; sourceTree = "<group>"; };
+		A750A7DD2E01BE2800C6055D /* EntranceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceView.swift; sourceTree = "<group>"; };
+		A750A7E42E01BE2800C6055D /* PlayroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayroomView.swift; sourceTree = "<group>"; };
+		A750A7E52E01BE2800C6055D /* SmartDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartDevice.swift; sourceTree = "<group>"; };
+		A750A8072E020BE700C6055D /* DeviceGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGroup.swift; sourceTree = "<group>"; };
+		A750A8082E020BE700C6055D /* DeviceGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGroupView.swift; sourceTree = "<group>"; };
+		A750A8092E020BE700C6055D /* DeviceHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHistory.swift; sourceTree = "<group>"; };
+		A750A80A2E020BE700C6055D /* DeviceHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHistoryView.swift; sourceTree = "<group>"; };
+		A750A80B2E020BE700C6055D /* DeviceTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTemplate.swift; sourceTree = "<group>"; };
+		A750A80C2E020BE700C6055D /* HomeAssistantConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssistantConfig.swift; sourceTree = "<group>"; };
+		A750A80D2E020BE700C6055D /* HomeAssistantConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssistantConfigView.swift; sourceTree = "<group>"; };
+		A750A8232E0223AA00C6055D /* HomeAssistantClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssistantClient.swift; sourceTree = "<group>"; };
+		A750A8272E02751000C6055D /* BlindsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindsCard.swift; sourceTree = "<group>"; };
+		A750A8282E02751000C6055D /* DishwasherCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwasherCard.swift; sourceTree = "<group>"; };
+		A750A8292E02751000C6055D /* FridgeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeCard.swift; sourceTree = "<group>"; };
+		A750A82A2E02751000C6055D /* OvenCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvenCard.swift; sourceTree = "<group>"; };
+		A750A82B2E02751000C6055D /* TempCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempCard.swift; sourceTree = "<group>"; };
+		A750A83B2E03C54B00C6055D /* CreateTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketView.swift; sourceTree = "<group>"; };
+		A750A83C2E03C54B00C6055D /* ZammadClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZammadClient.swift; sourceTree = "<group>"; };
+		A750A8432E04D86900C6055D /* ZammadClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZammadClient.swift; sourceTree = "<group>"; };
+		A750A8472E04DA0B00C6055D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A750A8482E04DA0B00C6055D /* ScreenshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotHelper.swift; sourceTree = "<group>"; };
+		A750A84F2E062E7300C6055D /* TicketHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketHistoryView.swift; sourceTree = "<group>"; };
+		A76AFCB72E0B9EE000FDFD0E /* HomeControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControlsView.swift; sourceTree = "<group>"; };
+		A76AFCBB2E0BB19F00FDFD0E /* DeviceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStore.swift; sourceTree = "<group>"; };
+		A76AFCBF2E11FF8400FDFD0E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		A76AFCC02E11FF8400FDFD0E /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A76AFCC12E11FF8400FDFD0E /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		A76AFCCB2E1203D200FDFD0E /* CallRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRecord.swift; sourceTree = "<group>"; };
+		A76AFCD22E12609B00FDFD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A76AFCD32E12FA9700FDFD0E /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
+		A76AFCD72E13283C00FDFD0E /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		A76AFCDB2E1330DB00FDFD0E /* AnimatedTempCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTempCardViewModel.swift; sourceTree = "<group>"; };
+		A76AFD002E1360ED00FDFD0E /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		A76AFD082E15C4CB00FDFD0E /* DeviceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStore.swift; sourceTree = "<group>"; };
+		A76AFD0C2E16E5A600FDFD0E /* voice_animation_MP4_WhiteVersion.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = voice_animation_MP4_WhiteVersion.mp4; sourceTree = "<group>"; };
+		A76AFD102E188E8A00FDFD0E /* MicrophoneAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneAnimationView.swift; sourceTree = "<group>"; };
+		A76F60B92DEE503400BB7BDB /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		A76F60BD2DEE50CC00BB7BDB /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		A76F60C12DEE50ED00BB7BDB /* HomeControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControlsView.swift; sourceTree = "<group>"; };
+		A76F60D12DEFE96800BB7BDB /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A7039B0A2D5E83440094542F /* SmartHomeController */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SmartHomeController;
-			sourceTree = "<group>";
-		};
 		A7039B1D2D5E83460094542F /* SmartHomeControllerTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SmartHomeControllerTests;
@@ -52,6 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76AFCFF2E134DBC00FDFD0E /* Vapi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +256,7 @@
 		A7039AFF2D5E83440094542F = {
 			isa = PBXGroup;
 			children = (
-				A7039B0A2D5E83440094542F /* SmartHomeController */,
+				A746DBCD2D761D0900CD8EBB /* SmartHomeController */,
 				A7039B1D2D5E83460094542F /* SmartHomeControllerTests */,
 				A7039B272D5E83460094542F /* SmartHomeControllerUITests */,
 				A7039B092D5E83440094542F /* Products */,
@@ -90,6 +271,67 @@
 				A7039B242D5E83460094542F /* SmartHomeControllerUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A746DBC02D761D0900CD8EBB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A746DBBF2D761D0900CD8EBB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A746DBCD2D761D0900CD8EBB /* SmartHomeController */ = {
+			isa = PBXGroup;
+			children = (
+				A76AFD102E188E8A00FDFD0E /* MicrophoneAnimationView.swift */,
+				A76AFD0C2E16E5A600FDFD0E /* voice_animation_MP4_WhiteVersion.mp4 */,
+				A76AFD082E15C4CB00FDFD0E /* DeviceStore.swift */,
+				A76AFD002E1360ED00FDFD0E /* CallManager.swift */,
+				A76AFCDB2E1330DB00FDFD0E /* AnimatedTempCardViewModel.swift */,
+				A76AFCD72E13283C00FDFD0E /* MasterView.swift */,
+				A76AFCD32E12FA9700FDFD0E /* RoomView.swift */,
+				A76AFCD22E12609B00FDFD0E /* Info.plist */,
+				A76AFCCB2E1203D200FDFD0E /* CallRecord.swift */,
+				A76AFCBF2E11FF8400FDFD0E /* App.swift */,
+				A76AFCC02E11FF8400FDFD0E /* AppState.swift */,
+				A76AFCC12E11FF8400FDFD0E /* CallManager.swift */,
+				A76AFCBB2E0BB19F00FDFD0E /* DeviceStore.swift */,
+				A76AFCB72E0B9EE000FDFD0E /* HomeControlsView.swift */,
+				A750A84F2E062E7300C6055D /* TicketHistoryView.swift */,
+				A750A8472E04DA0B00C6055D /* ImagePicker.swift */,
+				A750A8482E04DA0B00C6055D /* ScreenshotHelper.swift */,
+				A750A8432E04D86900C6055D /* ZammadClient.swift */,
+				A750A83B2E03C54B00C6055D /* CreateTicketView.swift */,
+				A750A83C2E03C54B00C6055D /* ZammadClient.swift */,
+				A750A8272E02751000C6055D /* BlindsCard.swift */,
+				A750A8282E02751000C6055D /* DishwasherCard.swift */,
+				A750A8292E02751000C6055D /* FridgeCard.swift */,
+				A750A82A2E02751000C6055D /* OvenCard.swift */,
+				A750A82B2E02751000C6055D /* TempCard.swift */,
+				A750A8232E0223AA00C6055D /* HomeAssistantClient.swift */,
+				A750A8072E020BE700C6055D /* DeviceGroup.swift */,
+				A750A8082E020BE700C6055D /* DeviceGroupView.swift */,
+				A750A8092E020BE700C6055D /* DeviceHistory.swift */,
+				A750A80A2E020BE700C6055D /* DeviceHistoryView.swift */,
+				A750A80B2E020BE700C6055D /* DeviceTemplate.swift */,
+				A750A80C2E020BE700C6055D /* HomeAssistantConfig.swift */,
+				A750A80D2E020BE700C6055D /* HomeAssistantConfigView.swift */,
+				A750A7DD2E01BE2800C6055D /* EntranceView.swift */,
+				A750A7E42E01BE2800C6055D /* PlayroomView.swift */,
+				A750A7E52E01BE2800C6055D /* SmartDevice.swift */,
+				A750A7D72DFCB85200C6055D /* AddDeviceView.swift */,
+				A750A74E2DFA40B400C6055D /* DeviceCard.swift */,
+				A76F60D12DEFE96800BB7BDB /* HomeScene.swift */,
+				A76F60C12DEE50ED00BB7BDB /* HomeControlsView.swift */,
+				A76F60BD2DEE50CC00BB7BDB /* SidebarView.swift */,
+				A76F60B92DEE503400BB7BDB /* Room.swift */,
+				A746DBC02D761D0900CD8EBB /* Preview Content */,
+				A746DBC12D761D0900CD8EBB /* Assets.xcassets */,
+				A746DBC52D761D0900CD8EBB /* ContentView.swift */,
+				A746DBCB2D761D0900CD8EBB /* SettingsView.swift */,
+			);
+			path = SmartHomeController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,11 +349,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				A7039B0A2D5E83440094542F /* SmartHomeController */,
-			);
 			name = SmartHomeController;
 			packageProductDependencies = (
+				A76AFCFE2E134DBC00FDFD0E /* Vapi */,
 			);
 			productName = SmartHomeController;
 			productReference = A7039B082D5E83440094542F /* SmartHomeController.app */;
@@ -195,6 +435,9 @@
 			);
 			mainGroup = A7039AFF2D5E83440094542F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A76AFCFD2E134DBC00FDFD0E /* XCRemoteSwiftPackageReference "ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A7039B092D5E83440094542F /* Products */;
 			projectDirPath = "";
@@ -212,6 +455,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76AFD0E2E16E5A600FDFD0E /* voice_animation_MP4_WhiteVersion.mp4 in Resources */,
+				A746DBD92D761D0900CD8EBB /* Preview Assets.xcassets in Resources */,
+				A746DBDA2D761D0900CD8EBB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +465,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76AFD0D2E16E5A600FDFD0E /* voice_animation_MP4_WhiteVersion.mp4 in Resources */,
+				A746DBF32D761D0900CD8EBB /* Preview Assets.xcassets in Resources */,
+				A746DBF42D761D0900CD8EBB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +475,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76AFD0F2E16E5A600FDFD0E /* voice_animation_MP4_WhiteVersion.mp4 in Resources */,
+				A746DBE62D761D0900CD8EBB /* Preview Assets.xcassets in Resources */,
+				A746DBE72D761D0900CD8EBB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +488,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A750A7D82DFCB85200C6055D /* AddDeviceView.swift in Sources */,
+				A750A8252E0223AA00C6055D /* HomeAssistantClient.swift in Sources */,
+				A76AFCDA2E13283C00FDFD0E /* MasterView.swift in Sources */,
+				A76AFD112E188E8A00FDFD0E /* MicrophoneAnimationView.swift in Sources */,
+				A76AFD092E15C4CB00FDFD0E /* DeviceStore.swift in Sources */,
+				A746DBCF2D761D0900CD8EBB /* ContentView.swift in Sources */,
+				A76F60D42DEFE96800BB7BDB /* HomeScene.swift in Sources */,
+				A76F60BA2DEE503400BB7BDB /* Room.swift in Sources */,
+				A750A80E2E020BE700C6055D /* HomeAssistantConfig.swift in Sources */,
+				A750A80F2E020BE700C6055D /* DeviceHistoryView.swift in Sources */,
+				A750A8102E020BE700C6055D /* DeviceHistory.swift in Sources */,
+				A750A8112E020BE700C6055D /* DeviceGroupView.swift in Sources */,
+				A750A8122E020BE700C6055D /* HomeAssistantConfigView.swift in Sources */,
+				A750A82C2E02751000C6055D /* TempCard.swift in Sources */,
+				A750A82D2E02751000C6055D /* BlindsCard.swift in Sources */,
+				A750A82E2E02751000C6055D /* DishwasherCard.swift in Sources */,
+				A750A82F2E02751000C6055D /* FridgeCard.swift in Sources */,
+				A76AFCC52E11FF8400FDFD0E /* CallManager.swift in Sources */,
+				A76AFCCC2E1203D200FDFD0E /* CallRecord.swift in Sources */,
+				A76AFCDC2E1330DB00FDFD0E /* AnimatedTempCardViewModel.swift in Sources */,
+				A76AFCC62E11FF8400FDFD0E /* AppState.swift in Sources */,
+				A76AFD032E1360ED00FDFD0E /* CallManager.swift in Sources */,
+				A76AFCC72E11FF8400FDFD0E /* App.swift in Sources */,
+				A750A8302E02751000C6055D /* OvenCard.swift in Sources */,
+				A750A8132E020BE700C6055D /* DeviceTemplate.swift in Sources */,
+				A750A8142E020BE700C6055D /* DeviceGroup.swift in Sources */,
+				A76F60C42DEE50ED00BB7BDB /* HomeControlsView.swift in Sources */,
+				A750A7512DFA40B400C6055D /* DeviceCard.swift in Sources */,
+				A746DBD52D761D0900CD8EBB /* SettingsView.swift in Sources */,
+				A750A7E62E01BE2800C6055D /* EntranceView.swift in Sources */,
+				A750A8452E04D86900C6055D /* ZammadClient.swift in Sources */,
+				A76AFCBE2E0BB19F00FDFD0E /* DeviceStore.swift in Sources */,
+				A750A83D2E03C54B00C6055D /* CreateTicketView.swift in Sources */,
+				A750A83E2E03C54B00C6055D /* ZammadClient.swift in Sources */,
+				A76AFCB92E0B9EE000FDFD0E /* HomeControlsView.swift in Sources */,
+				A76AFCD42E12FA9700FDFD0E /* RoomView.swift in Sources */,
+				A750A7EF2E01BE2800C6055D /* SmartDevice.swift in Sources */,
+				A750A7F02E01BE2800C6055D /* PlayroomView.swift in Sources */,
+				A750A8522E062E7300C6055D /* TicketHistoryView.swift in Sources */,
+				A750A8492E04DA0B00C6055D /* ImagePicker.swift in Sources */,
+				A750A84A2E04DA0B00C6055D /* ScreenshotHelper.swift in Sources */,
+				A76F60C02DEE50CC00BB7BDB /* SidebarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +537,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76F60C22DEE50ED00BB7BDB /* HomeControlsView.swift in Sources */,
+				A76AFCDE2E1330DB00FDFD0E /* AnimatedTempCardViewModel.swift in Sources */,
+				A746DBE92D761D0900CD8EBB /* ContentView.swift in Sources */,
+				A76F60BB2DEE503400BB7BDB /* Room.swift in Sources */,
+				A76F60BE2DEE50CC00BB7BDB /* SidebarView.swift in Sources */,
+				A746DBEF2D761D0900CD8EBB /* SettingsView.swift in Sources */,
+				A750A7FC2E01BE2800C6055D /* EntranceView.swift in Sources */,
+				A750A8262E0223AA00C6055D /* HomeAssistantClient.swift in Sources */,
+				A750A84D2E04DA0B00C6055D /* ImagePicker.swift in Sources */,
+				A76AFCCD2E1203D200FDFD0E /* CallRecord.swift in Sources */,
+				A750A84E2E04DA0B00C6055D /* ScreenshotHelper.swift in Sources */,
+				A76AFD012E1360ED00FDFD0E /* CallManager.swift in Sources */,
+				A76AFCC22E11FF8400FDFD0E /* CallManager.swift in Sources */,
+				A76AFCC32E11FF8400FDFD0E /* AppState.swift in Sources */,
+				A76AFCC42E11FF8400FDFD0E /* App.swift in Sources */,
+				A750A8052E01BE2800C6055D /* SmartDevice.swift in Sources */,
+				A750A8312E02751000C6055D /* TempCard.swift in Sources */,
+				A76AFCB82E0B9EE000FDFD0E /* HomeControlsView.swift in Sources */,
+				A750A8322E02751000C6055D /* BlindsCard.swift in Sources */,
+				A750A8442E04D86900C6055D /* ZammadClient.swift in Sources */,
+				A750A83F2E03C54B00C6055D /* CreateTicketView.swift in Sources */,
+				A750A8402E03C54B00C6055D /* ZammadClient.swift in Sources */,
+				A76AFCD92E13283C00FDFD0E /* MasterView.swift in Sources */,
+				A750A8332E02751000C6055D /* DishwasherCard.swift in Sources */,
+				A76AFD0A2E15C4CB00FDFD0E /* DeviceStore.swift in Sources */,
+				A750A8342E02751000C6055D /* FridgeCard.swift in Sources */,
+				A750A8352E02751000C6055D /* OvenCard.swift in Sources */,
+				A750A8062E01BE2800C6055D /* PlayroomView.swift in Sources */,
+				A750A74F2DFA40B400C6055D /* DeviceCard.swift in Sources */,
+				A76AFCBC2E0BB19F00FDFD0E /* DeviceStore.swift in Sources */,
+				A76F60D22DEFE96800BB7BDB /* HomeScene.swift in Sources */,
+				A750A8152E020BE700C6055D /* HomeAssistantConfig.swift in Sources */,
+				A750A8162E020BE700C6055D /* DeviceHistoryView.swift in Sources */,
+				A750A8172E020BE700C6055D /* DeviceHistory.swift in Sources */,
+				A750A8182E020BE700C6055D /* DeviceGroupView.swift in Sources */,
+				A76AFD122E188E8A00FDFD0E /* MicrophoneAnimationView.swift in Sources */,
+				A76AFCD52E12FA9700FDFD0E /* RoomView.swift in Sources */,
+				A750A8192E020BE700C6055D /* HomeAssistantConfigView.swift in Sources */,
+				A750A81A2E020BE700C6055D /* DeviceTemplate.swift in Sources */,
+				A750A8512E062E7300C6055D /* TicketHistoryView.swift in Sources */,
+				A750A81B2E020BE700C6055D /* DeviceGroup.swift in Sources */,
+				A750A7DA2DFCB85200C6055D /* AddDeviceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +586,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A746DBDC2D761D0900CD8EBB /* ContentView.swift in Sources */,
+				A76F60BF2DEE50CC00BB7BDB /* SidebarView.swift in Sources */,
+				A76F60BC2DEE503400BB7BDB /* Room.swift in Sources */,
+				A76AFD022E1360ED00FDFD0E /* CallManager.swift in Sources */,
+				A76F60C32DEE50ED00BB7BDB /* HomeControlsView.swift in Sources */,
+				A750A7502DFA40B400C6055D /* DeviceCard.swift in Sources */,
+				A750A8362E02751000C6055D /* TempCard.swift in Sources */,
+				A750A8372E02751000C6055D /* BlindsCard.swift in Sources */,
+				A750A8382E02751000C6055D /* DishwasherCard.swift in Sources */,
+				A750A8412E03C54B00C6055D /* CreateTicketView.swift in Sources */,
+				A750A8422E03C54B00C6055D /* ZammadClient.swift in Sources */,
+				A76AFD132E188E8A00FDFD0E /* MicrophoneAnimationView.swift in Sources */,
+				A750A8392E02751000C6055D /* FridgeCard.swift in Sources */,
+				A750A83A2E02751000C6055D /* OvenCard.swift in Sources */,
+				A76F60D32DEFE96800BB7BDB /* HomeScene.swift in Sources */,
+				A750A7F12E01BE2800C6055D /* EntranceView.swift in Sources */,
+				A750A81C2E020BE700C6055D /* HomeAssistantConfig.swift in Sources */,
+				A750A8502E062E7300C6055D /* TicketHistoryView.swift in Sources */,
+				A750A81D2E020BE700C6055D /* DeviceHistoryView.swift in Sources */,
+				A750A81E2E020BE700C6055D /* DeviceHistory.swift in Sources */,
+				A76AFCD82E13283C00FDFD0E /* MasterView.swift in Sources */,
+				A750A81F2E020BE700C6055D /* DeviceGroupView.swift in Sources */,
+				A76AFCCE2E1203D200FDFD0E /* CallRecord.swift in Sources */,
+				A750A8202E020BE700C6055D /* HomeAssistantConfigView.swift in Sources */,
+				A750A8212E020BE700C6055D /* DeviceTemplate.swift in Sources */,
+				A750A8222E020BE700C6055D /* DeviceGroup.swift in Sources */,
+				A750A8462E04D86900C6055D /* ZammadClient.swift in Sources */,
+				A750A84B2E04DA0B00C6055D /* ImagePicker.swift in Sources */,
+				A76AFCD62E12FA9700FDFD0E /* RoomView.swift in Sources */,
+				A750A84C2E04DA0B00C6055D /* ScreenshotHelper.swift in Sources */,
+				A76AFD0B2E15C4CB00FDFD0E /* DeviceStore.swift in Sources */,
+				A750A7FA2E01BE2800C6055D /* SmartDevice.swift in Sources */,
+				A76AFCDD2E1330DB00FDFD0E /* AnimatedTempCardViewModel.swift in Sources */,
+				A750A7FB2E01BE2800C6055D /* PlayroomView.swift in Sources */,
+				A750A7D92DFCB85200C6055D /* AddDeviceView.swift in Sources */,
+				A750A8242E0223AA00C6055D /* HomeAssistantClient.swift in Sources */,
+				A76AFCC82E11FF8400FDFD0E /* CallManager.swift in Sources */,
+				A76AFCC92E11FF8400FDFD0E /* AppState.swift in Sources */,
+				A76AFCCA2E11FF8400FDFD0E /* App.swift in Sources */,
+				A76AFCBA2E0B9EE000FDFD0E /* HomeControlsView.swift in Sources */,
+				A76AFCBD2E0BB19F00FDFD0E /* DeviceStore.swift in Sources */,
+				A746DBE22D761D0900CD8EBB /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +778,10 @@
 				DEVELOPMENT_TEAM = WUGMLAU6NB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartHomeController/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses microphone for mart hone";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to let you control your smart home with your voice.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -425,12 +807,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartHomeController/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 52H2JN88WD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartHomeController/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses microphone for mart hone";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to let you control your smart home with your voice.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -441,9 +829,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.universityofutahhealth.BYODSmartroom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.universityofutahhealth.SmartHomeEnterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "SmartHome Enterprise Distribution";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -562,6 +951,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A76AFCFD2E134DBC00FDFD0E /* XCRemoteSwiftPackageReference "ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VapiAI/ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A76AFCFE2E134DBC00FDFD0E /* Vapi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A76AFCFD2E134DBC00FDFD0E /* XCRemoteSwiftPackageReference "ios" */;
+			productName = Vapi;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A7039B002D5E83440094542F /* Project object */;
 }

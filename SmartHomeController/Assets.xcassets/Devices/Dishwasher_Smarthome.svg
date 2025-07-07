@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="174" viewBox="0 0 154 174">
+  <g id="Group_1207" data-name="Group 1207" transform="translate(-144 -263)">
+    <g id="Rectangle_988" data-name="Rectangle 988" transform="translate(144 263)" fill="none" stroke="#403f42" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <rect width="154" height="174" rx="20" stroke="none"/>
+      <rect x="3.5" y="3.5" width="147" height="167" rx="16.5" fill="none"/>
+    </g>
+    <g id="Ellipse_295" data-name="Ellipse 295" transform="translate(163 323)" fill="none" stroke="#403f42" stroke-width="7">
+      <circle cx="39" cy="39" r="39" stroke="none"/>
+      <circle cx="39" cy="39" r="35.5" fill="none"/>
+    </g>
+    <g id="Ellipse_294" data-name="Ellipse 294" transform="translate(174 334)" fill="none" stroke="#403f42" stroke-width="7">
+      <circle cx="28" cy="28" r="28" stroke="none"/>
+      <circle cx="28" cy="28" r="24.5" fill="none"/>
+    </g>
+    <g id="Ellipse_292" data-name="Ellipse 292" transform="translate(201 323)" fill="#fff" stroke="#403f42" stroke-width="7">
+      <circle cx="39" cy="39" r="39" stroke="none"/>
+      <circle cx="39" cy="39" r="35.5" fill="none"/>
+    </g>
+    <g id="Ellipse_293" data-name="Ellipse 293" transform="translate(212 334)" fill="#fff" stroke="#403f42" stroke-width="7">
+      <ellipse cx="27.5" cy="28" rx="27.5" ry="28" stroke="none"/>
+      <ellipse cx="27.5" cy="28" rx="24" ry="24.5" fill="none"/>
+    </g>
+    <line id="Line_180" data-name="Line 180" x2="143" transform="translate(150 403)" fill="none" stroke="#403f42" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_181" data-name="Line 181" x2="143" transform="translate(150 296)" fill="none" stroke="#403f42" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_184" data-name="Line 184" x2="7" transform="translate(246 283)" fill="none" stroke="#403f42" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_185" data-name="Line 185" x2="7" transform="translate(225 283)" fill="none" stroke="#403f42" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_183" data-name="Line 183" x2="7" transform="translate(267 283)" fill="none" stroke="#403f42" stroke-linecap="round" stroke-width="7"/>
+  </g>
+</svg>

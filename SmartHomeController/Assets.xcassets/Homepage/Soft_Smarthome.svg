@@ -1,0 +1,11 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="118" height="118" viewBox="0 0 118 118">
+  <g id="Layer_190" data-name="Layer 190" transform="translate(0 0)">
+    <rect id="Rectangle_385" data-name="Rectangle 385" width="118" height="118" fill="#fff" opacity="0"/>
+    <path id="Path_2871" data-name="Path 2871" d="M64.792,105.016c-21.845,0-39.622-18.1-39.622-40.319S42.947,24.37,64.792,24.37,104.406,42.476,104.406,64.7,86.637,105.016,64.792,105.016Zm0-72.984c-17.623,0-31.96,14.658-31.96,32.665s14.336,32.657,31.96,32.657S96.744,82.7,96.744,64.7,82.408,32.032,64.792,32.032Z" transform="translate(-5.884 -5.697)" fill="#424242"/>
+    <ellipse id="Ellipse_129" data-name="Ellipse 129" cx="6.298" cy="6.429" rx="6.298" ry="6.429" transform="translate(105.403 49.269)" fill="#424242"/>
+    <ellipse id="Ellipse_130" data-name="Ellipse 130" cx="6.298" cy="6.429" rx="6.298" ry="6.429" transform="translate(86.925 21.572) rotate(-45)" fill="#424242"/>
+    <ellipse id="Ellipse_131" data-name="Ellipse 131" cx="6.429" cy="6.298" rx="6.429" ry="6.298" transform="translate(52.096)" fill="#424242"/>
+    <ellipse id="Ellipse_132" data-name="Ellipse 132" cx="6.429" cy="6.298" rx="6.429" ry="6.298" transform="translate(86.926 96.549) rotate(-45)" fill="#424242"/>
+    <ellipse id="Ellipse_133" data-name="Ellipse 133" cx="6.429" cy="6.298" rx="6.429" ry="6.298" transform="translate(52.096 105.403)" fill="#424242"/>
+  </g>
+</svg>

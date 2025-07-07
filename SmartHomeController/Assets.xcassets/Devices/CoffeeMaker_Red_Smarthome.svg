@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="174" height="174" viewBox="0 0 174 174">
+  <g id="Group_1216" data-name="Group 1216" transform="translate(-134 -1010)">
+    <g id="Rectangle_999" data-name="Rectangle 999" transform="translate(194 1041)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <rect width="54" height="52" rx="15" stroke="none"/>
+      <rect x="3.5" y="3.5" width="47" height="45" rx="11.5" fill="none"/>
+    </g>
+    <g id="Rectangle_998" data-name="Rectangle 998" transform="translate(134 1010)" fill="#fff" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <rect width="174" height="56" rx="20" stroke="none"/>
+      <rect x="3.5" y="3.5" width="167" height="49" rx="16.5" fill="none"/>
+    </g>
+    <g id="Ellipse_310" data-name="Ellipse 310" transform="translate(233 1120)" fill="none" stroke="#ae1d32" stroke-width="7">
+      <circle cx="14" cy="14" r="14" stroke="none"/>
+      <circle cx="14" cy="14" r="10.5" fill="none"/>
+    </g>
+    <g id="Ellipse_307" data-name="Ellipse 307" transform="translate(160 1023)" fill="none" stroke="#ae1d32" stroke-width="7">
+      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+      <circle cx="14.5" cy="14.5" r="11" fill="none"/>
+    </g>
+    <g id="Ellipse_308" data-name="Ellipse 308" transform="translate(207 1023)" fill="none" stroke="#ae1d32" stroke-width="7">
+      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+      <circle cx="14.5" cy="14.5" r="11" fill="none"/>
+    </g>
+    <g id="Ellipse_309" data-name="Ellipse 309" transform="translate(253 1023)" fill="none" stroke="#ae1d32" stroke-width="7">
+      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+      <circle cx="14.5" cy="14.5" r="11" fill="none"/>
+    </g>
+    <line id="Line_203" data-name="Line 203" x2="22" transform="translate(246 1079)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_204" data-name="Line 204" y2="100.385" transform="translate(155.75 1063.539)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_205" data-name="Line 205" y2="100.385" transform="translate(286.25 1063.539)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <g id="Rectangle_1000" data-name="Rectangle 1000" transform="translate(134 1152)" fill="#fff" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <rect width="174" height="32" rx="8" stroke="none"/>
+      <rect x="3.5" y="3.5" width="167" height="25" rx="4.5" fill="none"/>
+    </g>
+    <g id="Rectangle_1001" data-name="Rectangle 1001" transform="translate(194 1109)" fill="#fff" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <rect width="54" height="50" rx="15" stroke="none"/>
+      <rect x="3.5" y="3.5" width="47" height="43" rx="11.5" fill="none"/>
+    </g>
+  </g>
+</svg>

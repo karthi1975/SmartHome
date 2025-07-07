@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="175" viewBox="0 0 154 175">
+  <g id="Group_1211" data-name="Group 1211" transform="translate(-144 -633)">
+    <g id="Rectangle_991" data-name="Rectangle 991" transform="translate(144 646)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <rect width="154" height="162" rx="20" stroke="none"/>
+      <rect x="3.5" y="3.5" width="147" height="155" rx="16.5" fill="none"/>
+    </g>
+    <g id="Rectangle_993" data-name="Rectangle 993" transform="translate(163 633)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <rect width="49" height="20" rx="5" stroke="none"/>
+      <rect x="3.5" y="3.5" width="42" height="13" rx="1.5" fill="none"/>
+    </g>
+    <g id="Rectangle_994" data-name="Rectangle 994" transform="translate(230 633)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <rect width="49" height="20" rx="5" stroke="none"/>
+      <rect x="3.5" y="3.5" width="42" height="13" rx="1.5" fill="none"/>
+    </g>
+    <g id="Rectangle_992" data-name="Rectangle 992" transform="translate(163 695)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <rect width="116" height="94" rx="5" stroke="none"/>
+      <rect x="3.5" y="3.5" width="109" height="87" rx="1.5" fill="none"/>
+    </g>
+    <g id="Rectangle_997" data-name="Rectangle 997" transform="translate(176 722)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <rect width="90" height="54" rx="5" stroke="none"/>
+      <rect x="3.5" y="3.5" width="83" height="47" rx="1.5" fill="none"/>
+    </g>
+    <line id="Line_196" data-name="Line 196" x2="143.885" transform="translate(149.096 679.495)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_197" data-name="Line 197" x2="27.885" transform="translate(207.096 664.995)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_201" data-name="Line 201" x2="27.885" transform="translate(213.15 760.716) rotate(-45)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_202" data-name="Line 202" x2="16.731" transform="translate(209.207 748.885) rotate(-45)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_199" data-name="Line 199" x2="81.423" transform="translate(180.326 712.635)" fill="none" stroke="#ae1d32" stroke-linecap="round" stroke-width="7"/>
+    <g id="Ellipse_297" data-name="Ellipse 297" transform="translate(163 661)" fill="#ae1d32" stroke="#ae1d32" stroke-width="1">
+      <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+      <circle cx="4.5" cy="4.5" r="4" fill="none"/>
+    </g>
+    <g id="Ellipse_298" data-name="Ellipse 298" transform="translate(183 661)" fill="#ae1d32" stroke="#ae1d32" stroke-width="1">
+      <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+      <circle cx="4.5" cy="4.5" r="4" fill="none"/>
+    </g>
+    <g id="Ellipse_300" data-name="Ellipse 300" transform="translate(250 661)" fill="#ae1d32" stroke="#ae1d32" stroke-width="1">
+      <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+      <circle cx="4.5" cy="4.5" r="4" fill="none"/>
+    </g>
+    <g id="Ellipse_299" data-name="Ellipse 299" transform="translate(270 661)" fill="#ae1d32" stroke="#ae1d32" stroke-width="1">
+      <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+      <circle cx="4.5" cy="4.5" r="4" fill="none"/>
+    </g>
+  </g>
+</svg>
