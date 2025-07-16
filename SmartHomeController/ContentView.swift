@@ -192,6 +192,8 @@ struct ContentView: View {
             if let match = allRooms.first(where: { $0.name.caseInsensitiveCompare(newPage.rawValue) == .orderedSame }) {
                 print("Setting selectedRoom to: \(match.name)")
                 selectedRoom = match
+                // Post notification when page changes via appState
+                NotificationCenter.default.post(name: .pageChanged, object: match.name)
             } else {
                 print("No matching room found for page: \(newPage.rawValue)")
             }
@@ -215,6 +217,9 @@ struct ContentView: View {
         }
         .onChange(of: callManager.userSpeaking) { newValue in
             isVADActive = newValue
+        }
+        .onChange(of: callManager.agentSpeaking) { newValue in
+            isAgentResponding = newValue
         }
         .onAppear {
             // Start the agent/call automatically on app launch

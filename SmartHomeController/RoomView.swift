@@ -124,15 +124,10 @@ struct RoomView: View {
             let updateClosure: (Int) -> Void = { newTemp in
                 callManager.roomTemps[roomName.lowercased()] = newTemp
             }
+            // Set the update closure on the view model using the new method
+            tempVM.setUpdateTempClosure(updateClosure)
             tempVM.objectWillChange.send() // ensure update
-            // Replace the updateTemp closure
-            let mirror = Mirror(reflecting: tempVM)
-            if let updateTempProperty = mirror.children.first(where: { $0.label == "updateTemp" })?.value as? (Int) -> Void {
-                // Already set
-            } else {
-                // Not set, so set it
-                // This is a hack; in practice, you may want to refactor the view model to allow updating the closure
-            }
+            
             RoomView.roomViewModels[roomName.lowercased()] = tempVM
             print("[DEBUG] Registered \(roomName.lowercased()) view model. Total registered: \(RoomView.roomViewModels.keys.sorted())")
             

@@ -131,6 +131,15 @@
 		A76AFD112E188E8A00FDFD0E /* MicrophoneAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD102E188E8A00FDFD0E /* MicrophoneAnimationView.swift */; };
 		A76AFD122E188E8A00FDFD0E /* MicrophoneAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD102E188E8A00FDFD0E /* MicrophoneAnimationView.swift */; };
 		A76AFD132E188E8A00FDFD0E /* MicrophoneAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD102E188E8A00FDFD0E /* MicrophoneAnimationView.swift */; };
+		A76AFD1C2E1ED40C00FDFD0E /* DeviceDiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD1A2E1ED40C00FDFD0E /* DeviceDiscoveryView.swift */; };
+		A76AFD1D2E1ED40C00FDFD0E /* HomeAssistantDeviceDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD1B2E1ED40C00FDFD0E /* HomeAssistantDeviceDiscovery.swift */; };
+		A76AFD1E2E1ED40C00FDFD0E /* DeviceDiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD1A2E1ED40C00FDFD0E /* DeviceDiscoveryView.swift */; };
+		A76AFD1F2E1ED40C00FDFD0E /* HomeAssistantDeviceDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD1B2E1ED40C00FDFD0E /* HomeAssistantDeviceDiscovery.swift */; };
+		A76AFD202E1ED40C00FDFD0E /* DeviceDiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD1A2E1ED40C00FDFD0E /* DeviceDiscoveryView.swift */; };
+		A76AFD212E1ED40C00FDFD0E /* HomeAssistantDeviceDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD1B2E1ED40C00FDFD0E /* HomeAssistantDeviceDiscovery.swift */; };
+		A76AFD232E1F4DC100FDFD0E /* HomeAssistantConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD222E1F4DC100FDFD0E /* HomeAssistantConfig.swift */; };
+		A76AFD242E1F4DC100FDFD0E /* HomeAssistantConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD222E1F4DC100FDFD0E /* HomeAssistantConfig.swift */; };
+		A76AFD252E1F4DC100FDFD0E /* HomeAssistantConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AFD222E1F4DC100FDFD0E /* HomeAssistantConfig.swift */; };
 		A76F60BA2DEE503400BB7BDB /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60B92DEE503400BB7BDB /* Room.swift */; };
 		A76F60BB2DEE503400BB7BDB /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60B92DEE503400BB7BDB /* Room.swift */; };
 		A76F60BC2DEE503400BB7BDB /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60B92DEE503400BB7BDB /* Room.swift */; };
@@ -208,6 +217,9 @@
 		A76AFD082E15C4CB00FDFD0E /* DeviceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStore.swift; sourceTree = "<group>"; };
 		A76AFD0C2E16E5A600FDFD0E /* voice_animation_MP4_WhiteVersion.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = voice_animation_MP4_WhiteVersion.mp4; sourceTree = "<group>"; };
 		A76AFD102E188E8A00FDFD0E /* MicrophoneAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneAnimationView.swift; sourceTree = "<group>"; };
+		A76AFD1A2E1ED40C00FDFD0E /* DeviceDiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDiscoveryView.swift; sourceTree = "<group>"; };
+		A76AFD1B2E1ED40C00FDFD0E /* HomeAssistantDeviceDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssistantDeviceDiscovery.swift; sourceTree = "<group>"; };
+		A76AFD222E1F4DC100FDFD0E /* HomeAssistantConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssistantConfig.swift; sourceTree = "<group>"; };
 		A76F60B92DEE503400BB7BDB /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		A76F60BD2DEE50CC00BB7BDB /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		A76F60C12DEE50ED00BB7BDB /* HomeControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControlsView.swift; sourceTree = "<group>"; };
@@ -284,6 +296,9 @@
 		A746DBCD2D761D0900CD8EBB /* SmartHomeController */ = {
 			isa = PBXGroup;
 			children = (
+				A76AFD222E1F4DC100FDFD0E /* HomeAssistantConfig.swift */,
+				A76AFD1A2E1ED40C00FDFD0E /* DeviceDiscoveryView.swift */,
+				A76AFD1B2E1ED40C00FDFD0E /* HomeAssistantDeviceDiscovery.swift */,
 				A76AFD102E188E8A00FDFD0E /* MicrophoneAnimationView.swift */,
 				A76AFD0C2E16E5A600FDFD0E /* voice_animation_MP4_WhiteVersion.mp4 */,
 				A76AFD082E15C4CB00FDFD0E /* DeviceStore.swift */,
@@ -516,6 +531,7 @@
 				A750A8142E020BE700C6055D /* DeviceGroup.swift in Sources */,
 				A76F60C42DEE50ED00BB7BDB /* HomeControlsView.swift in Sources */,
 				A750A7512DFA40B400C6055D /* DeviceCard.swift in Sources */,
+				A76AFD252E1F4DC100FDFD0E /* HomeAssistantConfig.swift in Sources */,
 				A746DBD52D761D0900CD8EBB /* SettingsView.swift in Sources */,
 				A750A7E62E01BE2800C6055D /* EntranceView.swift in Sources */,
 				A750A8452E04D86900C6055D /* ZammadClient.swift in Sources */,
@@ -526,6 +542,8 @@
 				A76AFCD42E12FA9700FDFD0E /* RoomView.swift in Sources */,
 				A750A7EF2E01BE2800C6055D /* SmartDevice.swift in Sources */,
 				A750A7F02E01BE2800C6055D /* PlayroomView.swift in Sources */,
+				A76AFD202E1ED40C00FDFD0E /* DeviceDiscoveryView.swift in Sources */,
+				A76AFD212E1ED40C00FDFD0E /* HomeAssistantDeviceDiscovery.swift in Sources */,
 				A750A8522E062E7300C6055D /* TicketHistoryView.swift in Sources */,
 				A750A8492E04DA0B00C6055D /* ImagePicker.swift in Sources */,
 				A750A84A2E04DA0B00C6055D /* ScreenshotHelper.swift in Sources */,
@@ -545,6 +563,7 @@
 				A746DBEF2D761D0900CD8EBB /* SettingsView.swift in Sources */,
 				A750A7FC2E01BE2800C6055D /* EntranceView.swift in Sources */,
 				A750A8262E0223AA00C6055D /* HomeAssistantClient.swift in Sources */,
+				A76AFD232E1F4DC100FDFD0E /* HomeAssistantConfig.swift in Sources */,
 				A750A84D2E04DA0B00C6055D /* ImagePicker.swift in Sources */,
 				A76AFCCD2E1203D200FDFD0E /* CallRecord.swift in Sources */,
 				A750A84E2E04DA0B00C6055D /* ScreenshotHelper.swift in Sources */,
@@ -559,6 +578,8 @@
 				A750A8442E04D86900C6055D /* ZammadClient.swift in Sources */,
 				A750A83F2E03C54B00C6055D /* CreateTicketView.swift in Sources */,
 				A750A8402E03C54B00C6055D /* ZammadClient.swift in Sources */,
+				A76AFD1E2E1ED40C00FDFD0E /* DeviceDiscoveryView.swift in Sources */,
+				A76AFD1F2E1ED40C00FDFD0E /* HomeAssistantDeviceDiscovery.swift in Sources */,
 				A76AFCD92E13283C00FDFD0E /* MasterView.swift in Sources */,
 				A750A8332E02751000C6055D /* DishwasherCard.swift in Sources */,
 				A76AFD0A2E15C4CB00FDFD0E /* DeviceStore.swift in Sources */,
@@ -601,6 +622,7 @@
 				A750A8392E02751000C6055D /* FridgeCard.swift in Sources */,
 				A750A83A2E02751000C6055D /* OvenCard.swift in Sources */,
 				A76F60D32DEFE96800BB7BDB /* HomeScene.swift in Sources */,
+				A76AFD242E1F4DC100FDFD0E /* HomeAssistantConfig.swift in Sources */,
 				A750A7F12E01BE2800C6055D /* EntranceView.swift in Sources */,
 				A750A81C2E020BE700C6055D /* HomeAssistantConfig.swift in Sources */,
 				A750A8502E062E7300C6055D /* TicketHistoryView.swift in Sources */,
@@ -611,6 +633,8 @@
 				A76AFCCE2E1203D200FDFD0E /* CallRecord.swift in Sources */,
 				A750A8202E020BE700C6055D /* HomeAssistantConfigView.swift in Sources */,
 				A750A8212E020BE700C6055D /* DeviceTemplate.swift in Sources */,
+				A76AFD1C2E1ED40C00FDFD0E /* DeviceDiscoveryView.swift in Sources */,
+				A76AFD1D2E1ED40C00FDFD0E /* HomeAssistantDeviceDiscovery.swift in Sources */,
 				A750A8222E020BE700C6055D /* DeviceGroup.swift in Sources */,
 				A750A8462E04D86900C6055D /* ZammadClient.swift in Sources */,
 				A750A84B2E04DA0B00C6055D /* ImagePicker.swift in Sources */,

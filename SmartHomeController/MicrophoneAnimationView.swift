@@ -10,7 +10,9 @@ struct MicrophoneAnimationView: View {
     @State private var animationTimer: Timer?
     
     private var shouldShowAnimation: Bool {
-        callManager.userSpeaking || callManager.agentSpeaking
+        let result = callManager.userSpeaking || callManager.agentSpeaking
+        print("[DEBUG] MicrophoneAnimationView: shouldShowAnimation = \(result) (userSpeaking: \(callManager.userSpeaking), agentSpeaking: \(callManager.agentSpeaking))")
+        return result
     }
     
     var body: some View {
@@ -83,12 +85,19 @@ struct MicrophoneAnimationView: View {
             animationTimer?.invalidate()
             animationTimer = nil
         }
+        .onChange(of: callManager.userSpeaking) { newValue in
+            print("[DEBUG] MicrophoneAnimationView: userSpeaking changed to \(newValue)")
+        }
+        .onChange(of: callManager.agentSpeaking) { newValue in
+            print("[DEBUG] MicrophoneAnimationView: agentSpeaking changed to \(newValue)")
+        }
     }
     
     private func setupVideoPlayer() {
         guard player == nil else { return }
         
         if let url = Bundle.main.url(forResource: "voice_animation_MP4_WhiteVersion", withExtension: "mp4") {
+            print("[DEBUG] MicrophoneAnimationView: Video file found, setting up player")
             player = AVPlayer(url: url)
             player?.actionAtItemEnd = .none
             
@@ -101,6 +110,8 @@ struct MicrophoneAnimationView: View {
                 player?.seek(to: .zero)
                 player?.play()
             }
+        } else {
+            print("[DEBUG] MicrophoneAnimationView: Video file 'voice_animation_MP4_WhiteVersion.mp4' not found in bundle")
         }
     }
     
@@ -198,6 +209,7 @@ struct GlobalMicrophoneOverlay: View {
                     }
                 }
                 .onChange(of: shouldShowAnimation) { newValue in
+                    print("[DEBUG] GlobalMicrophoneOverlay: shouldShowAnimation changed to \(newValue) (userSpeaking: \(callManager.userSpeaking), agentSpeaking: \(callManager.agentSpeaking))")
                     withAnimation(.easeInOut(duration: 0.2)) {
                         showAnimation = newValue
                     }

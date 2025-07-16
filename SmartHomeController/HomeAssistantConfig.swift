@@ -58,9 +58,9 @@ struct ZammadConfig: Codable {
     var isConfigured: Bool
     
     static let `default` = ZammadConfig(
-        baseURL: "http://localhost:8080/api/v1",
-        apiToken: "v1gmNy3Nkr29fk8C4HyuR5p9UFRdUJ3yO-Buzd6R_y9XWTIPbwfMVbTb5DMHS6pm",
-        isConfigured: true  // Default to true since we have default values
+        baseURL: "https://tickets.homeadapt.us/api/v1/",
+        apiToken: "3chvCU9AmUKAoYI8suDCJiEjJ9Mm2zEWvQlZQIi4AYr_oD077Vt0FAQoOGJmrYhR",
+        isConfigured: true
     )
     
     static func load() -> ZammadConfig {

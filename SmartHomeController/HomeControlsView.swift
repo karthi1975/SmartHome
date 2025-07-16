@@ -192,6 +192,11 @@ struct HomeControlsView: View {
                 }
                 .onAppear {
                     loadCards()
+                    // Set the update closure for home temperature
+                    let updateClosure: (Int) -> Void = { newTemp in
+                        callManager.roomTemps["home"] = newTemp
+                    }
+                    tempVM.setUpdateTempClosure(updateClosure)
                     HomeControlsView.homeTempVM = tempVM
                 }
                 .onDisappear {

@@ -10,6 +10,9 @@ struct TempCard: View {
     
     @State private var speechSynthesizer = AVSpeechSynthesizer()
     @State private var lastAnnouncedTemp: Int = 0
+    @State private var animateTemp = false
+    @State private var animateUp = false
+    @State private var animateDown = false
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 32) {
@@ -17,6 +20,8 @@ struct TempCard: View {
                     Text("\(viewModel.temp) °F")
                         .font(.system(size: 20, weight: .medium))
                         .foregroundColor(viewModel.isReducing ? .red : .black)
+                        .scaleEffect(animateTemp ? 1.2 : 1.0)
+                        .animation(.spring(), value: animateTemp)
                         .animation(.easeInOut(duration: 0.3), value: viewModel.temp)
                         .animation(.easeInOut(duration: 0.3), value: viewModel.isReducing)
                     Text("Current")
@@ -24,11 +29,20 @@ struct TempCard: View {
                         .foregroundColor(.gray)
                 }
                 VStack(spacing: 4) {
-                    Button(action: { onDown?() ?? { if viewModel.temp > 40 { viewModel.temp -= 2; viewModel.updateTemp(viewModel.temp) } }() }) {
+                    Button(action: { 
+                        onDown?() ?? { 
+                            if viewModel.temp > 40 { 
+                                viewModel.animateTemperatureChange(by: -2)
+                                viewModel.setButtonAction(.decrease, duration: 1.0)
+                            } 
+                        }() 
+                    }) {
                         Image("Down_Smarthome")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 36, height: 36)
+                            .scaleEffect(animateDown ? 1.2 : 1.0)
+                            .animation(.spring(), value: animateDown)
                             .background(
                                 Image("ButtonBase_Smarthome")
                                     .resizable()
@@ -45,11 +59,20 @@ struct TempCard: View {
                         .font(.system(size: 13))
                         .foregroundColor(.gray)
                 }
-                Button(action: { onUp?() ?? { if viewModel.temp < 100 { viewModel.temp += 2; viewModel.updateTemp(viewModel.temp) } }() }) {
+                Button(action: { 
+                    onUp?() ?? { 
+                        if viewModel.temp < 100 { 
+                            viewModel.animateTemperatureChange(by: 2)
+                            viewModel.setButtonAction(.increase, duration: 1.0)
+                        } 
+                    }() 
+                }) {
                     Image("Up_Smarthome")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 36, height: 36)
+                        .scaleEffect(animateUp ? 1.2 : 1.0)
+                        .animation(.spring(), value: animateUp)
                         .background(
                             Image("ButtonBase_Smarthome")
                                 .resizable()
@@ -91,6 +114,31 @@ struct TempCard: View {
                 lastAnnouncedTemp = newTemp
             }
         }
+        .onChange(of: viewModel.lastVoiceAction) { action in
+            if let action = action {
+                // Voice commands should trigger both temp and button animations for consistency
+                animateTemp = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) { animateTemp = false }
+                
+                // Also trigger appropriate button animation for voice commands
+                if action == .increase {
+                    animateUp = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) { animateUp = false }
+                } else if action == .decrease {
+                    animateDown = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) { animateDown = false }
+                }
+            }
+        }
+        .onChange(of: viewModel.lastButtonPressed) { action in
+            if action == .increase {
+                animateUp = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) { animateUp = false }
+            } else if action == .decrease {
+                animateDown = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) { animateDown = false }
+            }
+        }
         .onAppear {
             // Set initial temp but don't announce on startup
             lastAnnouncedTemp = viewModel.temp
@@ -108,7 +156,7 @@ struct TempCard: View {
         // Only use VAPI for voice announcements - no fallback to native TTS
         if callManager.isCalling {
             Task {
-                await callManager.speakTemperature(room: roomName, temp: temp)
+                await callManager.announceRoomTemperature(room: roomName, temp: temp)
             }
         } else {
             print("[DEBUG] VAPI not connected, skipping voice announcement")

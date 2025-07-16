@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Controller - High Level Entity Diagram</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        .diagram {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.4;
+            overflow-x: auto;
+            border: 1px solid #dee2e6;
+        }
+        .entity-box {
+            background-color: #e3f2fd;
+            border: 2px solid #2196f3;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            display: inline-block;
+            min-width: 200px;
+        }
+        .entity-title {
+            font-weight: bold;
+            color: #1976d2;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        .entity-items {
+            font-size: 11px;
+            color: #424242;
+        }
+        .flow-diagram {
+            background-color: #f1f8e9;
+            border: 1px solid #8bc34a;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+        .section {
+            margin: 30px 0;
+        }
+        .legend {
+            background-color: #fff3e0;
+            border: 1px solid #ff9800;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .legend-item {
+            display: inline-block;
+            margin: 5px 15px;
+            font-weight: bold;
+        }
+        .views { color: #e91e63; }
+        .viewmodels { color: #9c27b0; }
+        .config { color: #ff9800; }
+        .apis { color: #2196f3; }
+        .models { color: #4caf50; }
+        .voice { color: #f44336; }
+        .data { color: #795548; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Home Controller - High Level Entity Diagram</h1>
+        
+        <div class="section">
+            <h2>System Architecture Overview</h2>
+            <div class="diagram">
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                           SMART HOME CONTROLLER APP                             │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   APP LAYER     │    │ CONFIGURATION   │    │  STATE MGMT     │    │   VIEW LAYER    │
+│                 │    │                 │    │                 │    │                 │
+│ SmartHomeApp    │◄──►│ VAPIConfig      │◄──►│ AppState        │◄──►│ ContentView     │
+│                 │    │ HomeAssistant   │    │ CallManager     │    │ SidebarView     │
+│                 │    │   Config        │    │                 │    │ SettingsView    │
+│                 │    │ ZammadConfig    │    │                 │    │                 │
+└─────────────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘
+                                ▲                        ▲                       
+                                │                        │                       
+                                │                        │                       
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│ EXTERNAL APIS   │    │ VOICE CONTROL   │    │ TEMPERATURE     │    │ ROOM SYSTEM     │
+│                 │    │                 │    │                 │    │                 │
+│ HomeAssistant   │◄──►│ VAPI Client     │◄──►│ AnimatedTemp    │◄──►│ RoomView        │
+│   Client        │    │ Daily.co SDK    │    │   CardViewModel │    │ Room Model      │
+│ ZammadClient    │    │ Microphone      │    │ TempCard        │    │ DeviceStore     │
+│                 │    │   Animation     │    │                 │    │                 │
+└─────────────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘
+                                ▲                        ▲                       
+                                │                        │                       
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│ DEVICE CONTROL  │    │ SCENE SYSTEM    │    │ SUPPORT SYSTEM  │    │ MEDIA ASSETS    │
+│                 │    │                 │    │                 │    │                 │
+│ SmartDevice     │◄──►│ Scene Model     │◄──►│ CreateTicket    │◄──►│ Assets.xcassets │
+│ DeviceTemplate  │    │ SceneCardView   │    │   View          │    │ - Device Icons  │
+│ DeviceGroup     │    │ HomeScene       │    │ TicketHistory   │    │ - Room Icons    │
+│                 │    │                 │    │                 │    │ - Animations    │
+└─────────────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Entity Relationships</h2>
+            
+            <h3>1. Core Dependencies</h3>
+            <div class="flow-diagram">
+AppState ──► CallManager ──► VAPI Client ──► Daily.co SDK
+    │             │               │
+    ▼             ▼               ▼
+ContentView ──► RoomView ──► TempCard ──► AnimatedTempCardViewModel
+            </div>
+
+            <h3>2. Configuration Flow</h3>
+            <div class="flow-diagram">
+SettingsView ──► VAPIConfig ──► CallManager ──► Voice Control
+             ──► HomeAssistantConfig ──► HomeAssistantClient ──► Device Control
+             ──► ZammadConfig ──► ZammadClient ──► Support System
+            </div>
+
+            <h3>3. Voice Command Processing</h3>
+            <div class="flow-diagram">
+User Speech ──► CallManager ──► Transcript Processing ──► Temperature Commands
+                    │                                           │
+                    ▼                                           ▼
+            Navigation Commands ──► AppState ──► View Updates ──► TempCard Animation
+            </div>
+
+            <h3>4. Data Models</h3>
+            <div class="flow-diagram">
+Room ──► SmartDevice ──► DeviceTemplate
+  │           │              │
+  ▼           ▼              ▼
+Scene ──► DeviceGroup ──► DeviceHistory
+            </div>
+
+            <h3>5. UI Component Hierarchy</h3>
+            <div class="flow-diagram">
+ContentView
+    ├── SidebarView
+    │   ├── Room Icons
+    │   └── Settings Access
+    └── Main Content
+        ├── RoomView
+        │   ├── TempCard
+        │   └── Device Controls
+        └── GlobalMicrophoneOverlay
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Key Entity Types</h2>
+            <div class="legend">
+                <div class="legend-item views">📱 Views</div>
+                <div class="legend-item viewmodels">🧠 ViewModels</div>
+                <div class="legend-item config">⚙️ Configuration</div>
+                <div class="legend-item apis">📡 External APIs</div>
+                <div class="legend-item models">🏠 Domain Models</div>
+                <div class="legend-item voice">🎤 Voice System</div>
+                <div class="legend-item data">📊 Data Storage</div>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Entity Type</th>
+                    <th>Components</th>
+                    <th>Responsibility</th>
+                </tr>
+                <tr>
+                    <td class="views">📱 Views</td>
+                    <td>ContentView, SidebarView, RoomView, TempCard, SettingsView</td>
+                    <td>User interface and interaction</td>
+                </tr>
+                <tr>
+                    <td class="viewmodels">🧠 ViewModels</td>
+                    <td>AppState, CallManager, AnimatedTempCardViewModel</td>
+                    <td>Business logic and state management</td>
+                </tr>
+                <tr>
+                    <td class="config">⚙️ Configuration</td>
+                    <td>VAPIConfig, HomeAssistantConfig, ZammadConfig</td>
+                    <td>External service configuration</td>
+                </tr>
+                <tr>
+                    <td class="apis">📡 External APIs</td>
+                    <td>VAPI Client, HomeAssistant Client, ZammadClient</td>
+                    <td>External service integration</td>
+                </tr>
+                <tr>
+                    <td class="models">🏠 Domain Models</td>
+                    <td>Room, SmartDevice, Scene, DeviceGroup</td>
+                    <td>Core domain logic and data structures</td>
+                </tr>
+                <tr>
+                    <td class="voice">🎤 Voice System</td>
+                    <td>MicrophoneAnimationView, Transcript Processing</td>
+                    <td>Voice recognition and processing</td>
+                </tr>
+                <tr>
+                    <td class="data">📊 Data Storage</td>
+                    <td>UserDefaults (configs), In-memory state</td>
+                    <td>Data persistence and caching</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Voice Control:</strong> VAPI integration for natural language commands</li>
+                <li><strong>Temperature Control:</strong> Animated temperature adjustments with voice commands</li>
+                <li><strong>Room Navigation:</strong> Voice-activated room switching</li>
+                <li><strong>Device Management:</strong> Smart device control and monitoring</li>
+                <li><strong>Scene Management:</strong> Pre-configured device scenes</li>
+                <li><strong>Support System:</strong> Integrated ticketing via Zammad</li>
+                <li><strong>Real-time Animation:</strong> Microphone visualization during voice interaction</li>
+                <li><strong>Cross-transcript Processing:</strong> Handles split voice commands</li>
+                <li><strong>Edge Case Handling:</strong> Robust speech recognition error handling</li>
+                <li><strong>Configuration Management:</strong> Live-reloadable service configurations</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Architecture</h2>
+            <p><strong>Pattern:</strong> MVVM (Model-View-ViewModel) with SwiftUI</p>
+            <p><strong>State Management:</strong> Combine framework with @Published properties</p>
+            <p><strong>Voice Processing:</strong> VAPI + Daily.co SDK for real-time voice interaction</p>
+            <p><strong>Navigation:</strong> NotificationCenter for decoupled room switching</p>
+            <p><strong>Animation:</strong> SwiftUI animations with timer-based temperature changes</p>
+            <p><strong>Configuration:</strong> Codable structs with UserDefaults persistence</p>
+        </div>
+
+        <div class="section">
+            <p><em>Author : Karthi Jeyabalan</em></p>
+            <p><em>Date: 07/08/2025</em></p>
+        </div>
+    </div>
+</body>
+</html>

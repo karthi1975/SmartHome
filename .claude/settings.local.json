@@ -7,7 +7,16 @@
       "Bash(swift build:*)",
       "Bash(awk:*)",
       "Bash(swift:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(ls:*)",
+      "Bash(rm:*)",
+      "Bash(rg:*)",
+      "WebFetch(domain:docs.zammad.org)",
+      "Bash(defaults delete:*)",
+      "Bash(find:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }

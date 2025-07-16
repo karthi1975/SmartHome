@@ -36,34 +36,9 @@ struct CreateTicketView: View {
     @State private var isLoadingHistory = false
 
     private var displayTickets: [Ticket] {
-        // ALWAYS show dummy tickets for testing - ignore real ticket history for now
-        let isoFormatter = ISO8601DateFormatter()
-        let dummyTickets = (0..<10).map { i in
-            Ticket(
-                id: i + 1,
-                title: "Support Ticket #\(i+1) - \(ticketTitles[i % ticketTitles.count])",
-                stateId: (i % 4) + 1, // Cycle through all state types (1=New, 2=Open, 3=Pending, 4=Closed)
-                createdAt: isoFormatter.string(from: Date().addingTimeInterval(-Double(i) * 3600)),
-                customerId: 12345
-            )
-        }
-        
-        print("DEBUG: Generated \(dummyTickets.count) dummy tickets")
-        return dummyTickets
+        return ticketHistory
     }
     
-    private let ticketTitles = [
-        "Microphone not working during voice commands",
-        "Temperature control animation stuck in loop", 
-        "App crashes when navigating to kitchen page",
-        "Voice recognition not detecting room names",
-        "Unable to reduce temperature below 70 degrees",
-        "Floating microphone button disappears randomly",
-        "Settings page won't save Home Assistant config",
-        "Device cards not updating real-time status",
-        "Sidebar overlay animation glitchy on iPad",
-        "Support page scrolling performance issues"
-    ]
 
     
     private func stateColor(for stateId: Int) -> Color {
@@ -122,6 +97,40 @@ struct CreateTicketView: View {
                         .pickerStyle(SegmentedPickerStyle())
                     }
                     
+                    // Image Attachment
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("Attachment (Optional)")
+                            .font(.headline)
+                        
+                        if let image = selectedImage {
+                            VStack(spacing: 8) {
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(maxHeight: 200)
+                                    .cornerRadius(8)
+                                
+                                Button("Remove Image") {
+                                    selectedImage = nil
+                                    selectedPhotoItem = nil
+                                }
+                                .foregroundColor(.red)
+                            }
+                        } else {
+                            Button(action: { showAttachmentOptions = true }) {
+                                HStack {
+                                    Image(systemName: "photo")
+                                    Text("Add Image")
+                                }
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                                .background(Color(.systemGray5))
+                                .cornerRadius(8)
+                            }
+                        }
+                    }
+                    
+                    
                     // Submit Button
                     Button(action: submit) {
                         if isSubmitting {
@@ -152,54 +161,77 @@ struct CreateTicketView: View {
                 .background(Color(.systemGray6))
                 .cornerRadius(16)
                 
-                // FORCE SHOW DUMMY TICKETS - SIMPLIFIED APPROACH
+                // Real Zammad Tickets Display
                 VStack(alignment: .leading, spacing: 16) {
                     HStack {
                         Text("Support Tickets")
                             .font(.title2)
                             .bold()
                         Spacer()
-                        Text("10 tickets")
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                    }
-                    
-                    // Force display exactly 10 tickets with no conditions
-                    ForEach(0..<10, id: \.self) { i in
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text("Support Ticket #\(i+1) - \(ticketTitles[i % ticketTitles.count])")
-                                .font(.headline)
-                                .foregroundColor(.primary)
-                            
-                            HStack {
-                                let stateId = (i % 4) + 1
-                                Text("State: \(["New", "Open", "Pending", "Closed"][stateId - 1])")
-                                    .font(.subheadline)
-                                    .foregroundColor(.white)
-                                    .padding(.horizontal, 12)
-                                    .padding(.vertical, 4)
-                                    .background(stateColor(for: stateId))
-                                    .cornerRadius(8)
-                                
-                                Spacer()
-                                
-                                Text("ID: #\(i+1)")
-                                    .font(.caption)
-                                    .foregroundColor(.secondary)
-                            }
-                            
-                            Text("Created: \(Date().addingTimeInterval(-Double(i) * 3600), formatter: dateFormatter)")
+                        if isLoadingHistory {
+                            ProgressView()
+                                .scaleEffect(0.8)
+                        } else {
+                            Text("\(displayTickets.count) tickets")
                                 .font(.caption)
                                 .foregroundColor(.secondary)
                         }
+                    }
+                    
+                    if isLoadingHistory {
+                        HStack {
+                            Spacer()
+                            ProgressView("Loading tickets...")
+                            Spacer()
+                        }
                         .padding()
-                        .background(Color(.systemBackground))
-                        .cornerRadius(12)
-                        .shadow(color: .black.opacity(0.1), radius: 2, x: 0, y: 1)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12)
-                                .stroke(stateColor(for: (i % 4) + 1).opacity(0.3), lineWidth: 1)
-                        )
+                    } else if displayTickets.isEmpty {
+                        VStack(spacing: 8) {
+                            Text("No tickets found")
+                                .font(.headline)
+                                .foregroundColor(.secondary)
+                            Text("Create your first support ticket above")
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                    } else {
+                        ForEach(displayTickets, id: \.id) { ticket in
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text(ticket.title)
+                                    .font(.headline)
+                                    .foregroundColor(.primary)
+                                
+                                HStack {
+                                    Text("State: \(ticket.state)")
+                                        .font(.subheadline)
+                                        .foregroundColor(.white)
+                                        .padding(.horizontal, 12)
+                                        .padding(.vertical, 4)
+                                        .background(stateColor(for: ticket.stateId))
+                                        .cornerRadius(8)
+                                    
+                                    Spacer()
+                                    
+                                    Text("ID: #\(ticket.id)")
+                                        .font(.caption)
+                                        .foregroundColor(.secondary)
+                                }
+                                
+                                Text("Created: \(formatDate(ticket.createdAt))")
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
+                            }
+                            .padding()
+                            .background(Color(.systemBackground))
+                            .cornerRadius(12)
+                            .shadow(color: .black.opacity(0.1), radius: 2, x: 0, y: 1)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .stroke(stateColor(for: ticket.stateId).opacity(0.3), lineWidth: 1)
+                            )
+                        }
                     }
                 }
                 .padding()
@@ -250,9 +282,7 @@ struct CreateTicketView: View {
             }
         }
         .onAppear {
-            // Don't load ticket history for now - just use dummy tickets for testing
-            // loadTicketHistory()
-            print("DEBUG: CreateTicketView appeared, using dummy tickets for testing")
+            loadTicketHistory()
         }
         .overlay(alignment: .bottomTrailing) {
             GlobalMicrophoneOverlay()
@@ -281,31 +311,26 @@ struct CreateTicketView: View {
             }
         }
     }
+    
 
     private func loadTicketHistory() {
         isLoadingHistory = true
-        ZammadClient.shared.fetchCurrentUserId { [self] result in
-            switch result {
-            case .success(let userId):
-                ZammadClient.shared.fetchAllTickets { result in
-                    DispatchQueue.main.async {
-                        isLoadingHistory = false
-                        switch result {
-                        case .success(let tickets):
-                            self.ticketHistory = tickets
-                                .filter { $0.customerId == userId }
-                                .sorted(by: { $0.createdAt > $1.createdAt })
-                        case .failure(let error):
-                            print("Error fetching tickets: \(error.localizedDescription)")
-                            self.ticketHistory = []
-                        }
-                    }
-                }
-            case .failure(let error):
-                print("Error fetching user ID: \(error.localizedDescription)")
-                DispatchQueue.main.async {
-                    isLoadingHistory = false
+        print("DEBUG: Starting to load ticket history...")
+        
+        // For testing, let's also fetch all tickets without user filtering first
+        ZammadClient.shared.fetchAllTickets { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let tickets):
+                    print("DEBUG: Fetched \(tickets.count) total tickets from API")
+                    // Show all tickets for now to see if any exist
+                    self.ticketHistory = tickets.sorted(by: { $0.createdAt > $1.createdAt })
+                    print("DEBUG: Showing all tickets: \(self.ticketHistory.count)")
+                    self.isLoadingHistory = false
+                case .failure(let error):
+                    print("DEBUG: Error fetching tickets: \(error.localizedDescription)")
                     self.ticketHistory = []
+                    self.isLoadingHistory = false
                 }
             }
         }
@@ -326,4 +351,20 @@ struct CreateTicketView: View {
         df.timeStyle = .short
         return df
     }()
-} 
+    
+    private func takeScreenshot() -> UIImage? {
+        guard let window = UIApplication.shared.connectedScenes
+            .compactMap({ $0 as? UIWindowScene })
+            .first?.windows
+            .first(where: { $0.isKeyWindow }) else {
+            return nil
+        }
+        
+        let renderer = UIGraphicsImageRenderer(size: window.bounds.size)
+        return renderer.image { context in
+            window.layer.render(in: context.cgContext)
+        }
+    }
+}
+
+ 

@@ -3,11 +3,16 @@ import SwiftUI
 struct AddDeviceView: View {
     @Environment(\.dismiss) private var dismiss
     @EnvironmentObject var api: HomeAssistantClient
+    @StateObject private var deviceDiscovery = HomeAssistantDeviceDiscovery()
     @State private var selectedType: DeviceType?
     @State private var selectedDevice: SmartDevice?
+    @State private var selectedHADevice: HADevice?
     @State private var isDiscovering = false
     @State private var showError = false
     @State private var errorMessage = ""
+    @State private var showDiscoverySheet = false
+    @State private var selectedZone = ""
+    @State private var currentRoom = ""
     var deviceToEdit: SmartDevice? = nil
     var onSave: ((SmartDevice) -> Void)? = nil
     var onCancel: (() -> Void)? = nil
@@ -75,18 +80,50 @@ struct AddDeviceView: View {
     @ViewBuilder
     private func deviceTypeSelectionSection() -> some View {
         if deviceToEdit == nil {
-            Section(header: Text("Device Type")) {
-                ForEach(allowedTypes, id: \.self) { type in
-                    Button(action: { selectedType = type }) {
-                        HStack {
-                            Image(type.icon)
-                                .resizable()
-                                .frame(width: 24, height: 24)
-                            Text(type.rawValue.capitalized)
-                            Spacer()
-                            if selectedType == type {
-                                Image(systemName: "checkmark")
-                                    .foregroundColor(.blue)
+            Section(header: Text("Add Device")) {
+                // Home Assistant Discovery Option
+                DeviceOptionRow(
+                    icon: "house.fill",
+                    title: "Discover from Home Assistant",
+                    description: "Find devices in your Home Assistant setup"
+                ) {
+                    showDiscoverySheet = true
+                }
+                .sheet(isPresented: $showDiscoverySheet) {
+                    DeviceDiscoveryView(
+                        deviceDiscovery: deviceDiscovery,
+                        onDeviceSelected: { haDevice in
+                            selectedHADevice = haDevice
+                            showDiscoverySheet = false
+                        }
+                    )
+                }
+                
+                // Manual Device Creation
+                DeviceOptionRow(
+                    icon: "plus.circle.fill",
+                    title: "Create Manual Device",
+                    description: "Add a device manually"
+                ) {
+                    // Show manual device type selection
+                }
+            }
+            
+            // Show device type selection if manual creation is chosen
+            if selectedHADevice == nil {
+                Section(header: Text("Device Type")) {
+                    ForEach(allowedTypes, id: \.self) { type in
+                        Button(action: { selectedType = type }) {
+                            HStack {
+                                Image(type.icon)
+                                    .resizable()
+                                    .frame(width: 24, height: 24)
+                                Text(type.rawValue.capitalized)
+                                Spacer()
+                                if selectedType == type {
+                                    Image(systemName: "checkmark")
+                                        .foregroundColor(.blue)
+                                }
                             }
                         }
                     }
@@ -99,7 +136,34 @@ struct AddDeviceView: View {
         NavigationView {
             Form {
                 deviceTypeSelectionSection()
-                if let type = deviceToEdit?.type ?? selectedType {
+                
+                // Show Home Assistant device info if selected
+                if let haDevice = selectedHADevice {
+                    Section(header: Text("Home Assistant Device")) {
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(haDevice.name ?? haDevice.entityId)
+                                    .font(.headline)
+                                Text(haDevice.entityId)
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
+                                Text("State: \(haDevice.state)")
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
+                            }
+                            Spacer()
+                            Button("Change") {
+                                selectedHADevice = nil
+                                showDiscoverySheet = true
+                            }
+                        }
+                        
+                        TextField("Room", text: $currentRoom)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                    }
+                }
+                
+                if let type = deviceToEdit?.type ?? selectedType ?? selectedHADevice?.type {
                     deviceSettingsSection(for: type)
                 }
             }
@@ -114,28 +178,44 @@ struct AddDeviceView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button(deviceToEdit == nil ? "Add" : "Save") {
-                        let type = deviceToEdit?.type ?? selectedType!
-                        var device = deviceToEdit ?? SmartDevice(type: type)
-                        device.name = name
-                        switch type {
-                        case .temp:
-                            device.value = "\(tempValue)"
-                        case .oven:
-                            device.value = "\(ovenTemp)"
-                            device.isOn = ovenIsOn
-                        case .blinds:
-                            device.value = "\(blindsPosition)"
-                        case .fridge:
-                            device.value = "\(fridgeTemp)"
-                        case .dishwasher:
-                            device.value = dishwasherStatus ?? ""
-                        @unknown default:
-                            break
+                        let device: SmartDevice
+                        
+                        if let haDevice = selectedHADevice {
+                            // Create device from Home Assistant discovery
+                            let room = currentRoom.isEmpty ? "Unknown" : currentRoom
+                            device = deviceDiscovery.convertToSmartDevice(haDevice, room: room) ?? SmartDevice(type: .temp)
+                        } else {
+                            // Create device manually
+                            let type = deviceToEdit?.type ?? selectedType!
+                            device = deviceToEdit ?? SmartDevice(type: type)
                         }
-                        onSave?(device)
+                        
+                        var finalDevice = device
+                        finalDevice.name = name.isEmpty ? device.name : name
+                        
+                        // Apply manual settings if not from HA
+                        if selectedHADevice == nil {
+                            switch finalDevice.type {
+                            case .temp:
+                                finalDevice.value = "\(tempValue)"
+                            case .oven:
+                                finalDevice.value = "\(ovenTemp)"
+                                finalDevice.isOn = ovenIsOn
+                            case .blinds:
+                                finalDevice.value = "\(blindsPosition)"
+                            case .fridge:
+                                finalDevice.value = "\(fridgeTemp)"
+                            case .dishwasher:
+                                finalDevice.value = dishwasherStatus ?? ""
+                            @unknown default:
+                                break
+                            }
+                        }
+                        
+                        onSave?(finalDevice)
                         dismiss()
                     }
-                    .disabled((deviceToEdit == nil && selectedType == nil) || name.trimmingCharacters(in: .whitespaces).isEmpty)
+                    .disabled(isAddButtonDisabled)
                 }
             }
             .onAppear {
@@ -143,6 +223,7 @@ struct AddDeviceView: View {
                 if let device = deviceToEdit {
                     selectedType = device.type
                     name = device.name
+                    currentRoom = device.room
                     switch device.type {
                     case .temp:
                         tempValue = Int(device.value ?? "70") ?? 70
@@ -161,6 +242,21 @@ struct AddDeviceView: View {
                 }
             }
         }
+    }
+    
+    private var isAddButtonDisabled: Bool {
+        // For editing existing device
+        if deviceToEdit != nil {
+            return name.trimmingCharacters(in: .whitespaces).isEmpty
+        }
+        
+        // For Home Assistant device
+        if selectedHADevice != nil {
+            return currentRoom.trimmingCharacters(in: .whitespaces).isEmpty
+        }
+        
+        // For manual device creation
+        return selectedType == nil || name.trimmingCharacters(in: .whitespaces).isEmpty
     }
 }
 

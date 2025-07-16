@@ -53,8 +53,15 @@ class ZammadClient {
         request.httpMethod = "POST"
         request.setValue("Token token=\(apiToken)", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        // Debug logging
+        if UserDefaults.standard.bool(forKey: "DebugLoggingEnabled") {
+            print("DEBUG: Creating ticket with URL: \(url)")
+            print("DEBUG: Using token: \(apiToken)")
+            print("DEBUG: Authorization header: Token token=\(apiToken)")
+        }
 
-        // Use actual field values from the form
+        // Use Zammad API format as per documentation
         var articlePayload: [String: Any] = [
             "subject": subject,
             "body": body,
@@ -72,6 +79,7 @@ class ZammadClient {
             articlePayload["attachments"] = [attachmentPayload]
         }
         
+        // Format according to Zammad API documentation
         let payload: [String: Any] = [
             "title": subject,
             "group": group,
@@ -79,6 +87,13 @@ class ZammadClient {
             "priority": priority,
             "article": articlePayload
         ]
+        
+        if UserDefaults.standard.bool(forKey: "DebugLoggingEnabled") {
+            if let payloadData = try? JSONSerialization.data(withJSONObject: payload),
+               let payloadString = String(data: payloadData, encoding: .utf8) {
+                print("DEBUG: Payload: \(payloadString)")
+            }
+        }
 
         request.httpBody = try? JSONSerialization.data(withJSONObject: payload)
 
@@ -93,8 +108,24 @@ class ZammadClient {
             }
             if !(200...299).contains(httpResponse.statusCode) {
                 let bodyString = data.flatMap { String(data: $0, encoding: .utf8) } ?? "<no body>"
-                print("Zammad error: \(httpResponse.statusCode) - \(bodyString)")
-                let errorMessage = "Failed to create ticket (\(httpResponse.statusCode)): \(bodyString)"
+                if UserDefaults.standard.bool(forKey: "DebugLoggingEnabled") {
+                    print("Zammad error: \(httpResponse.statusCode) - \(bodyString)")
+                }
+                
+                let errorMessage: String
+                switch httpResponse.statusCode {
+                case 401:
+                    errorMessage = "Authentication failed. Check your API token."
+                case 403:
+                    errorMessage = "Permission denied. Token needs 'ticket.agent' or 'ticket.customer' permissions."
+                case 422:
+                    errorMessage = "Invalid data. Check required fields: title, group, customer, article."
+                case 500:
+                    errorMessage = "Server error. Please try again later."
+                default:
+                    errorMessage = "Failed to create ticket (\(httpResponse.statusCode)): \(bodyString)"
+                }
+                
                 completion(.failure(NSError(domain: "Zammad", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: errorMessage])))
                 return
             }
@@ -107,6 +138,12 @@ class ZammadClient {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Token token=\(apiToken)", forHTTPHeaderField: "Authorization")
+        
+        // Debug logging
+        if UserDefaults.standard.bool(forKey: "DebugLoggingEnabled") {
+            print("DEBUG: Testing token with URL: \(url)")
+            print("DEBUG: Token: \(apiToken)")
+        }
 
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
@@ -133,25 +170,90 @@ class ZammadClient {
         request.httpMethod = "GET"
         request.setValue("Token token=\(apiToken)", forHTTPHeaderField: "Authorization")
         
+        // Always debug for ticket fetching
+        print("DEBUG: Fetching tickets from URL: \(url)")
+        print("DEBUG: Using token: \(apiToken)")
+        
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
+                print("DEBUG: Network error: \(error.localizedDescription)")
                 completion(.failure(error))
                 return
             }
             
+            guard let httpResponse = response as? HTTPURLResponse else {
+                print("DEBUG: No HTTP response")
+                completion(.failure(NSError(domain: "ZammadClient", code: 2, userInfo: [NSLocalizedDescriptionKey: "No HTTP response"])))
+                return
+            }
+            
+            print("DEBUG: HTTP response status: \(httpResponse.statusCode)")
+            
             guard let data = data else {
+                print("DEBUG: No data received")
                 completion(.failure(NSError(domain: "ZammadClient", code: 1, userInfo: [NSLocalizedDescriptionKey: "No data received"])))
                 return
+            }
+            
+            if let responseString = String(data: data, encoding: .utf8) {
+                print("DEBUG: Response data: \(responseString)")
             }
             
             do {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let tickets = try decoder.decode([Ticket].self, from: data)
+                print("DEBUG: Successfully decoded \(tickets.count) tickets")
                 completion(.success(tickets))
             } catch {
+                print("DEBUG: JSON decode error: \(error)")
                 completion(.failure(error))
             }
         }.resume()
+    }
+    
+    // Test function to try different token formats
+    func testTokenFormats(completion: @escaping (Result<String, Error>) -> Void) {
+        let url = baseURL.appendingPathComponent("users/me")
+        
+        // Try different token formats
+        let tokenFormats = [
+            "Token token=\(apiToken)",
+            "Bearer \(apiToken)",
+            "Token \(apiToken)",
+            apiToken
+        ]
+        
+        func tryNextFormat(index: Int) {
+            guard index < tokenFormats.count else {
+                completion(.failure(NSError(domain: "ZammadClient", code: 401, userInfo: [NSLocalizedDescriptionKey: "All token formats failed"])))
+                return
+            }
+            
+            var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+            request.setValue(tokenFormats[index], forHTTPHeaderField: "Authorization")
+            
+            if UserDefaults.standard.bool(forKey: "DebugLoggingEnabled") {
+                print("DEBUG: Trying token format #\(index + 1): \(tokenFormats[index])")
+            }
+            
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                if let httpResponse = response as? HTTPURLResponse {
+                    if UserDefaults.standard.bool(forKey: "DebugLoggingEnabled") {
+                        print("DEBUG: Format #\(index + 1) response: \(httpResponse.statusCode)")
+                    }
+                    if httpResponse.statusCode == 200 {
+                        completion(.success("Format #\(index + 1) works: \(tokenFormats[index])"))
+                        return
+                    }
+                }
+                
+                // Try next format
+                tryNextFormat(index: index + 1)
+            }.resume()
+        }
+        
+        tryNextFormat(index: 0)
     }
 } 
