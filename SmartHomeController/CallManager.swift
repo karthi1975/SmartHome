@@ -25,6 +25,7 @@ class CallManager: ObservableObject {
     @Published var agentSpeaking: Bool = false
     @Published var isListening: Bool = false
     @Published var currentPage: String = "home" // Track current page to avoid redundant navigation
+    @Published var currentContext: AppContext = .smartHome // Track current context for ToT
 
     private var vapi: Vapi?
     private var cancellables = Set<AnyCancellable>()
@@ -39,6 +40,18 @@ class CallManager: ObservableObject {
 
     init() {
         loadHistory()
+        
+        // Listen for health education API responses
+        NotificationCenter.default.addObserver(
+            forName: NSNotification.Name("HealthEducationAPIResponse"),
+            object: nil,
+            queue: .main
+        ) { [weak self] notification in
+            if let response = notification.userInfo?["response"] as? String {
+                print("[DEBUG] Received Health Education API response notification")
+                self?.handleHealthEducationAPIResponse(response)
+            }
+        }
         // Listen for page changes to keep currentPage in sync
         NotificationCenter.default.addObserver(
             forName: .pageChanged,
@@ -48,6 +61,13 @@ class CallManager: ObservableObject {
             if let pageName = notification.object as? String {
                 self?.currentPage = pageName.lowercased()
                 print("[DEBUG] CallManager: Page changed to \(pageName)")
+                
+                // Update context based on page
+                if pageName.lowercased() == "health education" {
+                    self?.switchToHealthEducationContext()
+                } else {
+                    self?.switchToSmartHomeContext()
+                }
             }
         }
     }
@@ -89,9 +109,43 @@ class CallManager: ObservableObject {
                                     print("[DEBUG] User speaking - setting userSpeaking=true, agentSpeaking=false")
                                     self.userSpeaking = true
                                     self.agentSpeaking = false
+                                    
+                                    // Notify about transcription update
+                                    NotificationCenter.default.post(
+                                        name: NSNotification.Name("TranscriptionUpdate"),
+                                        object: nil,
+                                        userInfo: ["transcript": transcript.transcript]
+                                    )
                                 } else if transcript.transcriptType == .final {
                                     // Debug: Print user transcript content
-                                    print("[DEBUG] User transcript received: '\(transcript.transcript)'")
+                                    print("[DEBUG] 🎙️ User final transcript: '\(transcript.transcript)'")
+                                    
+                                    // CRITICAL: If on Health Education page, immediately send to Health Education
+                                    if self.currentPage.lowercased().contains("health") || self.currentContext == .healthEducation {
+                                        print("[DEBUG] 🚨🚨🚨 ON HEALTH EDUCATION PAGE - PROCESSING MESSAGE")
+                                        print("[DEBUG] 🚨 Current page: '\(self.currentPage)'")
+                                        print("[DEBUG] 🚨 Current context: \(self.currentContext)")
+                                        print("[DEBUG] 🚨 User said: '\(transcript.transcript)'")
+                                        
+                                        // Send to Health Education ViewModel IMMEDIATELY
+                                        DispatchQueue.main.async {
+                                            print("[DEBUG] 🚨 Posting HealthEducationUserMessage notification NOW")
+                                            NotificationCenter.default.post(
+                                                name: NSNotification.Name("HealthEducationUserMessage"),
+                                                object: nil,
+                                                userInfo: ["message": transcript.transcript]
+                                            )
+                                            
+                                            // Also directly call the view model if available
+                                            if let healthVM = HealthEducationViewModel.shared as? HealthEducationViewModel {
+                                                print("[DEBUG] 🚨 DIRECTLY calling handleUserMessage")
+                                                healthVM.handleUserMessage(transcript.transcript)
+                                            }
+                                        }
+                                        
+                                        // Don't process any other commands when in health education
+                                        return
+                                    }
                                     
                                     // Add to transcript buffer for context-aware processing
                                     self.recentUserTranscripts.append(transcript.transcript)
@@ -99,7 +153,7 @@ class CallManager: ObservableObject {
                                         self.recentUserTranscripts.removeFirst()
                                     }
                                     
-                                    // FIRST: Handle navigation from user speech
+                                    // Handle navigation from user speech (only if not health education)
                                     if let room = self.extractRoomName(from: transcript.transcript) {
                                         let normalizedRoom = room.lowercased()
                                         if self.currentPage.lowercased() != normalizedRoom {
@@ -161,10 +215,17 @@ class CallManager: ObservableObject {
                                     
                                     print("[DEBUG] User transcript has \(wordCount) words, estimated duration: \(estimatedDuration)s")
                                     
-                                    // After estimated duration, set speaking to false
+                                    // After estimated duration, set speaking to false and notify
                                     DispatchQueue.main.asyncAfter(deadline: .now() + estimatedDuration) {
                                         print("[DEBUG] User finished speaking - setting userSpeaking=false")
                                         self.userSpeaking = false
+                                        
+                                        // Notify that user stopped speaking
+                                        NotificationCenter.default.post(
+                                            name: NSNotification.Name("UserStoppedSpeaking"),
+                                            object: nil,
+                                            userInfo: ["transcript": transcript.transcript]
+                                        )
                                     }
                                 }
                             } else if transcript.role == .assistant {
@@ -232,6 +293,249 @@ class CallManager: ObservableObject {
     func endCall() {
         vapi?.stop()
     }
+    
+    /// Update system prompt for specific contexts (e.g., health education)
+    func updateSystemPrompt(_ prompt: String) {
+        // Send system message to update the assistant's behavior
+        let message = VapiMessage(type: "system", role: "system", content: prompt)
+        if let vapi = vapi {
+            Task {
+                do {
+                    try await vapi.send(message: message)
+                    print("[DEBUG] System prompt updated successfully")
+                } catch {
+                    print("Failed to update system prompt: \(error)")
+                }
+            }
+        }
+    }
+    
+    /// Switch to Smart Home context with Tree of Thought
+    func switchToSmartHomeContext() {
+        currentContext = .smartHome
+        let prompt = TreeOfThoughtPrompts.getPromptForContext(currentContext)
+        updateSystemPrompt(prompt)
+        print("[DEBUG] Switched to Smart Home context with ToT")
+    }
+    
+    /// Switch to Health Education context with Tree of Thought
+    func switchToHealthEducationContext() {
+        currentContext = .healthEducation
+        let prompt = TreeOfThoughtPrompts.getPromptForContext(currentContext)
+        updateSystemPrompt(prompt)
+        print("[DEBUG] Switched to Health Education context (transcription-only mode)")
+    }
+    
+    /// Convenience method for health education context
+    func startCall() {
+        startCall(publicKey: "a9ac4b5f-2095-4073-a05b-c037965ffd0b",
+                 assistantId: "e06725f5-cc23-4e06-ba89-7c33643bfbdb")
+    }
+    
+    private func handleTranscript(_ transcript: Transcript) {
+        DispatchQueue.main.async {
+            // Immediately set speaking states based on role and transcript type
+            print("[DEBUG] Processing transcript - role: \(transcript.role), type: \(transcript.transcriptType)")
+            
+            // Voice is always active - process all transcripts
+            if transcript.role == .user || transcript.role == .assistant {
+                // Send transcript update notification for health education view
+                if transcript.role == .user && transcript.transcriptType == .partial {
+                    NotificationCenter.default.post(
+                        name: NSNotification.Name("TranscriptionUpdate"),
+                        object: nil,
+                        userInfo: ["transcript": transcript.transcript]
+                    )
+                }
+                
+                if transcript.role == .user {
+                    self.processUserTranscript(transcript.transcript, transcript: transcript)
+                } else {
+                    self.processAssistantTranscript(transcript)
+                }
+            }
+        }
+    }
+    
+    private func processUserTranscript(_ transcriptText: String, transcript: Transcript) {
+        if transcript.transcriptType == .partial {
+            // User is actively speaking
+            print("[DEBUG] User speaking - setting userSpeaking=true, agentSpeaking=false")
+            self.userSpeaking = true
+            self.agentSpeaking = false
+        } else if transcript.transcriptType == .final {
+            // Debug: Print user transcript content
+            print("[DEBUG] User transcript received: '\(transcriptText)'")
+            
+            // This code block is now handled above in the main transcript processing
+            // Removed to prevent duplicate processing
+            
+            // Add to transcript buffer for context-aware processing
+            self.recentUserTranscripts.append(transcript.transcript)
+            if self.recentUserTranscripts.count > self.transcriptBufferLimit {
+                self.recentUserTranscripts.removeFirst()
+            }
+            
+            // FIRST: Check for health-related questions
+            if self.isHealthRelatedQuestion(transcript.transcript) {
+                print("[DEBUG] 🏥 Health-related question detected in transcript: '\(transcript.transcript)'")
+                print("[DEBUG] 🏥 Navigating to Health Education")
+                self.currentPage = "health education"
+                
+                // Post notification on main thread
+                DispatchQueue.main.async {
+                    print("[DEBUG] 🏥 Posting navigateToRoom notification with 'Health Education'")
+                    NotificationCenter.default.post(name: .navigateToRoom, object: "Health Education")
+                    
+                    // Immediately trigger the Health Education API
+                    print("[DEBUG] 🏥 Directly triggering Health Education API")
+                    Task { @MainActor in
+                        let viewModel = HealthEducationViewModel.shared
+                        print("[DEBUG] 🏥 ViewModel isConfigured: \(viewModel.isConfigured)")
+                        
+                        // Add user message
+                        viewModel.messages.append(HealthChatMessage(content: transcript.transcript, isUser: true))
+                        
+                        // Process the query directly
+                        viewModel.currentInput = transcript.transcript
+                        viewModel.sendMessage()
+                        
+                        print("[DEBUG] 🏥 API call triggered for: '\(transcript.transcript)'")
+                    }
+                    
+                    // Also post notification for compatibility
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        print("[DEBUG] 🏥 Also posting HealthEducationUserMessage notification")
+                        NotificationCenter.default.post(
+                            name: NSNotification.Name("HealthEducationUserMessage"),
+                            object: nil,
+                            userInfo: ["message": transcript.transcript]
+                        )
+                    }
+                }
+                
+                // Immediately update prompt to prevent VAPI from responding
+                self.updateSystemPrompt("You are being redirected to health education. Please do not respond to this message.")
+                // Switch context to health education
+                self.switchToHealthEducationContext()
+            }
+            // SECOND: Handle navigation from user speech
+            else if let room = self.extractRoomName(from: transcript.transcript) {
+                let normalizedRoom = room.lowercased()
+                if self.currentPage.lowercased() != normalizedRoom {
+                    print("[DEBUG] User mentioned room: \(room), navigating from \(self.currentPage) to \(room)...")
+                    self.currentPage = normalizedRoom
+                    NotificationCenter.default.post(name: .navigateToRoom, object: room)
+                } else {
+                    print("[DEBUG] User mentioned \(room) but already on \(self.currentPage) page - no navigation needed")
+                }
+            }
+            
+            // THIRD: Process temperature changes from USER commands
+            print("[DEBUG] Processing temperature commands for user transcript")
+            
+            // Try current transcript first
+            var tempCommand: (room: String, reduction: Int)? = self.extractTempReductionAction(transcript.transcript)
+            
+            // If no command found, try with context buffer (combine recent transcripts)
+            if tempCommand == nil && self.recentUserTranscripts.count > 1 {
+                let combinedTranscript = self.recentUserTranscripts.joined(separator: " ")
+                print("[DEBUG] No command in current transcript, trying combined context: '\(combinedTranscript)'")
+                tempCommand = self.extractTempReductionAction(combinedTranscript)
+            }
+            
+            if let (room, reduction) = tempCommand {
+                print("[DEBUG] USER temperature command detected: room=\(room.lowercased()), reduction=\(reduction)")
+                print("[DEBUG] Available room view models: \(RoomView.roomViewModels.keys.sorted())")
+                let normalizedRoom = room.isEmpty ? self.currentPage.lowercased() : room.lowercased()
+                print("[DEBUG] room='\(room)', currentPage='\(self.currentPage)', normalizedRoom='\(normalizedRoom)'")
+                if let tempVM = RoomView.roomViewModels[normalizedRoom] {
+                    print("[DEBUG] Found room view model for \(normalizedRoom), temp before: \(tempVM.temp)")
+                    tempVM.animateTemperatureChange(by: reduction)
+                    tempVM.setVoiceAction(reduction > 0 ? .increase : .decrease, duration: 1.0)
+                    print("[DEBUG] temp after: \(tempVM.temp)")
+                    // Clear buffer after successful command to prevent duplicate execution
+                    self.recentUserTranscripts.removeAll()
+                } else if let tempVM = HomeControlsView.homeTempVM, (normalizedRoom == "home" || normalizedRoom == "favorites") {
+                    print("[DEBUG] Found home view model for \(normalizedRoom), temp before: \(tempVM.temp)")
+                    tempVM.animateTemperatureChange(by: reduction)
+                    tempVM.setVoiceAction(reduction > 0 ? .increase : .decrease, duration: 1.0)
+                    print("[DEBUG] temp after: \(tempVM.temp)")
+                    // Clear buffer after successful command to prevent duplicate execution
+                    self.recentUserTranscripts.removeAll()
+                } else {
+                    print("[DEBUG] No view model found for \(normalizedRoom)")
+                }
+            } else {
+                print("[DEBUG] No temperature command detected in transcript: '\(transcript.transcript)'")
+            }
+            
+            // FOURTH: Show speaking animation for microphone (after processing)
+            print("[DEBUG] User final transcript - simulating speaking animation")
+            self.userSpeaking = true
+            self.agentSpeaking = false
+            
+            // Calculate duration based on transcript length (roughly 150 words per minute)
+            let wordCount = transcript.transcript.split(separator: " ").count
+            let estimatedDuration = max(1.5, min(Double(wordCount) * 0.4, 5.0)) // 1.5-5 seconds
+            
+            print("[DEBUG] User transcript has \(wordCount) words, estimated duration: \(estimatedDuration)s")
+            
+            // After estimated duration, set speaking to false
+            DispatchQueue.main.asyncAfter(deadline: .now() + estimatedDuration) {
+                print("[DEBUG] User finished speaking - setting userSpeaking=false")
+                self.userSpeaking = false
+            }
+        }
+    }
+    
+    private func processAssistantTranscript(_ transcript: Transcript) {
+        if transcript.transcriptType == .partial {
+            // Agent is actively speaking
+            print("[DEBUG] Agent speaking - setting agentSpeaking=true, userSpeaking=false")
+            self.agentSpeaking = true
+            self.userSpeaking = false
+        } else if transcript.transcriptType == .final {
+            // Debug: Print all transcript content
+            print("[DEBUG] Agent transcript received: '\(transcript.transcript)'")
+            print("[DEBUG] Ignoring agent transcript for temperature changes - only user commands allowed")
+            
+            // In health education context, VAPI will provide voice responses
+            // The API calls with images are triggered separately via notifications
+            if self.currentContext == .healthEducation || self.currentPage.lowercased() == "health education" {
+                print("[DEBUG] In health education context - VAPI providing voice response while API handles images")
+            }
+            
+            // FIRST: Handle navigation ONLY for agent responses, not temperature changes
+            if let room = self.extractRoomName(from: transcript.transcript) {
+                let normalizedRoom = room.lowercased()
+                if self.currentPage.lowercased() != normalizedRoom {
+                    print("[DEBUG] Agent mentioned room: \(room), navigating from \(self.currentPage) to \(room)...")
+                    self.currentPage = normalizedRoom
+                    NotificationCenter.default.post(name: .navigateToRoom, object: room)
+                } else {
+                    print("[DEBUG] Agent mentioned \(room) but already on \(self.currentPage) page - suppressing redundant navigation")
+                }
+            }
+            
+            // SECOND: Show speaking animation for microphone (after processing)
+            print("[DEBUG] Agent final transcript - simulating speaking animation")
+            self.agentSpeaking = true
+            self.userSpeaking = false
+            
+            // Calculate duration based on transcript length (roughly 150 words per minute)
+            let wordCount = transcript.transcript.split(separator: " ").count
+            let estimatedDuration = max(2.0, min(Double(wordCount) * 0.4, 8.0)) // 2-8 seconds for agent
+            
+            print("[DEBUG] Agent transcript has \(wordCount) words, estimated duration: \(estimatedDuration)s")
+            
+            // After estimated duration, set speaking to false
+            DispatchQueue.main.asyncAfter(deadline: .now() + estimatedDuration) {
+                print("[DEBUG] Agent finished speaking - setting agentSpeaking=false")
+                self.agentSpeaking = false
+            }
+        }
+    }
 
     // --- Persistence (copied from VapiDemo) ---
     private func loadHistory() {
@@ -273,6 +577,28 @@ class CallManager: ObservableObject {
         }
     }
     
+    /// Speak a response using VAPI (TTS)
+    func speakResponse(_ text: String) async {
+        print("[DEBUG] 🔊 speakResponse called with: '\(text.prefix(50))...'")
+        
+        // Send response for text-to-speech
+        let message = VapiMessage(type: "transcript", role: "assistant", content: text)
+        if let vapi = vapi {
+            do {
+                print("[DEBUG] 🔊 Sending TTS message to VAPI")
+                // Use high priority queue for faster TTS
+                try await Task.detached(priority: .userInitiated) {
+                    try await vapi.send(message: message)
+                }.value
+                print("[DEBUG] 🔊✅ TTS message sent successfully")
+            } catch {
+                print("[DEBUG] 🔊❌ Failed to send TTS response to VAPI: \(error)")
+            }
+        } else {
+            print("[DEBUG] 🔊❌ VAPI is not connected - cannot speak response")
+        }
+    }
+    
     /// Announce current room temperature when visiting a room (without triggering agent questions)
     func announceRoomTemperature(room: String, temp: Int) async {
         // Send room temperature info but tell agent not to ask about changing it
@@ -291,8 +617,79 @@ class CallManager: ObservableObject {
         }
     }
 
+    private func isHealthRelatedQuestion(_ text: String) -> Bool {
+        let lower = text.lowercased()
+        
+        // Health-related keywords and phrases
+        let healthKeywords = [
+            // Medical conditions
+            "autonomic dysreflexia", "ad", "dysreflexia",
+            "pressure injury", "pressure sore", "bedsore", "pressure ulcer",
+            "spasticity", "spasm", "muscle spasm",
+            "uti", "urinary tract infection", "bladder infection",
+            "pain", "neuropathic pain", "nerve pain",
+            
+            // Body systems
+            "bladder", "bowel", "catheter", "bowel routine",
+            "blood pressure", "heart rate", "circulation",
+            "breathing", "respiratory",
+            
+            // Symptoms
+            "headache", "sweating", "fever", "chills",
+            "nausea", "dizziness", "fatigue",
+            "swelling", "edema", "rash",
+            
+            // Care and management
+            "medication", "medicine", "prescription",
+            "exercise", "physical therapy", "pt",
+            "occupational therapy", "ot",
+            "wheelchair", "transfer", "mobility",
+            "diet", "nutrition", "hydration",
+            
+            // Health questions
+            "what is", "how do i", "what are the signs",
+            "symptoms of", "treatment for", "prevent",
+            "manage", "care for", "help with",
+            
+            // Emergency
+            "emergency", "urgent", "serious", "911",
+            
+            // General health terms
+            "health", "medical", "doctor", "nurse",
+            "hospital", "clinic", "therapy",
+            "injury", "condition", "diagnosis",
+            
+            // Navigation to health page
+            "health page", "health education", "health chat",
+            "take me to health", "go to health"
+        ]
+        
+        // Check if any health keyword is present
+        return healthKeywords.contains { keyword in
+            lower.contains(keyword)
+        }
+    }
+
     private func extractRoomName(from text: String) -> String? {
         let lower = text.lowercased()
+        
+        // Skip navigation if the text contains certain phrases that shouldn't trigger navigation
+        let skipPhrases = [
+            "autonomic dysreflexia",
+            "blood pressure", 
+            "medical emergency",
+            "life threatening",
+            "spinal cord",
+            "symptoms",
+            "what is",
+            "how do",
+            "can occur"
+        ]
+        
+        // Don't navigate if any skip phrases are found
+        if skipPhrases.contains(where: { lower.contains($0) }) {
+            return nil
+        }
         
         // First check for formal pattern "Shows the <room> page"
         let formalPattern = #"Shows the ([a-zA-Z ]+) page"#
@@ -302,15 +699,28 @@ class CallManager: ObservableObject {
             return String(text[roomRange]).trimmingCharacters(in: .whitespacesAndNewlines)
         }
         
-        // Then check for any room names mentioned in context
-        let roomNames = [
-            "kitchen", "living room", "bedroom", "garage", "laundry", "nursery",
-            "outside", "backyard", "master", "entrance", "playroom", "elevator", "support", "home", "homepage"
+        // Only check for explicit navigation commands
+        let navigationPhrases = [
+            "go to", "navigate to", "show me", "take me to", "open", "switch to"
         ]
         
-        // Find any room name mentioned in the text
-        if let room = roomNames.first(where: { lower.contains($0) }) {
-            return room
+        // Check if this is actually a navigation request
+        let hasNavigationIntent = navigationPhrases.contains { phrase in
+            lower.contains(phrase)
+        }
+        
+        // Only look for room names if there's navigation intent
+        if hasNavigationIntent {
+            let roomNames = [
+                "kitchen", "living room", "bedroom", "garage", "laundry", "nursery",
+                "outside", "backyard", "master", "entrance", "playroom", "elevator", 
+                "support", "help", "help page", "health education", "health page", "home", "homepage"
+            ]
+            
+            // Find any room name mentioned in the text
+            if let room = roomNames.first(where: { lower.contains($0) }) {
+                return room
+            }
         }
         
         return nil
@@ -510,6 +920,27 @@ class CallManager: ObservableObject {
             }
         }
         return nil
+    }
+
+    /// Handle health education API responses and ensure VAPI provides voice response
+    private func handleHealthEducationAPIResponse(_ response: String) {
+        print("[DEBUG] Handling Health Education API response: '\(response.prefix(100))...'")
+        
+        // If VAPI is active, send a message to trigger the assistant to speak
+        if let vapi = vapi, isCalling {
+            Task {
+                do {
+                    // Send a message to the assistant to acknowledge the API response
+                    let message = VapiMessage(type: "transcript", role: "user", content: "The health education system has provided a detailed response. Please acknowledge this and provide a brief voice summary.")
+                    try await vapi.send(message: message)
+                    print("[DEBUG] ✅ Sent VAPI message to trigger voice response")
+                } catch {
+                    print("[DEBUG] ❌ Failed to send VAPI message: \(error)")
+                }
+            }
+        } else {
+            print("[DEBUG] VAPI not active, cannot send voice response")
+        }
     }
 }
 
