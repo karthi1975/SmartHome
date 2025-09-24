@@ -125,6 +125,29 @@ struct DeviceCard: View {
                                 ControlButton(asset: "Down_Smarthome", label: "Down") { setTemperature((device.currentTemperature ?? 70) - 1) }
                                 ControlButton(asset: "Up_Smarthome", label: "Up") { setTemperature((device.currentTemperature ?? 70) + 1) }
                             }
+                        case .toaster:
+                            HStack(spacing: 24) {
+                                VStack(spacing: 8) {
+                                    Text(device.isOn ? "Toasting" : "Ready")
+                                        .font(.subheadline)
+                                    Text("Status")
+                                        .font(.caption2)
+                                        .foregroundColor(.secondary)
+                                }
+                                Image(device.type.icon)
+                                    .resizable()
+                                    .frame(width: 48, height: 48)
+                                Spacer()
+                                VStack(spacing: 2) {
+                                    Image("Power_Smarthome")
+                                        .resizable()
+                                        .frame(width: 36, height: 36)
+                                        .onTapGesture { toggleDevice() }
+                                    Text(device.isOn ? "On" : "Off")
+                                        .font(.caption2)
+                                        .foregroundColor(.secondary)
+                                }
+                            }
                         default:
                             HStack {
                                 Image(device.type.icon)

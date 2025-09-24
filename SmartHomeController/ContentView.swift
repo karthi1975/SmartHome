@@ -23,6 +23,7 @@ enum MainPage: String, CaseIterable, Identifiable {
     case playroom = "Playroom"
     case garage = "Garage"
     case elevator = "Elevator"
+    case healthEducation = "Health Education"
     case support = "Support"
 
     var id: String { self.rawValue }
@@ -59,6 +60,7 @@ struct ContentView: View {
         Room(name: "Playroom", iconName: "Playroom_Smarthome", selectedIconName: "Playroom_Red_Smarthome"),
         Room(name: "Garage", iconName: "Garage_Smarthome", selectedIconName: "Garage_Red_Smarthome"),
         Room(name: "Elevator", iconName: "Elevator_Smarthome", selectedIconName: "Elevator_Red_Smarthome"),
+        Room(name: "Health Education", iconName: "HealthEd_Smarthome", selectedIconName: "HealthEd_Red_Smarthome"),
         Room(name: "Support", iconName: "Support_Smarthome", selectedIconName: "Support_Red_Smarthome"),
     ]
     
@@ -135,6 +137,15 @@ struct ContentView: View {
                         .environmentObject(callManager)
                 case "Support":
                     CreateTicketView()
+                        .environmentObject(callManager)
+                        .environmentObject(appState)
+                case "Health Education":
+                    HealthEducationView()
+                        .environmentObject(callManager)
+                case "Nursery", "Playroom", "Garage", "Elevator":
+                    RoomView(roomName: selectedRoom.name)
+                        .environmentObject(deviceStore)
+                        .environmentObject(callManager)
                 default:
                     RoomView(roomName: selectedRoom.name)
                         .environmentObject(deviceStore)
@@ -194,15 +205,64 @@ struct ContentView: View {
                 selectedRoom = match
                 // Post notification when page changes via appState
                 NotificationCenter.default.post(name: .pageChanged, object: match.name)
+                
+                // Update CallManager's current page and context
+                callManager.currentPage = match.name.lowercased()
+                
+                // Switch context if navigating to Health Education
+                if match.name == "Health Education" {
+                    print("[DEBUG] appState changed to Health Education - switching context")
+                    callManager.switchToHealthEducationContext()
+                } else {
+                    print("[DEBUG] appState changed to \(match.name) - switching to Smart Home context")
+                    callManager.switchToSmartHomeContext()
+                }
             } else {
                 print("No matching room found for page: \(newPage.rawValue)")
             }
         }
         .onReceive(NotificationCenter.default.publisher(for: .navigateToRoom)) { notif in
+            print("[DEBUG] ContentView received navigateToRoom notification")
             if let room = notif.object as? String {
+                print("[DEBUG] Room received: '\(room)'")
                 let normalizedRoom = normalizeRoomName(room)
+                print("[DEBUG] Normalized room: '\(normalizedRoom)'")
+
+                // Update selectedRoom to match the navigation
+                if normalizedRoom == "Support" {
+                    // Find Support room in the right column
+                    if let supportRoom = rightColumnRooms.first(where: { $0.name == "Support" }) {
+                        selectedRoom = supportRoom
+                        print("[DEBUG] Updated selectedRoom to Support")
+                    }
+                } else if normalizedRoom == "Health Education" {
+                    // Find Health Education room in the right column
+                    if let healthRoom = rightColumnRooms.first(where: { $0.name == "Health Education" }) {
+                        selectedRoom = healthRoom
+                        print("[DEBUG] Updated selectedRoom to Health Education")
+                    }
+                } else {
+                    // Try to find the room in left or right columns
+                    if let room = leftColumnRooms.first(where: { $0.name == normalizedRoom }) {
+                        selectedRoom = room
+                        print("[DEBUG] Updated selectedRoom to \(normalizedRoom) from left column")
+                    } else if let room = rightColumnRooms.first(where: { $0.name == normalizedRoom }) {
+                        selectedRoom = room
+                        print("[DEBUG] Updated selectedRoom to \(normalizedRoom) from right column")
+                    }
+                }
+
                 print("STT navigation: Setting appState.currentPage to: \(normalizedRoom)")
-                appState.currentPage = AppState.AppPage(rawValue: normalizedRoom) ?? appState.currentPage
+
+                if let newPage = AppState.AppPage(rawValue: normalizedRoom) {
+                    print("[DEBUG] Successfully created AppPage enum: \(newPage)")
+                    appState.currentPage = newPage
+                } else {
+                    print("[DEBUG] Failed to create AppPage enum for: '\(normalizedRoom)'")
+                    print("[DEBUG] Available AppPage values: Home, Kitchen, Living Room, Bedroom, Garage, Laundry, Nursery, Outside, Backyard, Master, Entrance, Playroom, Elevator, Health Education, Support")
+                }
+            } else {
+                print("[DEBUG] No room string in notification object")
             }
         }
         .onChange(of: isSpeaking) { newValue in
@@ -221,6 +281,19 @@ struct ContentView: View {
         .onChange(of: callManager.agentSpeaking) { newValue in
             isAgentResponding = newValue
         }
+        .onChange(of: selectedRoom) { newRoom in
+            // Update CallManager's current page when room changes
+            callManager.currentPage = newRoom.name.lowercased()
+            
+            // Switch context based on selected room
+            if newRoom.name == "Health Education" {
+                print("[DEBUG] Room changed to Health Education - switching context")
+                callManager.switchToHealthEducationContext()
+            } else {
+                print("[DEBUG] Room changed to \(newRoom.name) - switching to Smart Home context")
+                callManager.switchToSmartHomeContext()
+            }
+        }
         .onAppear {
             // Start the agent/call automatically on app launch
             let vapiConfig = VAPIConfig.load()
@@ -229,6 +302,45 @@ struct ContentView: View {
                 assistantId: vapiConfig.assistantId
             )
             // VAD is now wired to VAPI events
+
+            // Listen for ticket navigation
+            NotificationCenter.default.addObserver(
+                forName: NSNotification.Name("NavigateToCreateTicket"),
+                object: nil,
+                queue: .main
+            ) { notification in
+                print("[DEBUG] ContentView: Navigating to Create Ticket page with voice command")
+
+                // Extract and store ticket details in AppState
+                if let userInfo = notification.userInfo {
+                    let subject = userInfo["subject"] as? String ?? ""
+                    let description = userInfo["description"] as? String ?? ""
+                    let voiceCommand = userInfo["voiceCommand"] as? String ?? ""
+                    let priority = userInfo["priority"] as? String ?? "normal"
+
+                    print("[DEBUG] ContentView: Storing ticket details - Subject: \(subject)")
+                    appState.pendingTicketDetails = (
+                        subject: subject,
+                        description: description,
+                        voiceCommand: voiceCommand,
+                        priority: priority
+                    )
+                }
+
+                // Find Support room and select it
+                if let supportRoom = (leftColumnRooms + rightColumnRooms).first(where: { $0.name == "Support" }) {
+                    withAnimation(.spring(response: 0.3)) {
+                        selectedRoom = supportRoom
+                    }
+                }
+            }
+            
+            // Set initial context based on selected room
+            if selectedRoom.name == "Health Education" {
+                callManager.switchToHealthEducationContext()
+            } else {
+                callManager.switchToSmartHomeContext()
+            }
         }
         .sheet(isPresented: $showSettings) {
             SettingsView()
@@ -349,6 +461,14 @@ struct ContentView: View {
             "entrance": "Entrance",
             "playroom": "Playroom",
             "elevator": "Elevator",
+            "health education": "Health Education",
+            "health": "Health Education",
+            "health page": "Health Education",
+            "education": "Health Education",
+            "patient education": "Health Education",
+            "medical": "Health Education",
+            "help": "Support",  // Map help to support
+            "help page": "Support",
             "support": "Support",
             "home": "Home",
             "homepage": "Home",  // Handle "homepage" variation

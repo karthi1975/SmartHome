@@ -17,7 +17,7 @@ import SwiftUI
 import AVFoundation
 
 enum HomeCardType: Identifiable, Equatable, CaseIterable, RawRepresentable {
-    case blinds, oven, temp, dishwasher, fridge
+    case blinds, oven, temp, dishwasher, fridge, toaster
     var id: String {
         switch self {
         case .blinds: return "blinds"
@@ -25,6 +25,7 @@ enum HomeCardType: Identifiable, Equatable, CaseIterable, RawRepresentable {
         case .temp: return "temp"
         case .dishwasher: return "dishwasher"
         case .fridge: return "fridge"
+        case .toaster: return "toaster"
         }
     }
     init?(rawValue: String) {
@@ -34,6 +35,7 @@ enum HomeCardType: Identifiable, Equatable, CaseIterable, RawRepresentable {
         case "temp": self = .temp
         case "dishwasher": self = .dishwasher
         case "fridge": self = .fridge
+        case "toaster": self = .toaster
         default: return nil
         }
     }
@@ -204,7 +206,6 @@ struct HomeControlsView: View {
                 }
                 }
             }
-            GlobalMicrophoneOverlay()
         }
     }
 
@@ -221,6 +222,8 @@ struct HomeControlsView: View {
             return AnyView(DishwasherCard(status: "Idle"))
         case .fridge:
             return AnyView(FridgeCard(temperature: "40 °F"))
+        case .toaster:
+            return AnyView(ToasterCard(isOn: false, onToggle: nil))
         }
     }
 
@@ -231,6 +234,7 @@ struct HomeControlsView: View {
         case .temp: return "Temp"
         case .dishwasher: return "Dishwasher"
         case .fridge: return "Fridge"
+        case .toaster: return "Toaster"
         }
     }
 
@@ -284,6 +288,7 @@ struct AddHomeDeviceView: View {
         case .temp: return "Temp"
         case .dishwasher: return "Dishwasher"
         case .fridge: return "Fridge"
+        case .toaster: return "Toaster"
         }
     }
 }
@@ -306,6 +311,8 @@ struct EditDeviceView: View {
     let dishwasherStatuses = ["Idle", "Running", "Done"]
     // Fridge
     @State private var fridgeTemp: Int = 40
+    // Toaster
+    @State private var toastLevel: Int = 3
 
     var body: some View {
         Form {
@@ -373,6 +380,12 @@ struct EditDeviceView: View {
                     Text("Default Temp: \(fridgeTemp) °F")
                 }
             }
+        case .toaster:
+            Section(header: Text("Default Settings")) {
+                Stepper(value: $toastLevel, in: 1...5, step: 1) {
+                    Text("Toast Level: \(toastLevel)")
+                }
+            }
         }
     }
 
@@ -389,6 +402,8 @@ struct EditDeviceView: View {
             Image("Dishwasher_Smarthome").resizable().frame(width: 40, height: 40)
         case .fridge:
             Image("Fridge_Smarthome").resizable().frame(width: 40, height: 40)
+        case .toaster:
+            Image("Toaster_Smarthome").resizable().frame(width: 40, height: 40)
         }
     }
 
@@ -399,6 +414,7 @@ struct EditDeviceView: View {
         case .temp: return "Temp"
         case .dishwasher: return "Dishwasher"
         case .fridge: return "Fridge"
+        case .toaster: return "Toaster"
         }
     }
 }

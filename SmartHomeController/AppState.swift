@@ -16,8 +16,12 @@ class AppState: ObservableObject {
         case entrance = "Entrance"
         case playroom = "Playroom"
         case elevator = "Elevator"
+        case healthEducation = "Health Education"
         case support = "Support"
     }
     @Published var currentPage: AppPage = .home
     @Published var agentMessage: String? = nil
+
+    // Ticket creation from voice command
+    @Published var pendingTicketDetails: (subject: String, description: String, voiceCommand: String, priority: String)? = nil
 } 

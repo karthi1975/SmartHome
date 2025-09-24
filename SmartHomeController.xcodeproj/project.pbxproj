@@ -60,16 +60,19 @@
 		A750A8262E0223AA00C6055D /* HomeAssistantClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8232E0223AA00C6055D /* HomeAssistantClient.swift */; };
 		A750A82C2E02751000C6055D /* TempCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A82B2E02751000C6055D /* TempCard.swift */; };
 		A750A82D2E02751000C6055D /* BlindsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8272E02751000C6055D /* BlindsCard.swift */; };
+		A750A82D2E02751000C6055F /* AnimatedBlindsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8272E02751000C6055E /* AnimatedBlindsCard.swift */; };
 		A750A82E2E02751000C6055D /* DishwasherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8282E02751000C6055D /* DishwasherCard.swift */; };
 		A750A82F2E02751000C6055D /* FridgeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8292E02751000C6055D /* FridgeCard.swift */; };
 		A750A8302E02751000C6055D /* OvenCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A82A2E02751000C6055D /* OvenCard.swift */; };
 		A750A8312E02751000C6055D /* TempCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A82B2E02751000C6055D /* TempCard.swift */; };
 		A750A8322E02751000C6055D /* BlindsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8272E02751000C6055D /* BlindsCard.swift */; };
+		A750A8322E02751000C6055G /* AnimatedBlindsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8272E02751000C6055E /* AnimatedBlindsCard.swift */; };
 		A750A8332E02751000C6055D /* DishwasherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8282E02751000C6055D /* DishwasherCard.swift */; };
 		A750A8342E02751000C6055D /* FridgeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8292E02751000C6055D /* FridgeCard.swift */; };
 		A750A8352E02751000C6055D /* OvenCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A82A2E02751000C6055D /* OvenCard.swift */; };
 		A750A8362E02751000C6055D /* TempCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A82B2E02751000C6055D /* TempCard.swift */; };
 		A750A8372E02751000C6055D /* BlindsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8272E02751000C6055D /* BlindsCard.swift */; };
+		A750A8372E02751000C6055H /* AnimatedBlindsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8272E02751000C6055E /* AnimatedBlindsCard.swift */; };
 		A750A8382E02751000C6055D /* DishwasherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8282E02751000C6055D /* DishwasherCard.swift */; };
 		A750A8392E02751000C6055D /* FridgeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A8292E02751000C6055D /* FridgeCard.swift */; };
 		A750A83A2E02751000C6055D /* OvenCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750A82A2E02751000C6055D /* OvenCard.swift */; };
@@ -152,6 +155,33 @@
 		A76F60D22DEFE96800BB7BDB /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60D12DEFE96800BB7BDB /* HomeScene.swift */; };
 		A76F60D32DEFE96800BB7BDB /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60D12DEFE96800BB7BDB /* HomeScene.swift */; };
 		A76F60D42DEFE96800BB7BDB /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F60D12DEFE96800BB7BDB /* HomeScene.swift */; };
+		A79B254A2E42B0BF001D2E3E /* HealthEducationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25442E42B0BF001D2E3E /* HealthEducationAPI.swift */; };
+		A79B254B2E42B0BF001D2E3E /* HealthEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25462E42B0BF001D2E3E /* HealthEducationView.swift */; };
+		A79B254C2E42B0BF001D2E3E /* HealthEducationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25452E42B0BF001D2E3E /* HealthEducationSettings.swift */; };
+		A79B254D2E42B0BF001D2E3E /* HealthEducationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25472E42B0BF001D2E3E /* HealthEducationViewModel.swift */; };
+		A79B254E2E42B0BF001D2E3E /* ToasterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25482E42B0BF001D2E3E /* ToasterCard.swift */; };
+		A79B254F2E42B0BF001D2E3E /* AnimatedToasterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25492E42B0BF001D2E3E /* AnimatedToasterCard.swift */; };
+		A79B264F2E42B0BF001D2E3E /* TreeOfThoughtPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B274B2E42B0BF001D2E3E /* TreeOfThoughtPrompts.swift */; };
+		A79B25502E42B0BF001D2E3E /* HealthEducationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25442E42B0BF001D2E3E /* HealthEducationAPI.swift */; };
+		A79B25512E42B0BF001D2E3E /* HealthEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25462E42B0BF001D2E3E /* HealthEducationView.swift */; };
+		A79B25522E42B0BF001D2E3E /* HealthEducationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25452E42B0BF001D2E3E /* HealthEducationSettings.swift */; };
+		A79B25532E42B0BF001D2E3E /* HealthEducationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25472E42B0BF001D2E3E /* HealthEducationViewModel.swift */; };
+		A79B25542E42B0BF001D2E3E /* ToasterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25482E42B0BF001D2E3E /* ToasterCard.swift */; };
+		A79B25552E42B0BF001D2E3E /* AnimatedToasterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25492E42B0BF001D2E3E /* AnimatedToasterCard.swift */; };
+		A79B26552E42B0BF001D2E3E /* TreeOfThoughtPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B274B2E42B0BF001D2E3E /* TreeOfThoughtPrompts.swift */; };
+		A79B25562E42B0BF001D2E3E /* HealthEducationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25442E42B0BF001D2E3E /* HealthEducationAPI.swift */; };
+		A79B25572E42B0BF001D2E3E /* HealthEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25462E42B0BF001D2E3E /* HealthEducationView.swift */; };
+		A79B25582E42B0BF001D2E3E /* HealthEducationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25452E42B0BF001D2E3E /* HealthEducationSettings.swift */; };
+		A79B25592E42B0BF001D2E3E /* HealthEducationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25472E42B0BF001D2E3E /* HealthEducationViewModel.swift */; };
+		A79B255A2E42B0BF001D2E3E /* ToasterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25482E42B0BF001D2E3E /* ToasterCard.swift */; };
+		A79B255B2E42B0BF001D2E3E /* AnimatedToasterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B25492E42B0BF001D2E3E /* AnimatedToasterCard.swift */; };
+		A79B265B2E42B0BF001D2E3E /* TreeOfThoughtPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B274B2E42B0BF001D2E3E /* TreeOfThoughtPrompts.swift */; };
+		A79B255D2E42B3E0001D2E3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B255C2E42B3E0001D2E3E /* ContentView.swift */; };
+		A79B255E2E42B3E0001D2E3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B255C2E42B3E0001D2E3E /* ContentView.swift */; };
+		A79B255F2E42B3E0001D2E3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B255C2E42B3E0001D2E3E /* ContentView.swift */; };
+		A7DB16502E454DBC00EC7A3D /* HealthEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DB164F2E454DBC00EC7A3D /* HealthEducationView.swift */; };
+		A7DB16512E454DBC00EC7A3D /* HealthEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DB164F2E454DBC00EC7A3D /* HealthEducationView.swift */; };
+		A7DB16522E454DBC00EC7A3D /* HealthEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DB164F2E454DBC00EC7A3D /* HealthEducationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +223,7 @@
 		A750A80D2E020BE700C6055D /* HomeAssistantConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssistantConfigView.swift; sourceTree = "<group>"; };
 		A750A8232E0223AA00C6055D /* HomeAssistantClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssistantClient.swift; sourceTree = "<group>"; };
 		A750A8272E02751000C6055D /* BlindsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindsCard.swift; sourceTree = "<group>"; };
+		A750A8272E02751000C6055E /* AnimatedBlindsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBlindsCard.swift; sourceTree = "<group>"; };
 		A750A8282E02751000C6055D /* DishwasherCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwasherCard.swift; sourceTree = "<group>"; };
 		A750A8292E02751000C6055D /* FridgeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeCard.swift; sourceTree = "<group>"; };
 		A750A82A2E02751000C6055D /* OvenCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvenCard.swift; sourceTree = "<group>"; };
@@ -224,6 +255,15 @@
 		A76F60BD2DEE50CC00BB7BDB /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		A76F60C12DEE50ED00BB7BDB /* HomeControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControlsView.swift; sourceTree = "<group>"; };
 		A76F60D12DEFE96800BB7BDB /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
+		A79B25442E42B0BF001D2E3E /* HealthEducationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthEducationAPI.swift; sourceTree = "<group>"; };
+		A79B25452E42B0BF001D2E3E /* HealthEducationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthEducationSettings.swift; sourceTree = "<group>"; };
+		A79B25462E42B0BF001D2E3E /* HealthEducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthEducationView.swift; sourceTree = "<group>"; };
+		A79B25472E42B0BF001D2E3E /* HealthEducationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthEducationViewModel.swift; sourceTree = "<group>"; };
+		A79B25482E42B0BF001D2E3E /* ToasterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasterCard.swift; sourceTree = "<group>"; };
+		A79B25492E42B0BF001D2E3E /* AnimatedToasterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedToasterCard.swift; sourceTree = "<group>"; };
+		A79B274B2E42B0BF001D2E3E /* TreeOfThoughtPrompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeOfThoughtPrompts.swift; sourceTree = "<group>"; };
+		A79B255C2E42B3E0001D2E3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7DB164F2E454DBC00EC7A3D /* HealthEducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthEducationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -296,6 +336,15 @@
 		A746DBCD2D761D0900CD8EBB /* SmartHomeController */ = {
 			isa = PBXGroup;
 			children = (
+				A7DB164F2E454DBC00EC7A3D /* HealthEducationView.swift */,
+				A79B255C2E42B3E0001D2E3E /* ContentView.swift */,
+				A79B25442E42B0BF001D2E3E /* HealthEducationAPI.swift */,
+				A79B25452E42B0BF001D2E3E /* HealthEducationSettings.swift */,
+				A79B25462E42B0BF001D2E3E /* HealthEducationView.swift */,
+				A79B25472E42B0BF001D2E3E /* HealthEducationViewModel.swift */,
+				A79B25482E42B0BF001D2E3E /* ToasterCard.swift */,
+				A79B25492E42B0BF001D2E3E /* AnimatedToasterCard.swift */,
+				A79B274B2E42B0BF001D2E3E /* TreeOfThoughtPrompts.swift */,
 				A76AFD222E1F4DC100FDFD0E /* HomeAssistantConfig.swift */,
 				A76AFD1A2E1ED40C00FDFD0E /* DeviceDiscoveryView.swift */,
 				A76AFD1B2E1ED40C00FDFD0E /* HomeAssistantDeviceDiscovery.swift */,
@@ -320,6 +369,7 @@
 				A750A83B2E03C54B00C6055D /* CreateTicketView.swift */,
 				A750A83C2E03C54B00C6055D /* ZammadClient.swift */,
 				A750A8272E02751000C6055D /* BlindsCard.swift */,
+				A750A8272E02751000C6055E /* AnimatedBlindsCard.swift */,
 				A750A8282E02751000C6055D /* DishwasherCard.swift */,
 				A750A8292E02751000C6055D /* FridgeCard.swift */,
 				A750A82A2E02751000C6055D /* OvenCard.swift */,
@@ -513,16 +563,26 @@
 				A76F60BA2DEE503400BB7BDB /* Room.swift in Sources */,
 				A750A80E2E020BE700C6055D /* HomeAssistantConfig.swift in Sources */,
 				A750A80F2E020BE700C6055D /* DeviceHistoryView.swift in Sources */,
+				A79B255F2E42B3E0001D2E3E /* ContentView.swift in Sources */,
 				A750A8102E020BE700C6055D /* DeviceHistory.swift in Sources */,
 				A750A8112E020BE700C6055D /* DeviceGroupView.swift in Sources */,
 				A750A8122E020BE700C6055D /* HomeAssistantConfigView.swift in Sources */,
 				A750A82C2E02751000C6055D /* TempCard.swift in Sources */,
 				A750A82D2E02751000C6055D /* BlindsCard.swift in Sources */,
+				A750A82D2E02751000C6055F /* AnimatedBlindsCard.swift in Sources */,
 				A750A82E2E02751000C6055D /* DishwasherCard.swift in Sources */,
 				A750A82F2E02751000C6055D /* FridgeCard.swift in Sources */,
 				A76AFCC52E11FF8400FDFD0E /* CallManager.swift in Sources */,
 				A76AFCCC2E1203D200FDFD0E /* CallRecord.swift in Sources */,
 				A76AFCDC2E1330DB00FDFD0E /* AnimatedTempCardViewModel.swift in Sources */,
+				A79B25502E42B0BF001D2E3E /* HealthEducationAPI.swift in Sources */,
+				A7DB16502E454DBC00EC7A3D /* HealthEducationView.swift in Sources */,
+				A79B25512E42B0BF001D2E3E /* HealthEducationView.swift in Sources */,
+				A79B25522E42B0BF001D2E3E /* HealthEducationSettings.swift in Sources */,
+				A79B25532E42B0BF001D2E3E /* HealthEducationViewModel.swift in Sources */,
+				A79B25542E42B0BF001D2E3E /* ToasterCard.swift in Sources */,
+				A79B25552E42B0BF001D2E3E /* AnimatedToasterCard.swift in Sources */,
+				A79B26552E42B0BF001D2E3E /* TreeOfThoughtPrompts.swift in Sources */,
 				A76AFCC62E11FF8400FDFD0E /* AppState.swift in Sources */,
 				A76AFD032E1360ED00FDFD0E /* CallManager.swift in Sources */,
 				A76AFCC72E11FF8400FDFD0E /* App.swift in Sources */,
@@ -558,6 +618,7 @@
 				A76F60C22DEE50ED00BB7BDB /* HomeControlsView.swift in Sources */,
 				A76AFCDE2E1330DB00FDFD0E /* AnimatedTempCardViewModel.swift in Sources */,
 				A746DBE92D761D0900CD8EBB /* ContentView.swift in Sources */,
+				A79B255D2E42B3E0001D2E3E /* ContentView.swift in Sources */,
 				A76F60BB2DEE503400BB7BDB /* Room.swift in Sources */,
 				A76F60BE2DEE50CC00BB7BDB /* SidebarView.swift in Sources */,
 				A746DBEF2D761D0900CD8EBB /* SettingsView.swift in Sources */,
@@ -569,12 +630,20 @@
 				A750A84E2E04DA0B00C6055D /* ScreenshotHelper.swift in Sources */,
 				A76AFD012E1360ED00FDFD0E /* CallManager.swift in Sources */,
 				A76AFCC22E11FF8400FDFD0E /* CallManager.swift in Sources */,
+				A79B254A2E42B0BF001D2E3E /* HealthEducationAPI.swift in Sources */,
+				A79B254B2E42B0BF001D2E3E /* HealthEducationView.swift in Sources */,
+				A79B254C2E42B0BF001D2E3E /* HealthEducationSettings.swift in Sources */,
+				A79B254D2E42B0BF001D2E3E /* HealthEducationViewModel.swift in Sources */,
+				A79B254E2E42B0BF001D2E3E /* ToasterCard.swift in Sources */,
+				A79B254F2E42B0BF001D2E3E /* AnimatedToasterCard.swift in Sources */,
+				A79B264F2E42B0BF001D2E3E /* TreeOfThoughtPrompts.swift in Sources */,
 				A76AFCC32E11FF8400FDFD0E /* AppState.swift in Sources */,
 				A76AFCC42E11FF8400FDFD0E /* App.swift in Sources */,
 				A750A8052E01BE2800C6055D /* SmartDevice.swift in Sources */,
 				A750A8312E02751000C6055D /* TempCard.swift in Sources */,
 				A76AFCB82E0B9EE000FDFD0E /* HomeControlsView.swift in Sources */,
 				A750A8322E02751000C6055D /* BlindsCard.swift in Sources */,
+				A750A8322E02751000C6055G /* AnimatedBlindsCard.swift in Sources */,
 				A750A8442E04D86900C6055D /* ZammadClient.swift in Sources */,
 				A750A83F2E03C54B00C6055D /* CreateTicketView.swift in Sources */,
 				A750A8402E03C54B00C6055D /* ZammadClient.swift in Sources */,
@@ -598,6 +667,7 @@
 				A750A8192E020BE700C6055D /* HomeAssistantConfigView.swift in Sources */,
 				A750A81A2E020BE700C6055D /* DeviceTemplate.swift in Sources */,
 				A750A8512E062E7300C6055D /* TicketHistoryView.swift in Sources */,
+				A7DB16522E454DBC00EC7A3D /* HealthEducationView.swift in Sources */,
 				A750A81B2E020BE700C6055D /* DeviceGroup.swift in Sources */,
 				A750A7DA2DFCB85200C6055D /* AddDeviceView.swift in Sources */,
 			);
@@ -615,12 +685,14 @@
 				A750A7502DFA40B400C6055D /* DeviceCard.swift in Sources */,
 				A750A8362E02751000C6055D /* TempCard.swift in Sources */,
 				A750A8372E02751000C6055D /* BlindsCard.swift in Sources */,
+				A750A8372E02751000C6055H /* AnimatedBlindsCard.swift in Sources */,
 				A750A8382E02751000C6055D /* DishwasherCard.swift in Sources */,
 				A750A8412E03C54B00C6055D /* CreateTicketView.swift in Sources */,
 				A750A8422E03C54B00C6055D /* ZammadClient.swift in Sources */,
 				A76AFD132E188E8A00FDFD0E /* MicrophoneAnimationView.swift in Sources */,
 				A750A8392E02751000C6055D /* FridgeCard.swift in Sources */,
 				A750A83A2E02751000C6055D /* OvenCard.swift in Sources */,
+				A79B255E2E42B3E0001D2E3E /* ContentView.swift in Sources */,
 				A76F60D32DEFE96800BB7BDB /* HomeScene.swift in Sources */,
 				A76AFD242E1F4DC100FDFD0E /* HomeAssistantConfig.swift in Sources */,
 				A750A7F12E01BE2800C6055D /* EntranceView.swift in Sources */,
@@ -635,6 +707,7 @@
 				A750A8212E020BE700C6055D /* DeviceTemplate.swift in Sources */,
 				A76AFD1C2E1ED40C00FDFD0E /* DeviceDiscoveryView.swift in Sources */,
 				A76AFD1D2E1ED40C00FDFD0E /* HomeAssistantDeviceDiscovery.swift in Sources */,
+				A7DB16512E454DBC00EC7A3D /* HealthEducationView.swift in Sources */,
 				A750A8222E020BE700C6055D /* DeviceGroup.swift in Sources */,
 				A750A8462E04D86900C6055D /* ZammadClient.swift in Sources */,
 				A750A84B2E04DA0B00C6055D /* ImagePicker.swift in Sources */,
@@ -651,6 +724,13 @@
 				A76AFCCA2E11FF8400FDFD0E /* App.swift in Sources */,
 				A76AFCBA2E0B9EE000FDFD0E /* HomeControlsView.swift in Sources */,
 				A76AFCBD2E0BB19F00FDFD0E /* DeviceStore.swift in Sources */,
+				A79B25562E42B0BF001D2E3E /* HealthEducationAPI.swift in Sources */,
+				A79B25572E42B0BF001D2E3E /* HealthEducationView.swift in Sources */,
+				A79B25582E42B0BF001D2E3E /* HealthEducationSettings.swift in Sources */,
+				A79B25592E42B0BF001D2E3E /* HealthEducationViewModel.swift in Sources */,
+				A79B255A2E42B0BF001D2E3E /* ToasterCard.swift in Sources */,
+				A79B255B2E42B0BF001D2E3E /* AnimatedToasterCard.swift in Sources */,
+				A79B265B2E42B0BF001D2E3E /* TreeOfThoughtPrompts.swift in Sources */,
 				A746DBE22D761D0900CD8EBB /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
