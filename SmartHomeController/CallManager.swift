@@ -1686,47 +1686,68 @@ class CallManager: ObservableObject {
         // Remove any non-printable characters
         cleaned = cleaned.components(separatedBy: CharacterSet.alphanumerics.union(.whitespaces).union(.punctuationCharacters).inverted).joined()
 
-        // Remove patterns using simple string replacement (more reliable)
-        let greetingsToRemove = [
-            "Hey, uh, Luna", "Hey uh Luna", "Hey Luna", "Hi Luna", "Hello Luna",
-            "Hey, uh, Nava", "Hey uh Nava", "Hey Nava", "Hi Nava", "Hello Nava",
-            "Hey, uh,", "Hey uh", "Uh,", "uh,"
+        // Remove all variations of greetings and filler words (case insensitive)
+        let phrasesToRemove = [
+            // Greetings and agent names
+            "Can you hey, Luna", "Can you hey Luna", "Hey, Luna", "Hey Luna",
+            "Hi, Luna", "Hi Luna", "Hello, Luna", "Hello Luna",
+            "Hey, Nava", "Hey Nava", "Hi, Nava", "Hi Nava",
+            "Can you", "Could you", "Would you",
+
+            // Navigation and support phrases
+            "Can you go to the", "go to the", "go to support page",
+            "go to support", "support page", "open support",
+            "navigate to support", "take me to support",
+
+            // Filler words and sounds
+            "Um,", "um", "Uh,", "uh", "Ah,", "ah",
+            "please help", "help me with",
+
+            // Question starters
+            "Hi.", "Hey.", "Hello.",
+
+            // Weird punctuation
+            "?", ". .", ",.", ".,", "..", ",,"
         ]
 
-        let navigationToRemove = [
-            "Go to support page", "go to support page",
-            "Go to support", "go to support",
-            "support page", "Support page"
-        ]
-
-        // Remove greetings and navigation commands
-        for phrase in greetingsToRemove + navigationToRemove {
+        // Remove all phrases (case insensitive)
+        for phrase in phrasesToRemove {
             cleaned = cleaned.replacingOccurrences(of: phrase, with: "", options: .caseInsensitive)
         }
 
-        // Remove weird punctuation patterns
-        cleaned = cleaned
-            .replacingOccurrences(of: ". .", with: "")
-            .replacingOccurrences(of: ",.", with: "")
-            .replacingOccurrences(of: ".,", with: "")
-            .replacingOccurrences(of: "..", with: ".")
-            .replacingOccurrences(of: ",,", with: ",")
+        // Extract the actual problem statement
+        // Look for key problem indicators
+        if let range = cleaned.range(of: "my ", options: .caseInsensitive) {
+            // Extract from "my" onwards (this usually starts the actual problem)
+            cleaned = String(cleaned[range.lowerBound...])
+        }
 
-        // Clean up whitespace and punctuation
+        // Clean up extra whitespace and punctuation
         cleaned = cleaned
             .trimmingCharacters(in: .whitespacesAndNewlines)
-            .replacingOccurrences(of: "  +", with: " ", options: .regularExpression)
+            .replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
             .replacingOccurrences(of: "^[,. ]+", with: "", options: .regularExpression)
             .replacingOccurrences(of: "[,. ]+$", with: "", options: .regularExpression)
 
-        // Ensure first letter is capitalized
+        // Capitalize first letter
         if !cleaned.isEmpty {
-            cleaned = cleaned.prefix(1).uppercased() + cleaned.dropFirst()
+            let firstChar = cleaned.prefix(1)
+            if firstChar.lowercased() == "m" && cleaned.lowercased().hasPrefix("my ") {
+                // Keep "My" capitalized for problem descriptions
+                cleaned = "My" + cleaned.dropFirst(2)
+            } else {
+                cleaned = cleaned.prefix(1).uppercased() + cleaned.dropFirst()
+            }
         }
 
-        // If the cleaned text is too short or seems garbled, return a default
-        if cleaned.count < 5 || !cleaned.contains(" ") {
+        // Validate the cleaned text
+        if cleaned.isEmpty || cleaned.count < 5 {
             return "Issue reported via voice"
+        }
+
+        // Final cleanup - ensure it's a proper sentence
+        if !cleaned.hasSuffix(".") && !cleaned.hasSuffix("!") && !cleaned.hasSuffix("?") {
+            cleaned = cleaned + "."
         }
 
         return cleaned
