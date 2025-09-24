@@ -41,5 +41,41 @@ class DeviceStore: ObservableObject {
            let decoded = try? JSONDecoder().decode([String: [SmartDevice]].self, from: data) {
             devicesByRoom = decoded
         }
+
+        // Always ensure Kitchen has HVAC device
+        ensureKitchenHVAC()
+    }
+
+    private func ensureKitchenHVAC() {
+        let kitchenDevices = devicesByRoom["Kitchen"] ?? []
+        let hasHVAC = kitchenDevices.contains(where: { $0.type == .temp && $0.name == "Kitchen HVAC" })
+
+        if !hasHVAC {
+            // Create Kitchen HVAC device
+            let hvacDevice = SmartDevice(
+                id: UUID(),
+                name: "Kitchen HVAC",
+                type: .temp,
+                room: "Kitchen",
+                entityId: "climate.kitchen",
+                state: "heat",
+                attributes: [
+                    "temperature": CodableValue.int(74),
+                    "target_temp_high": CodableValue.int(80),
+                    "target_temp_low": CodableValue.int(65),
+                    "hvac_mode": CodableValue.string("heat"),
+                    "preset_mode": CodableValue.string("comfort"),
+                    "unit": CodableValue.string("°F")
+                ],
+                services: [:],
+                template: nil,
+                groups: [],
+                lastUpdated: Date(),
+                value: "74"
+            )
+
+            devicesByRoom["Kitchen", default: []].append(hvacDevice)
+            save()
+        }
     }
 } 
