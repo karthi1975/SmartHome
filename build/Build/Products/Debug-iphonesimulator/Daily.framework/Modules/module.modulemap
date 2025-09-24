@@ -1,0 +1,4 @@
+framework module Daily {
+  header "Daily-Swift.h"
+  requires objc
+}

@@ -1,0 +1,24 @@
+"/Users/karthi/U/SmartHomeController/SmartHomeController/PlayroomView.swift":
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/PlayroomView.o"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/PlayroomView.d"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/PlayroomView.swiftdeps"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/PlayroomView.swiftconstvalues"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/PlayroomView.dia"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/HomeAssistantDeviceDiscovery.swift":
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeAssistantDeviceDiscovery.d"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeAssistantDeviceDiscovery.o"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeAssistantDeviceDiscovery.swiftconstvalues"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeAssistantDeviceDiscovery.swiftdeps"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeAssistantDeviceDiscovery.dia"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/DeviceDiscoveryView.swift":
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/DeviceDiscoveryView.swiftconstvalues"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/DeviceDiscoveryView.o"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/DeviceDiscoveryView.swiftdeps"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/DeviceDiscoveryView.dia"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/DeviceDiscoveryView.d"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/TicketHistoryView.swift":
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/TicketHistoryView.swiftconstvalues"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/TicketHistoryView.swiftdeps"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/TicketHistoryView.dia"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/TicketHistoryView.o"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/TicketHistoryView.d"

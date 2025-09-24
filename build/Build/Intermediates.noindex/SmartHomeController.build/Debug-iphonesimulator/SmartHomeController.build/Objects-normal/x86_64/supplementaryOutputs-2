@@ -1,0 +1,24 @@
+"/Users/karthi/U/SmartHomeController/SmartHomeController/ContentView.swift":
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/ContentView-c536e208f1bfbeb39af60e4d0ebc2aa0.swiftconstvalues"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/ContentView-c536e208f1bfbeb39af60e4d0ebc2aa0.o"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/ContentView-c536e208f1bfbeb39af60e4d0ebc2aa0.d"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/ContentView-c536e208f1bfbeb39af60e4d0ebc2aa0.swiftdeps"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/ContentView-c536e208f1bfbeb39af60e4d0ebc2aa0.dia"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/Room.swift":
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/Room.o"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/Room.dia"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/Room.d"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/Room.swiftconstvalues"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/Room.swiftdeps"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/HomeScene.swift":
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeScene.d"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeScene.o"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeScene.swiftconstvalues"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeScene.swiftdeps"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeScene.dia"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/HomeAssistantConfig.swift":
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeAssistantConfig-e4bfa7f7c648e1c48a275bd1c44c30cb.swiftdeps"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeAssistantConfig-e4bfa7f7c648e1c48a275bd1c44c30cb.dia"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeAssistantConfig-e4bfa7f7c648e1c48a275bd1c44c30cb.o"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeAssistantConfig-e4bfa7f7c648e1c48a275bd1c44c30cb.swiftconstvalues"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/x86_64/HomeAssistantConfig-e4bfa7f7c648e1c48a275bd1c44c30cb.d"

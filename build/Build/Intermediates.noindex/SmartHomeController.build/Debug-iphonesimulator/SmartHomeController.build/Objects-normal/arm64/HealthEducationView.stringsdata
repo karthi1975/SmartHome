@@ -1,0 +1,200 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/HealthEducationView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Error",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "📍 New content available",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 124
+        }
+      },
+      {
+        "comment": "",
+        "key": "Retry",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 128
+        }
+      },
+      {
+        "comment": "",
+        "key": "Health Education",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 141
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ask questions about SCI care",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 145
+        }
+      },
+      {
+        "comment": "",
+        "key": "Suggested Questions:",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 211
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ask a health question...",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 266
+        }
+      },
+      {
+        "comment": "",
+        "key": "Page %lld",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 363
+        }
+      },
+      {
+        "comment": "",
+        "key": "Failed to display image %lld",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 402
+        }
+      },
+      {
+        "comment": "",
+        "key": "Failed to display image %lld",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 432
+        }
+      },
+      {
+        "comment": "",
+        "key": "Page %lld",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 452
+        }
+      },
+      {
+        "comment": "",
+        "key": "Loading %lld image(s)...",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 469
+        }
+      },
+      {
+        "comment": "",
+        "key": "📄 %@",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 482
+        }
+      },
+      {
+        "comment": "",
+        "key": "• %@",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 488
+        }
+      },
+      {
+        "comment": "",
+        "key": "Page %lld",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 493
+        }
+      },
+      {
+        "comment": "",
+        "key": "Suggested follow-ups:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 508
+        }
+      },
+      {
+        "comment": "",
+        "key": "• %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 517
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pages: %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 550
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 560
+        }
+      },
+      {
+        "comment": "",
+        "key": "Processing...",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 652
+        }
+      },
+      {
+        "comment": "",
+        "key": "Listening...",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 662
+        }
+      },
+      {
+        "comment": "",
+        "key": "Health Topics",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 690
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 691
+        }
+      }
+    ]
+  },
+  "version": 1
+}

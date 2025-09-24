@@ -1,0 +1,40 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/SidebarView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Add New Room",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "Room Name",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Room",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 144
+        }
+      }
+    ]
+  },
+  "version": 1
+}

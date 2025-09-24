@@ -1,0 +1,24 @@
+"/Users/karthi/U/SmartHomeController/SmartHomeController/CallManager.swift":
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallManager-b9eae6bc536b901410d8caae72758a34.d"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallManager-b9eae6bc536b901410d8caae72758a34.swiftdeps"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallManager-b9eae6bc536b901410d8caae72758a34.dia"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallManager-b9eae6bc536b901410d8caae72758a34.o"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallManager-b9eae6bc536b901410d8caae72758a34.swiftconstvalues"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/FridgeCard.swift":
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/FridgeCard.swiftconstvalues"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/FridgeCard.swiftdeps"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/FridgeCard.o"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/FridgeCard.dia"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/FridgeCard.d"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/CallRecord.swift":
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallRecord.o"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallRecord.d"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallRecord.swiftconstvalues"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallRecord.swiftdeps"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallRecord.dia"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/AnimatedTempCardViewModel.swift":
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedTempCardViewModel.swiftconstvalues"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedTempCardViewModel.dia"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedTempCardViewModel.swiftdeps"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedTempCardViewModel.d"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedTempCardViewModel.o"

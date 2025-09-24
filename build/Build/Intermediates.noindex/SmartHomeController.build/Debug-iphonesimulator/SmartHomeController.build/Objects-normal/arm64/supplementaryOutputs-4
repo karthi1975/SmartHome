@@ -1,0 +1,24 @@
+"/Users/karthi/U/SmartHomeController/SmartHomeController/TempCard.swift":
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TempCard.o"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TempCard.swiftconstvalues"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TempCard.dia"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TempCard.swiftdeps"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TempCard.d"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/AnimatedBlindsCard.swift":
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedBlindsCard.d"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedBlindsCard.o"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedBlindsCard.swiftdeps"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedBlindsCard.dia"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedBlindsCard.swiftconstvalues"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/BlindsCard.swift":
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/BlindsCard.o"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/BlindsCard.d"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/BlindsCard.swiftdeps"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/BlindsCard.dia"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/BlindsCard.swiftconstvalues"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/DishwasherCard.swift":
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DishwasherCard.dia"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DishwasherCard.swiftdeps"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DishwasherCard.swiftconstvalues"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DishwasherCard.d"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DishwasherCard.o"

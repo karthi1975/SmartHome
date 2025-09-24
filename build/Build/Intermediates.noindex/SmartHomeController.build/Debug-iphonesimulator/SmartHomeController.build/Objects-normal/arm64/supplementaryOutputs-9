@@ -1,0 +1,24 @@
+"/Users/karthi/U/SmartHomeController/SmartHomeController/SettingsView.swift":
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SettingsView.swiftdeps"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SettingsView.dia"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SettingsView.swiftconstvalues"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SettingsView.o"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SettingsView.d"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/HomeControlsView.swift":
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeControlsView-da8fa3b59d472071703ba74700b5e80c.o"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeControlsView-da8fa3b59d472071703ba74700b5e80c.swiftdeps"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeControlsView-da8fa3b59d472071703ba74700b5e80c.d"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeControlsView-da8fa3b59d472071703ba74700b5e80c.dia"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeControlsView-da8fa3b59d472071703ba74700b5e80c.swiftconstvalues"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/DeviceCard.swift":
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceCard.swiftdeps"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceCard.dia"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceCard.d"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceCard.o"
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceCard.swiftconstvalues"
+"/Users/karthi/U/SmartHomeController/SmartHomeController/EntranceView.swift":
+  const-values: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/EntranceView.swiftconstvalues"
+  object: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/EntranceView.o"
+  swift-dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/EntranceView.swiftdeps"
+  diagnostics: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/EntranceView.dia"
+  dependencies: "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/EntranceView.d"

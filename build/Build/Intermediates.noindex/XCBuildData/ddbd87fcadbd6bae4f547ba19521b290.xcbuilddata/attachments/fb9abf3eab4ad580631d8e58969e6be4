@@ -1,0 +1,158 @@
+{
+  "" : {
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Vapi-master.dia",
+    "emit-module-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Vapi-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Vapi-master-emit-module.dia",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Vapi-master.swiftdeps"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Constants/Constants.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Constants.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Constants.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Constants.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Constants.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Constants.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Constants.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Constants.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Constants~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/AppMessage.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/AppMessage.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/AppMessage.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/AppMessage.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/AppMessage.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/AppMessage.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/AppMessage.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/AppMessage.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/AppMessage~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/ConversationUpdate.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ConversationUpdate.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ConversationUpdate.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ConversationUpdate.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ConversationUpdate.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ConversationUpdate.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ConversationUpdate.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ConversationUpdate.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ConversationUpdate~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/FunctionCall.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/FunctionCall.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/FunctionCall.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/FunctionCall.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/FunctionCall.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/FunctionCall.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/FunctionCall.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/FunctionCall.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/FunctionCall~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/Metadata.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Metadata.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Metadata.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Metadata.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Metadata.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Metadata.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Metadata.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Metadata.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Metadata~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/ModelOutput.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ModelOutput.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ModelOutput.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ModelOutput.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ModelOutput.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ModelOutput.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ModelOutput.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ModelOutput.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/ModelOutput~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/SpeechUpdate.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/SpeechUpdate.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/SpeechUpdate.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/SpeechUpdate.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/SpeechUpdate.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/SpeechUpdate.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/SpeechUpdate.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/SpeechUpdate.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/SpeechUpdate~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/StatusUpdate.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/StatusUpdate.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/StatusUpdate.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/StatusUpdate.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/StatusUpdate.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/StatusUpdate.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/StatusUpdate.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/StatusUpdate.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/StatusUpdate~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/Transcript.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Transcript.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Transcript.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Transcript.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Transcript.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Transcript.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Transcript.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Transcript.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Transcript~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/UserInterrupted.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/UserInterrupted.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/UserInterrupted.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/UserInterrupted.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/UserInterrupted.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/UserInterrupted.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/UserInterrupted.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/UserInterrupted.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/UserInterrupted~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/VapiError.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VapiError.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VapiError.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VapiError.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VapiError.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VapiError.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VapiError.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VapiError.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VapiError~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/VoiceInput.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VoiceInput.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VoiceInput.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VoiceInput.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VoiceInput.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VoiceInput.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VoiceInput.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VoiceInput.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/VoiceInput~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/WebCallResponse.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/WebCallResponse.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/WebCallResponse.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/WebCallResponse.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/WebCallResponse.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/WebCallResponse.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/WebCallResponse.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/WebCallResponse.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/WebCallResponse~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/NetworkManager.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/NetworkManager.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/NetworkManager.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/NetworkManager.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/NetworkManager.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/NetworkManager.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/NetworkManager.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/NetworkManager.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/NetworkManager~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Vapi.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Vapi.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Vapi.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Vapi.dia",
+    "index-unit-output-path" : "/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Vapi.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Vapi.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Vapi.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Vapi.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/Vapi.build/Debug-iphonesimulator/Vapi.build/Objects-normal/arm64/Vapi~partial.swiftmodule"
+  }
+}

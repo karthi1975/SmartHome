@@ -1,0 +1,296 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/DeviceCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Error",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "Current Status",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.0f °F",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 61
+        }
+      },
+      {
+        "comment": "",
+        "key": "Current Temp",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Current Status",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "On",
+        "location": {
+          "startingColumn": 56,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "Off",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.0f °F",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "Current Temp",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "On",
+        "location": {
+          "startingColumn": 56,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "Off",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "Current Status",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 107
+        }
+      },
+      {
+        "comment": "",
+        "key": "On",
+        "location": {
+          "startingColumn": 56,
+          "startingLine": 105
+        }
+      },
+      {
+        "comment": "",
+        "key": "Off",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 105
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.0f °F",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 119
+        }
+      },
+      {
+        "comment": "",
+        "key": "Current",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 121
+        }
+      },
+      {
+        "comment": "",
+        "key": "Status",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "Toasting",
+        "location": {
+          "startingColumn": 56,
+          "startingLine": 131
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ready",
+        "location": {
+          "startingColumn": 69,
+          "startingLine": 131
+        }
+      },
+      {
+        "comment": "",
+        "key": "On",
+        "location": {
+          "startingColumn": 56,
+          "startingLine": 146
+        }
+      },
+      {
+        "comment": "",
+        "key": "Off",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 146
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 178
+        }
+      },
+      {
+        "comment": "",
+        "key": "Color Temp",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 281
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 302
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld°",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 325
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld°C",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 337
+        }
+      },
+      {
+        "comment": "",
+        "key": "Motion Detected",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 420
+        }
+      },
+      {
+        "comment": "",
+        "key": "Door Open",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 442
+        }
+      },
+      {
+        "comment": "",
+        "key": "Device Configuration",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 503
+        }
+      },
+      {
+        "comment": "",
+        "key": "Device Info",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 479
+        }
+      },
+      {
+        "comment": "",
+        "key": "YAML Configuration",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 487
+        }
+      },
+      {
+        "comment": "",
+        "key": "Template: %@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 483
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 480
+        }
+      },
+      {
+        "comment": "",
+        "key": "# Home Assistant Configuration\n%@:\n  name: %@\n  type: %@\n  room: %@\n  template: %@\n  attributes:\n    %@\n  services:\n    %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 488
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 507
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 513
+        }
+      }
+    ]
+  },
+  "version": 1
+}

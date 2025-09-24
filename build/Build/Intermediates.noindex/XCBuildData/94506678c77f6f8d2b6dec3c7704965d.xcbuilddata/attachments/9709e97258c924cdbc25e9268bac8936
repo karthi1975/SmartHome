@@ -1,0 +1,498 @@
+{
+  "" : {
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SmartHomeController-master.dia",
+    "emit-module-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SmartHomeController-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SmartHomeController-master-emit-module.dia",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SmartHomeController-master.swiftdeps"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/AddDeviceView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AddDeviceView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AddDeviceView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AddDeviceView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AddDeviceView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AddDeviceView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AddDeviceView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AddDeviceView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AddDeviceView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/AnimatedBlindsCard.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedBlindsCard.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedBlindsCard.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedBlindsCard.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedBlindsCard.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedBlindsCard.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedBlindsCard.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedBlindsCard.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedBlindsCard~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/AnimatedTempCardViewModel.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedTempCardViewModel.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedTempCardViewModel.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedTempCardViewModel.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedTempCardViewModel.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedTempCardViewModel.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedTempCardViewModel.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedTempCardViewModel.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedTempCardViewModel~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/AnimatedToasterCard.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedToasterCard.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedToasterCard.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedToasterCard.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedToasterCard.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedToasterCard.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedToasterCard.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedToasterCard.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AnimatedToasterCard~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/App.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/App.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/App.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/App.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/App.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/App.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/App.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/App.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/App~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/AppState.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AppState.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AppState.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AppState.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AppState.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AppState.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AppState.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AppState.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/AppState~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/BlindsCard.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/BlindsCard.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/BlindsCard.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/BlindsCard.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/BlindsCard.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/BlindsCard.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/BlindsCard.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/BlindsCard.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/BlindsCard~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/CallManager.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallManager-b9eae6bc536b901410d8caae72758a34.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallManager-b9eae6bc536b901410d8caae72758a34.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallManager-b9eae6bc536b901410d8caae72758a34.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallManager-b9eae6bc536b901410d8caae72758a34.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallManager-b9eae6bc536b901410d8caae72758a34.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallManager-b9eae6bc536b901410d8caae72758a34.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallManager-b9eae6bc536b901410d8caae72758a34.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallManager-b9eae6bc536b901410d8caae72758a34~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/CallRecord.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallRecord.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallRecord.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallRecord.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallRecord.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallRecord.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallRecord.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallRecord.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CallRecord~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/ContentView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ContentView-c536e208f1bfbeb39af60e4d0ebc2aa0.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ContentView-c536e208f1bfbeb39af60e4d0ebc2aa0.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ContentView-c536e208f1bfbeb39af60e4d0ebc2aa0.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ContentView-c536e208f1bfbeb39af60e4d0ebc2aa0.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ContentView-c536e208f1bfbeb39af60e4d0ebc2aa0.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ContentView-c536e208f1bfbeb39af60e4d0ebc2aa0.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ContentView-c536e208f1bfbeb39af60e4d0ebc2aa0.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ContentView-c536e208f1bfbeb39af60e4d0ebc2aa0~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/CreateTicketView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CreateTicketView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CreateTicketView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CreateTicketView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CreateTicketView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CreateTicketView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CreateTicketView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CreateTicketView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/CreateTicketView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/DeviceCard.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceCard.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceCard.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceCard.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceCard.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceCard.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceCard.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceCard.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceCard~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/DeviceDiscoveryView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceDiscoveryView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceDiscoveryView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceDiscoveryView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceDiscoveryView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceDiscoveryView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceDiscoveryView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceDiscoveryView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceDiscoveryView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/DeviceGroup.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroup.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroup.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroup.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroup.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroup.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroup.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroup.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroup~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/DeviceGroupView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroupView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroupView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroupView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroupView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroupView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroupView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroupView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceGroupView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/DeviceHistory.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistory.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistory.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistory.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistory.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistory.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistory.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistory.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistory~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/DeviceHistoryView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistoryView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistoryView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistoryView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistoryView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistoryView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistoryView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistoryView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceHistoryView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/DeviceStore.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceStore-5ce5d83177421b6ed4b6702972950f4d.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceStore-5ce5d83177421b6ed4b6702972950f4d.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceStore-5ce5d83177421b6ed4b6702972950f4d.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceStore-5ce5d83177421b6ed4b6702972950f4d.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceStore-5ce5d83177421b6ed4b6702972950f4d.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceStore-5ce5d83177421b6ed4b6702972950f4d.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceStore-5ce5d83177421b6ed4b6702972950f4d.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceStore-5ce5d83177421b6ed4b6702972950f4d~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/DeviceTemplate.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceTemplate.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceTemplate.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceTemplate.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceTemplate.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceTemplate.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceTemplate.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceTemplate.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DeviceTemplate~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/DishwasherCard.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DishwasherCard.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DishwasherCard.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DishwasherCard.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DishwasherCard.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DishwasherCard.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DishwasherCard.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DishwasherCard.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/DishwasherCard~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/EntranceView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/EntranceView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/EntranceView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/EntranceView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/EntranceView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/EntranceView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/EntranceView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/EntranceView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/EntranceView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/FridgeCard.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/FridgeCard.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/FridgeCard.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/FridgeCard.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/FridgeCard.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/FridgeCard.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/FridgeCard.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/FridgeCard.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/FridgeCard~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/HealthEducationAPI.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationAPI.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationAPI.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationAPI.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationAPI.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationAPI.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationAPI.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationAPI.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationAPI~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/HealthEducationSettings.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationSettings.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationSettings.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationSettings.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationSettings.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationSettings.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationSettings.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationSettings.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationSettings~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/HealthEducationView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationView-5d3c16b454cf374d08e59510cbf67d4c.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationView-5d3c16b454cf374d08e59510cbf67d4c.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationView-5d3c16b454cf374d08e59510cbf67d4c.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationView-5d3c16b454cf374d08e59510cbf67d4c.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationView-5d3c16b454cf374d08e59510cbf67d4c.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationView-5d3c16b454cf374d08e59510cbf67d4c.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationView-5d3c16b454cf374d08e59510cbf67d4c.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationView-5d3c16b454cf374d08e59510cbf67d4c~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/HealthEducationViewModel.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationViewModel.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationViewModel.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationViewModel.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationViewModel.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationViewModel.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationViewModel.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationViewModel.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HealthEducationViewModel~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/HomeAssistantClient.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantClient.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantClient.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantClient.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantClient.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantClient.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantClient.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantClient.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantClient~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/HomeAssistantConfig.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfig-e4bfa7f7c648e1c48a275bd1c44c30cb.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfig-e4bfa7f7c648e1c48a275bd1c44c30cb.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfig-e4bfa7f7c648e1c48a275bd1c44c30cb.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfig-e4bfa7f7c648e1c48a275bd1c44c30cb.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfig-e4bfa7f7c648e1c48a275bd1c44c30cb.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfig-e4bfa7f7c648e1c48a275bd1c44c30cb.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfig-e4bfa7f7c648e1c48a275bd1c44c30cb.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfig-e4bfa7f7c648e1c48a275bd1c44c30cb~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/HomeAssistantConfigView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfigView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfigView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfigView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfigView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfigView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfigView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfigView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantConfigView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/HomeAssistantDeviceDiscovery.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantDeviceDiscovery.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantDeviceDiscovery.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantDeviceDiscovery.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantDeviceDiscovery.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantDeviceDiscovery.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantDeviceDiscovery.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantDeviceDiscovery.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeAssistantDeviceDiscovery~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/HomeControlsView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeControlsView-da8fa3b59d472071703ba74700b5e80c.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeControlsView-da8fa3b59d472071703ba74700b5e80c.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeControlsView-da8fa3b59d472071703ba74700b5e80c.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeControlsView-da8fa3b59d472071703ba74700b5e80c.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeControlsView-da8fa3b59d472071703ba74700b5e80c.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeControlsView-da8fa3b59d472071703ba74700b5e80c.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeControlsView-da8fa3b59d472071703ba74700b5e80c.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeControlsView-da8fa3b59d472071703ba74700b5e80c~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/HomeScene.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeScene.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeScene.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeScene.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeScene.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeScene.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeScene.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeScene.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/HomeScene~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/ImagePicker.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ImagePicker.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ImagePicker.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ImagePicker.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ImagePicker.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ImagePicker.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ImagePicker.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ImagePicker.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ImagePicker~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/MasterView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MasterView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MasterView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MasterView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MasterView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MasterView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MasterView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MasterView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MasterView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/MicrophoneAnimationView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MicrophoneAnimationView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MicrophoneAnimationView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MicrophoneAnimationView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MicrophoneAnimationView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MicrophoneAnimationView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MicrophoneAnimationView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MicrophoneAnimationView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/MicrophoneAnimationView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/OvenCard.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/OvenCard.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/OvenCard.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/OvenCard.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/OvenCard.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/OvenCard.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/OvenCard.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/OvenCard.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/OvenCard~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/PlayroomView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/PlayroomView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/PlayroomView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/PlayroomView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/PlayroomView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/PlayroomView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/PlayroomView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/PlayroomView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/PlayroomView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/Room.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/Room.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/Room.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/Room.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/Room.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/Room.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/Room.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/Room.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/Room~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/RoomView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/RoomView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/RoomView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/RoomView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/RoomView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/RoomView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/RoomView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/RoomView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/RoomView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/ScreenshotHelper.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ScreenshotHelper.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ScreenshotHelper.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ScreenshotHelper.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ScreenshotHelper.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ScreenshotHelper.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ScreenshotHelper.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ScreenshotHelper.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ScreenshotHelper~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/SettingsView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/SidebarView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SidebarView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SidebarView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SidebarView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SidebarView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SidebarView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SidebarView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SidebarView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SidebarView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/SmartDevice.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SmartDevice.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SmartDevice.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SmartDevice.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SmartDevice.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SmartDevice.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SmartDevice.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SmartDevice.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/SmartDevice~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/TempCard.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TempCard.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TempCard.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TempCard.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TempCard.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TempCard.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TempCard.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TempCard.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TempCard~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/TicketHistoryView.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TicketHistoryView.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TicketHistoryView.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TicketHistoryView.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TicketHistoryView.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TicketHistoryView.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TicketHistoryView.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TicketHistoryView.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TicketHistoryView~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/ToasterCard.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ToasterCard.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ToasterCard.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ToasterCard.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ToasterCard.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ToasterCard.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ToasterCard.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ToasterCard.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ToasterCard~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/TreeOfThoughtPrompts.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TreeOfThoughtPrompts.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TreeOfThoughtPrompts.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TreeOfThoughtPrompts.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TreeOfThoughtPrompts.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TreeOfThoughtPrompts.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TreeOfThoughtPrompts.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TreeOfThoughtPrompts.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/TreeOfThoughtPrompts~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/SmartHomeController/ZammadClient.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ZammadClient-2e98dc8688efbf9a7092b8f951dc2e40.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ZammadClient-2e98dc8688efbf9a7092b8f951dc2e40.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ZammadClient-2e98dc8688efbf9a7092b8f951dc2e40.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ZammadClient-2e98dc8688efbf9a7092b8f951dc2e40.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ZammadClient-2e98dc8688efbf9a7092b8f951dc2e40.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ZammadClient-2e98dc8688efbf9a7092b8f951dc2e40.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ZammadClient-2e98dc8688efbf9a7092b8f951dc2e40.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/ZammadClient-2e98dc8688efbf9a7092b8f951dc2e40~partial.swiftmodule"
+  },
+  "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/karthi/U/SmartHomeController/build/Build/Intermediates.noindex/SmartHomeController.build/Debug-iphonesimulator/SmartHomeController.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

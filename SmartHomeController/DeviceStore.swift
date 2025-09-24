@@ -47,35 +47,40 @@ class DeviceStore: ObservableObject {
     }
 
     private func ensureKitchenHVAC() {
-        let kitchenDevices = devicesByRoom["Kitchen"] ?? []
-        let hasHVAC = kitchenDevices.contains(where: { $0.type == .temp && $0.name == "Kitchen HVAC" })
+        // Remove any duplicate temp devices first
+        var kitchenDevices = devicesByRoom["Kitchen"] ?? []
 
-        if !hasHVAC {
-            // Create Kitchen HVAC device
-            let hvacDevice = SmartDevice(
-                id: UUID(),
-                name: "Kitchen HVAC",
-                type: .temp,
-                room: "Kitchen",
-                entityId: "climate.kitchen",
-                state: "heat",
-                attributes: [
-                    "temperature": CodableValue.int(74),
-                    "target_temp_high": CodableValue.int(80),
-                    "target_temp_low": CodableValue.int(65),
-                    "hvac_mode": CodableValue.string("heat"),
-                    "preset_mode": CodableValue.string("comfort"),
-                    "unit": CodableValue.string("°F")
-                ],
-                services: [:],
-                template: nil,
-                groups: [],
-                lastUpdated: Date(),
-                value: "74"
-            )
+        // Filter out all temp devices
+        kitchenDevices = kitchenDevices.filter { $0.type != .temp }
 
-            devicesByRoom["Kitchen", default: []].append(hvacDevice)
-            save()
-        }
+        // Use a stable UUID for the Kitchen HVAC device
+        let stableHVACId = UUID(uuidString: "A1B2C3D4-E5F6-7890-ABCD-EF1234567890") ?? UUID()
+
+        // Create the single Kitchen HVAC device
+        let hvacDevice = SmartDevice(
+            id: stableHVACId,
+            name: "Kitchen HVAC",
+            type: .temp,
+            room: "Kitchen",
+            entityId: "climate.kitchen",
+            state: "heat",
+            attributes: [
+                "temperature": CodableValue.int(78),
+                "target_temp_high": CodableValue.int(80),
+                "target_temp_low": CodableValue.int(65),
+                "hvac_mode": CodableValue.string("heat"),
+                "preset_mode": CodableValue.string("comfort"),
+                "unit": CodableValue.string("°F")
+            ],
+            services: [:],
+            template: nil,
+            groups: [],
+            lastUpdated: Date(),
+            value: "78"
+        )
+
+        kitchenDevices.append(hvacDevice)
+        devicesByRoom["Kitchen"] = kitchenDevices
+        save()
     }
 } 

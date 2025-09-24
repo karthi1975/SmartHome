@@ -130,7 +130,7 @@ class CallManager: ObservableObject {
                 if pageName.lowercased() == "health education" {
                     self?.switchToHealthEducationContext()
                 } else {
-                    self?.switchToSmartHomeContext()
+                    self?.switchToSmartHomeContext(room: pageName)
                 }
             }
         }
@@ -389,9 +389,16 @@ class CallManager: ObservableObject {
     }
     
     /// Switch to Smart Home context with Tree of Thought
-    func switchToSmartHomeContext() {
+    func switchToSmartHomeContext(room: String? = nil) {
         currentContext = .smartHome
-        let prompt = TreeOfThoughtPrompts.getPromptForContext(currentContext)
+
+        // Get the temperature for the room if available
+        var temperature: Int? = nil
+        if let room = room?.lowercased() {
+            temperature = roomTemps[room]
+        }
+
+        let prompt = TreeOfThoughtPrompts.getPromptForContext(currentContext, room: room, temperature: temperature)
         updateSystemPrompt(prompt)
         print("[DEBUG] Switched to Smart Home context with ToT")
     }

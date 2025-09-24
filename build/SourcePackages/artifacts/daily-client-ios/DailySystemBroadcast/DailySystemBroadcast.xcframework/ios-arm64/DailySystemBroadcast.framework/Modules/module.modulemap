@@ -1,0 +1,13 @@
+framework module DailySystemBroadcast {
+    umbrella header "DailySystemBroadcast.h"
+    
+    private header "RPBroadcastSampleHandler+Extensions.h"
+
+    export *
+    module * { export * }
+}
+
+module DailySystemBroadcast.Swift {
+  header "DailySystemBroadcast-Swift.h"
+  requires objc
+}

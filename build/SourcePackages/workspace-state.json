@@ -1,0 +1,75 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "daily-client-ios",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/daily-co/daily-client-ios",
+          "name" : "daily-client-ios"
+        },
+        "path" : "/Users/karthi/U/SmartHomeController/build/SourcePackages/artifacts/daily-client-ios/Daily/Daily.xcframework",
+        "source" : {
+          "checksum" : "6679ea815d5f4d0b1c1d9c21c1092d5c1d548abc43a377c1d3fe4b68bc51fb49",
+          "type" : "remote",
+          "url" : "https://www.daily.co/sdk/daily-client-ios-0.31.0.zip"
+        },
+        "targetName" : "Daily"
+      },
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "daily-client-ios",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/daily-co/daily-client-ios",
+          "name" : "daily-client-ios"
+        },
+        "path" : "/Users/karthi/U/SmartHomeController/build/SourcePackages/artifacts/daily-client-ios/DailySystemBroadcast/DailySystemBroadcast.xcframework",
+        "source" : {
+          "checksum" : "6d7667cd412a05c387789eb772cbeb4d713d0973bd3198efaf5f58c18444665f",
+          "type" : "remote",
+          "url" : "https://www.daily.co/sdk/daily-system-broadcast-client-ios-0.31.0.zip"
+        },
+        "targetName" : "DailySystemBroadcast"
+      }
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "daily-client-ios",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/daily-co/daily-client-ios",
+          "name" : "daily-client-ios"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "431938db25e5807120e89e2dc5bab1c076729f59",
+            "version" : "0.31.0"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "daily-client-ios"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "ios",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/VapiAI/ios.git",
+          "name" : "ios"
+        },
+        "state" : {
+          "checkoutState" : {
+            "branch" : "main",
+            "revision" : "ee89eeb693235842aea1150cb68626f37c7e8c41"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "ios"
+      }
+    ]
+  },
+  "version" : 6
+}

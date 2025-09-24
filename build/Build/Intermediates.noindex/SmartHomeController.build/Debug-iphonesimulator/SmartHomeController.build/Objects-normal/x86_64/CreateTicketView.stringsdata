@@ -1,0 +1,248 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/CreateTicketView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Create Ticket",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 680
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Attachment",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 681
+        }
+      },
+      {
+        "comment": "",
+        "key": "\"%@\"",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 239
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select Priority Level",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 247
+        }
+      },
+      {
+        "comment": "",
+        "key": "Voice Command Received",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 234
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter ticket subject",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 283
+        }
+      },
+      {
+        "comment": "",
+        "key": "Subject",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 274
+        }
+      },
+      {
+        "comment": "",
+        "key": "Description",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 306
+        }
+      },
+      {
+        "comment": "",
+        "key": "Describe the issue...",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 317
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter your email",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 360
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your Email",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 351
+        }
+      },
+      {
+        "comment": "",
+        "key": "Priority",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 382
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ Priority Selected",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 393
+        }
+      },
+      {
+        "comment": "",
+        "key": "Attachment (Optional)",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 437
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remove Image",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 448
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Image",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 458
+        }
+      },
+      {
+        "comment": "",
+        "key": "Creating %@ Priority Ticket...",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 490
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create %@ Priority Ticket",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 533
+        }
+      },
+      {
+        "comment": "",
+        "key": "Support Tickets",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 604
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld tickets",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 612
+        }
+      },
+      {
+        "comment": "",
+        "key": "Loading tickets...",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 621
+        }
+      },
+      {
+        "comment": "",
+        "key": "No tickets found",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 627
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create your first support ticket above",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 630
+        }
+      },
+      {
+        "comment": "",
+        "key": "Created: %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 659
+        }
+      },
+      {
+        "comment": "",
+        "key": "State: %@",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 644
+        }
+      },
+      {
+        "comment": "",
+        "key": "ID: #%lld",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 654
+        }
+      },
+      {
+        "comment": "",
+        "key": "Choose from Library",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 682
+        }
+      },
+      {
+        "comment": "",
+        "key": "Take Photo",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 685
+        }
+      },
+      {
+        "comment": "",
+        "key": "Take Screenshot",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 692
+        }
+      },
+      {
+        "comment": "",
+        "key": "TETR",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 714
+        }
+      }
+    ]
+  },
+  "version": 1
+}

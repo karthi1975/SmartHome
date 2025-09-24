@@ -1,0 +1,16 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/DishwasherCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Current Status",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 16
+        }
+      }
+    ]
+  },
+  "version": 1
+}

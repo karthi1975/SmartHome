@@ -1,0 +1,216 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/HomeControlsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Agent: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 92
+        }
+      },
+      {
+        "comment": "",
+        "key": "Favorites",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 103
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 103
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Device",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 170
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Device",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 276
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 279
+        }
+      },
+      {
+        "comment": "",
+        "key": "Device Info",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 320
+        }
+      },
+      {
+        "comment": "",
+        "key": "Device Name",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 321
+        }
+      },
+      {
+        "comment": "",
+        "key": "Icon Preview:",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 323
+        }
+      },
+      {
+        "comment": "",
+        "key": "Default Position",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 346
+        }
+      },
+      {
+        "comment": "",
+        "key": "Default Temperature",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 355
+        }
+      },
+      {
+        "comment": "",
+        "key": "Temperature Range",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 361
+        }
+      },
+      {
+        "comment": "",
+        "key": "Default Status",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 370
+        }
+      },
+      {
+        "comment": "",
+        "key": "Default Temperature",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 379
+        }
+      },
+      {
+        "comment": "",
+        "key": "Default Settings",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 385
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 330
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 334
+        }
+      },
+      {
+        "comment": "",
+        "key": "Default Position",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 347
+        }
+      },
+      {
+        "comment": "",
+        "key": "Default Temp: %lld °F",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 357
+        }
+      },
+      {
+        "comment": "",
+        "key": "Min Temp: %lld °F",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 363
+        }
+      },
+      {
+        "comment": "",
+        "key": "Max Temp: %lld °F",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 366
+        }
+      },
+      {
+        "comment": "",
+        "key": "Default Status",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 371
+        }
+      },
+      {
+        "comment": "",
+        "key": "Default Temp: %lld °F",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 381
+        }
+      },
+      {
+        "comment": "",
+        "key": "Toast Level: %lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 387
+        }
+      },
+      {
+        "comment": "",
+        "key": "On/Off",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 523
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,184 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/DeviceDiscoveryView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Discover Devices",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 107
+        }
+      },
+      {
+        "comment": "",
+        "key": "Error",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "Zone:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter zone/area name",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Search Zone",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "Discover All",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "Refresh Areas",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "Discovering devices...",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "No supported devices found",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "Try searching in a different zone or check your Home Assistant configuration",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 92
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 111
+        }
+      },
+      {
+        "comment": "",
+        "key": "Show All Devices",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 118
+        }
+      },
+      {
+        "comment": "",
+        "key": "Last Discovery: %@",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 134
+        }
+      },
+      {
+        "comment": "",
+        "key": "State: %@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "• %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 182
+        }
+      },
+      {
+        "comment": "",
+        "key": "• %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 188
+        }
+      },
+      {
+        "comment": "",
+        "key": "All Devices",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 270
+        }
+      },
+      {
+        "comment": "",
+        "key": "State: %@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 253
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Unsupported",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 262
+        }
+      },
+      {
+        "comment": "",
+        "key": "• %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 258
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 274
+        }
+      }
+    ]
+  },
+  "version": 1
+}

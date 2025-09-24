@@ -1,0 +1,80 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/HomeAssistantConfigView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Home Assistant",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Server Configuration",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "Server URL",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "Long-Lived Access Token",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "Test Connection",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "Close",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "Error",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 103,
+          "startingLine": 52
+        }
+      }
+    ]
+  },
+  "version": 1
+}

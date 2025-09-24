@@ -1,0 +1,40 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/AnimatedToasterCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Level %lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 171
+        }
+      },
+      {
+        "comment": "",
+        "key": "On",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 198
+        }
+      },
+      {
+        "comment": "",
+        "key": "Off",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 198
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 213
+        }
+      }
+    ]
+  },
+  "version": 1
+}

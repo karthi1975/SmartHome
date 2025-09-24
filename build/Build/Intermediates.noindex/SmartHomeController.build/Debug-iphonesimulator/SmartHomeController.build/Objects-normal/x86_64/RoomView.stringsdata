@@ -1,0 +1,48 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/RoomView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Devices in %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Device",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 96
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 279
+        }
+      }
+    ]
+  },
+  "version": 1
+}

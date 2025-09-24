@@ -1,0 +1,16 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/FridgeCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Current Temp",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 16
+        }
+      }
+    ]
+  },
+  "version": 1
+}

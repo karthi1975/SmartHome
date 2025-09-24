@@ -1,0 +1,4 @@
+module Vapi {
+header "Vapi-Swift.h"
+export *
+}

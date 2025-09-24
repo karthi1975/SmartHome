@@ -57,7 +57,8 @@
       "Bash(xcrun devicectl device install:*)",
       "Bash(xcrun devicectl device process launch:*)",
       "Bash(.specify/scripts/bash/setup-plan.sh:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(git rm:*)"
     ],
     "deny": []
   }

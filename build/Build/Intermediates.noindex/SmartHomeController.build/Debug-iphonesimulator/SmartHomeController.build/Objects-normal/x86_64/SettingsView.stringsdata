@@ -1,0 +1,168 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 153
+        }
+      },
+      {
+        "comment": "",
+        "key": "Home Assistant Connection",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "VAPI Voice Assistant Configuration",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "Zammad Support System Configuration",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Health Education Configuration",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "Debug & Testing",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 103
+        }
+      },
+      {
+        "comment": "",
+        "key": "API URL",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "Long-Lived Access Token",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Public Key",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Assistant ID",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Base URL (e.g., https://tickets.homeadapt.us/api/v1)",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "API Token",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "Test Zammad Token",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "Health Education Settings",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 93
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enable Debug Logging",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "Test Zammad Permissions",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 117
+        }
+      },
+      {
+        "comment": "",
+        "key": "Reset Zammad Config",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 125
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save All Settings",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "Test Home Assistant Connection",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 141
+        }
+      },
+      {
+        "comment": "",
+        "key": "TETR",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 166
+        }
+      }
+    ]
+  },
+  "version": 1
+}

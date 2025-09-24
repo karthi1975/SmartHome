@@ -1,0 +1,168 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/AddDeviceView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Temperature: %lld °F",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "Oven On",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "Oven Temp: %lld °F",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "Blinds Position: %lld%%",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fridge Temp: %lld °F",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Status",
+        "location": {
+          "startingColumn": 19,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Toaster On",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "Device Settings",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 73
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 74
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Device",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "Device Type",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 121
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Device",
+        "location": {
+          "startingColumn": 52,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit Device",
+        "location": {
+          "startingColumn": 67,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "Home Assistant Device",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 149
+        }
+      },
+      {
+        "comment": "",
+        "key": "Room",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 168
+        }
+      },
+      {
+        "comment": "",
+        "key": "Change",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 162
+        }
+      },
+      {
+        "comment": "",
+        "key": "State: %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 157
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 181
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 187
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 58,
+          "startingLine": 187
+        }
+      }
+    ]
+  },
+  "version": 1
+}

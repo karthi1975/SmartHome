@@ -1,0 +1,24 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/AnimatedBlindsCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Voice: \"%@\"",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 268
+        }
+      },
+      {
+        "comment": "",
+        "key": "Position: %lld%%",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 129
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -215,7 +215,7 @@ struct ContentView: View {
                     callManager.switchToHealthEducationContext()
                 } else {
                     print("[DEBUG] appState changed to \(match.name) - switching to Smart Home context")
-                    callManager.switchToSmartHomeContext()
+                    callManager.switchToSmartHomeContext(room: match.name)
                 }
             } else {
                 print("No matching room found for page: \(newPage.rawValue)")
@@ -291,7 +291,7 @@ struct ContentView: View {
                 callManager.switchToHealthEducationContext()
             } else {
                 print("[DEBUG] Room changed to \(newRoom.name) - switching to Smart Home context")
-                callManager.switchToSmartHomeContext()
+                callManager.switchToSmartHomeContext(room: newRoom.name)
             }
         }
         .onAppear {
@@ -339,7 +339,7 @@ struct ContentView: View {
             if selectedRoom.name == "Health Education" {
                 callManager.switchToHealthEducationContext()
             } else {
-                callManager.switchToSmartHomeContext()
+                callManager.switchToSmartHomeContext(room: selectedRoom.name)
             }
         }
         .sheet(isPresented: $showSettings) {

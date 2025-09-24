@@ -1,0 +1,48 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/ToasterCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Status",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "Toasting",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ready",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "On",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "Off",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 31
+        }
+      }
+    ]
+  },
+  "version": 1
+}

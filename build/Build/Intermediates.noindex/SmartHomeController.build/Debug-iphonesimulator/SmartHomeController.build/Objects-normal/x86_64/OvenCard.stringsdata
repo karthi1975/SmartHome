@@ -1,0 +1,40 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/OvenCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Turn oven off",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "Turn oven on",
+        "location": {
+          "startingColumn": 62,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "Current Status",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "Current Temp",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 27
+        }
+      }
+    ]
+  },
+  "version": 1
+}

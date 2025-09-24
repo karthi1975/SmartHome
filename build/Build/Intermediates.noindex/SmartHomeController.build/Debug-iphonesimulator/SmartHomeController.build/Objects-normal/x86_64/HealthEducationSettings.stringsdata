@@ -1,0 +1,216 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/HealthEducationSettings.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Health Education Settings",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 212
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 213
+        }
+      },
+      {
+        "comment": "",
+        "key": "Configuration",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 217
+        }
+      },
+      {
+        "comment": "",
+        "key": "Quick Login",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 114
+        }
+      },
+      {
+        "comment": "",
+        "key": "Custom Login",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 134
+        }
+      },
+      {
+        "comment": "",
+        "key": "Current Session",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 157
+        }
+      },
+      {
+        "comment": "",
+        "key": "API Configuration",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 172
+        }
+      },
+      {
+        "comment": "",
+        "key": "Actions",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 185
+        }
+      },
+      {
+        "comment": "",
+        "key": "Instructions",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 197
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select User",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 115
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ (%@)",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 117
+        }
+      },
+      {
+        "comment": "",
+        "key": "Login as %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 127
+        }
+      },
+      {
+        "comment": "",
+        "key": "Username",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 135
+        }
+      },
+      {
+        "comment": "",
+        "key": "Password",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 140
+        }
+      },
+      {
+        "comment": "",
+        "key": "Login",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 150
+        }
+      },
+      {
+        "comment": "",
+        "key": "Logged in as: %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 161
+        }
+      },
+      {
+        "comment": "",
+        "key": "Logout",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 166
+        }
+      },
+      {
+        "comment": "",
+        "key": "API Base URL",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 174
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter API URL",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "Test Connection",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 187
+        }
+      },
+      {
+        "comment": "",
+        "key": "Logout All Sessions",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 191
+        }
+      },
+      {
+        "comment": "",
+        "key": "To access Health Education:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 199
+        }
+      },
+      {
+        "comment": "",
+        "key": "1. Select a predefined user or enter custom credentials",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 202
+        }
+      },
+      {
+        "comment": "",
+        "key": "2. Click Login to authenticate",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 204
+        }
+      },
+      {
+        "comment": "",
+        "key": "3. Start asking health-related questions",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 206
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 218
+        }
+      }
+    ]
+  },
+  "version": 1
+}

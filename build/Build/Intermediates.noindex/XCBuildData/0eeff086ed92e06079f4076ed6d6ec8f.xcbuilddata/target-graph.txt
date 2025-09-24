@@ -1,0 +1,9 @@
+Target dependency graph (4 targets)
+Target 'SmartHomeController' in project 'SmartHomeController'
+➜ Explicit dependency on target 'Vapi' in project 'Vapi'
+Target 'Vapi' in project 'Vapi'
+➜ Explicit dependency on target 'Vapi' in project 'Vapi'
+➜ Explicit dependency on target 'Daily' in project 'Daily'
+Target 'Vapi' in project 'Vapi'
+➜ Explicit dependency on target 'Daily' in project 'Daily'
+Target 'Daily' in project 'Daily' (no dependencies)

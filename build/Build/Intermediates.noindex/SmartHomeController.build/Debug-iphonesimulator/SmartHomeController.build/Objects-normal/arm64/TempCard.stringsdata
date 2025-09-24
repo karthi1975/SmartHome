@@ -1,0 +1,48 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/TempCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%lld °F",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "Current",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld °F",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "Up",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "Adjusting Temperature...",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 92
+        }
+      }
+    ]
+  },
+  "version": 1
+}

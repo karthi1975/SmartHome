@@ -1,0 +1,15 @@
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Constants/Constants.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/AppMessage.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/ConversationUpdate.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/FunctionCall.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/Metadata.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/ModelOutput.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/SpeechUpdate.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/StatusUpdate.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/Transcript.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/UserInterrupted.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/VapiError.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/VoiceInput.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Models/WebCallResponse.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/NetworkManager.swift
+/Users/karthi/U/SmartHomeController/build/SourcePackages/checkouts/ios/Sources/Vapi.swift

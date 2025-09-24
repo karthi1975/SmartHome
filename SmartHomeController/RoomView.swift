@@ -174,18 +174,40 @@ struct RoomView: View {
         }
         .onAppear {
             print("[DEBUG] RoomView for \(roomName) appeared, registering view model")
-            // Register the view model for this room
-            tempVM.setTemp(callManager.roomTemps[roomName.lowercased()] ?? 70)
+
+            // Get the temperature from the actual HVAC device
+            var actualTemp = 70
+            if let hvacDevice = deviceStore.devices(for: roomName).first(where: { $0.type == .temp }) {
+                // Get temperature from device attributes
+                if case .int(let temp) = hvacDevice.attributes["temperature"] {
+                    actualTemp = temp
+                } else if let tempStr = hvacDevice.value, let temp = Int(tempStr) {
+                    actualTemp = temp
+                }
+                print("[DEBUG] Found HVAC device with temperature: \(actualTemp)°F")
+            }
+
+            // Register the view model for this room with actual temperature
+            tempVM.setTemp(actualTemp)
+            callManager.roomTemps[roomName.lowercased()] = actualTemp
+
             let updateClosure: (Int) -> Void = { newTemp in
                 callManager.roomTemps[roomName.lowercased()] = newTemp
+                // Also update the device in the store
+                if let hvacDevice = deviceStore.devices(for: roomName).first(where: { $0.type == .temp }) {
+                    var updatedDevice = hvacDevice
+                    updatedDevice.attributes["temperature"] = .int(newTemp)
+                    updatedDevice.value = String(newTemp)
+                    deviceStore.updateDevice(updatedDevice, in: roomName)
+                }
             }
             // Set the update closure on the view model using the new method
             tempVM.setUpdateTempClosure(updateClosure)
             tempVM.objectWillChange.send() // ensure update
-            
+
             RoomView.roomViewModels[roomName.lowercased()] = tempVM
-            print("[DEBUG] Registered \(roomName.lowercased()) view model. Total registered: \(RoomView.roomViewModels.keys.sorted())")
-            
+            print("[DEBUG] Registered \(roomName.lowercased()) view model with temp \(actualTemp). Total registered: \(RoomView.roomViewModels.keys.sorted())")
+
             // Initialize blinds view models for all blinds devices
             for device in deviceStore.devices(for: roomName).filter({ $0.type == .blinds }) {
                 if blindsViewModels[device.id] == nil {
@@ -194,7 +216,7 @@ struct RoomView: View {
                     blindsViewModels[device.id] = blindsVM
                 }
             }
-            
+
             // Initialize toaster view models for all toaster devices
             for device in deviceStore.devices(for: roomName).filter({ $0.type == .toaster }) {
                 if toasterViewModels[device.id] == nil {
@@ -203,12 +225,12 @@ struct RoomView: View {
                     toasterViewModels[device.id] = toasterVM
                 }
             }
-            
+
             // Removed auto-test animation - temperature should only change on explicit user commands
             // Automatically read out the current temperature using VAPI, with a medium delay
             Task {
                 try? await Task.sleep(nanoseconds: 300_000_000) // 0.3 seconds
-                await callManager.speakTemperature(room: roomName, temp: tempVM.temp)
+                await callManager.speakTemperature(room: roomName, temp: actualTemp)
             }
         }
         .onDisappear {

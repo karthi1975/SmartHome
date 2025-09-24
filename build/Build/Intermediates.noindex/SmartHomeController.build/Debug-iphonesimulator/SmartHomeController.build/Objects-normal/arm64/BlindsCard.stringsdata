@@ -1,0 +1,40 @@
+{
+  "source": "/Users/karthi/U/SmartHomeController/SmartHomeController/BlindsCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Close",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Down",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Up",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 71
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 89
+        }
+      }
+    ]
+  },
+  "version": 1
+}

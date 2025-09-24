@@ -318,10 +318,24 @@ struct TreeOfThoughtPrompts {
     """
     
     // MARK: - Context-Aware Prompt Selection
-    static func getPromptForContext(_ context: AppContext) -> String {
+    static func getPromptForContext(_ context: AppContext, room: String? = nil, temperature: Int? = nil) -> String {
         switch context {
         case .smartHome:
-            return smartHomeToTPrompt
+            var prompt = smartHomeToTPrompt
+
+            // Add current room and temperature state if available
+            if let room = room, let temperature = temperature {
+                let roomState = """
+
+                ## Current Room State:
+                - You are currently showing the \(room) page
+                - The \(room) temperature is \(temperature)°F
+                - When asked about the current temperature, always report: "\(temperature) degrees"
+                """
+                prompt += roomState
+            }
+
+            return prompt
         case .healthEducation:
             // Use the health education ToT prompt instead of transcription-only
             return healthEducationToTPrompt
