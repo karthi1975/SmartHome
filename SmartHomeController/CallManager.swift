@@ -841,10 +841,27 @@ class CallManager: ObservableObject {
         }
 
         // Check for ticket creation requests (including "support page", "create ticket", etc.)
+        // First check the current transcript
         if self.isTicketCreationRequest(transcriptText) {
             print("[DEBUG] 🎫 Starting voice-guided ticket creation for: '\(transcriptText)'")
             startVoiceGuidedTicketCreation()
             return
+        }
+
+        // Also check combined recent context for fragmented commands
+        if recentUserTranscripts.count > 0 {
+            let combinedContext = recentUserTranscripts.joined(separator: " ")
+            print("[DEBUG] 🎫 Checking combined context for ticket request: '\(combinedContext)'")
+
+            // More lenient check for support page navigation
+            let lowerContext = combinedContext.lowercased()
+            if (lowerContext.contains("support") && lowerContext.contains("page")) ||
+               (lowerContext.contains("luna") && lowerContext.contains("support")) ||
+               self.isTicketCreationRequest(combinedContext) {
+                print("[DEBUG] 🎫 Starting voice-guided ticket creation from combined context: '\(combinedContext)'")
+                startVoiceGuidedTicketCreation()
+                return
+            }
         }
 
         // Check for health-related questions
@@ -1264,7 +1281,11 @@ class CallManager: ObservableObject {
             "file complaint",
             "need support",
             "support page",
-            "go to support"
+            "go to support",
+            "to support page",
+            "to support",
+            "open support",
+            "show support"
         ]
 
         // Check for ticket keywords
