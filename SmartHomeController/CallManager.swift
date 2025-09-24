@@ -1292,7 +1292,29 @@ class CallManager: ObservableObject {
             "to support page",
             "to support",
             "open support",
-            "show support"
+            "show support",
+            "i have an issue",
+            "i have a problem",
+            "have an issue",
+            "have a problem",
+            "connection issue",
+            "connection problem",
+            "connectivity issue",
+            "connectivity problem",
+            "i have issue",
+            "i have problem",
+            "got an issue",
+            "got a problem",
+            "experiencing an issue",
+            "experiencing a problem",
+            "facing an issue",
+            "facing a problem",
+            "issue with",
+            "problem with",
+            "there's an issue",
+            "there's a problem",
+            "there is an issue",
+            "there is a problem"
         ]
 
         // Check for ticket keywords

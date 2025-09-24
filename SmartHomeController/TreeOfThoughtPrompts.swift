@@ -83,6 +83,16 @@ struct TreeOfThoughtPrompts {
     - Direct: "Show me the kitchen" → (Shows the Kitchen page)
     - Indirect: "Kitchen is hot" → (Shows the Kitchen page) + state temperature
     - Implied: "The oven is on" → (Shows the Kitchen page) + oven status
+
+    ### Support/Ticket Request Detection
+    When user mentions issues or problems, navigate to support page:
+    - "I have an issue" → Navigate to support page
+    - "I have a problem" → Navigate to support page
+    - "connection issue" / "connection problem" → Navigate to support page
+    - "something is broken" / "not working" → Navigate to support page
+    - "need help" / "need support" → Navigate to support page
+    - "create a ticket" / "submit ticket" → Navigate to support page
+    - Any variation of issue/problem/broken/help → Support page
     
     ## Example ToT Processing:
     
