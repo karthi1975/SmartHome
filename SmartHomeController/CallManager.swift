@@ -1661,52 +1661,51 @@ class CallManager: ObservableObject {
     private func cleanTicketDescription(_ description: String) -> String {
         var cleaned = description
 
-        // Remove common greetings and agent names (case insensitive)
-        let greetingPatterns = [
-            "hello nava", "hi nava", "hey nava", "nava",
-            "hello nova", "hi nova", "hey nova", "nova",
-            "hello luna", "hi luna", "hey luna", "luna",
-            "ok nava", "okay nava",
-            "ok nova", "okay nova",
-            "ok luna", "okay luna",
-            "hello", "hi there", "hey there"
+        // First, clean up encoding issues and weird characters
+        // Remove any non-printable characters
+        cleaned = cleaned.components(separatedBy: CharacterSet.alphanumerics.union(.whitespaces).union(.punctuationCharacters).inverted).joined()
+
+        // Remove patterns using simple string replacement (more reliable)
+        let greetingsToRemove = [
+            "Hey, uh, Luna", "Hey uh Luna", "Hey Luna", "Hi Luna", "Hello Luna",
+            "Hey, uh, Nava", "Hey uh Nava", "Hey Nava", "Hi Nava", "Hello Nava",
+            "Hey, uh,", "Hey uh", "Uh,", "uh,"
         ]
 
-        // Remove navigation commands (case insensitive)
-        let navigationPatterns = [
-            "go to support page", "goto support page", "go to support",
-            "open support page", "navigate to support",
-            "take me to support", "show support page",
-            "support page please", "open the support"
+        let navigationToRemove = [
+            "Go to support page", "go to support page",
+            "Go to support", "go to support",
+            "support page", "Support page"
         ]
 
-        // Apply all pattern removals
-        for pattern in greetingPatterns {
-            // Use case-insensitive regex replacement
-            let regex = try? NSRegularExpression(pattern: "\\b\(NSRegularExpression.escapedPattern(for: pattern))\\b", options: .caseInsensitive)
-            if let regex = regex {
-                cleaned = regex.stringByReplacingMatches(in: cleaned, options: [], range: NSRange(location: 0, length: cleaned.utf16.count), withTemplate: "")
-            }
+        // Remove greetings and navigation commands
+        for phrase in greetingsToRemove + navigationToRemove {
+            cleaned = cleaned.replacingOccurrences(of: phrase, with: "", options: .caseInsensitive)
         }
 
-        for pattern in navigationPatterns {
-            // Use case-insensitive regex replacement
-            let regex = try? NSRegularExpression(pattern: NSRegularExpression.escapedPattern(for: pattern), options: .caseInsensitive)
-            if let regex = regex {
-                cleaned = regex.stringByReplacingMatches(in: cleaned, options: [], range: NSRange(location: 0, length: cleaned.utf16.count), withTemplate: "")
-            }
-        }
-
-        // Clean up extra whitespace and punctuation
+        // Remove weird punctuation patterns
         cleaned = cleaned
+            .replacingOccurrences(of: ". .", with: "")
+            .replacingOccurrences(of: ",.", with: "")
+            .replacingOccurrences(of: ".,", with: "")
+            .replacingOccurrences(of: "..", with: ".")
+            .replacingOccurrences(of: ",,", with: ",")
+
+        // Clean up whitespace and punctuation
+        cleaned = cleaned
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+            .replacingOccurrences(of: "  +", with: " ", options: .regularExpression)
             .replacingOccurrences(of: "^[,. ]+", with: "", options: .regularExpression)
             .replacingOccurrences(of: "[,. ]+$", with: "", options: .regularExpression)
-            .replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
-            .trimmingCharacters(in: .whitespacesAndNewlines)
 
-        // Capitalize first letter if needed
+        // Ensure first letter is capitalized
         if !cleaned.isEmpty {
             cleaned = cleaned.prefix(1).uppercased() + cleaned.dropFirst()
+        }
+
+        // If the cleaned text is too short or seems garbled, return a default
+        if cleaned.count < 5 || !cleaned.contains(" ") {
+            return "Issue reported via voice"
         }
 
         return cleaned

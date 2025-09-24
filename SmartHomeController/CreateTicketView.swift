@@ -934,14 +934,15 @@ struct CreateTicketView: View {
             if let subject = userInfo["subject"] as? String,
                animateField == "subject" {
                 self.animatedSubject = ""
-                self.subject = ""
+                // Set the subject directly without animation to avoid corruption
+                self.subject = subject
                 withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
                     self.subjectFieldFocused = true
                     self.isVoiceGuided = true
                     self.voiceGuidedStep = "Filling subject..."
                 }
-                // Animate text appearing character by character
-                animateText(subject, to: \.subject, animatedTo: \.animatedSubject, isAnimating: \.isAnimatingSubject)
+                // Skip animation for now to avoid text corruption
+                // animateText(subject, to: \.subject, animatedTo: \.animatedSubject, isAnimating: \.isAnimatingSubject)
 
                 // Haptic feedback
                 let impact = UIImpactFeedbackGenerator(style: .light)
@@ -958,13 +959,14 @@ struct CreateTicketView: View {
             if let description = userInfo["description"] as? String,
                animateField == "description" {
                 self.animatedDescription = ""
-                self.description = ""
+                // Set the description directly without animation to avoid corruption
+                self.description = description
                 withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
                     self.descriptionFieldFocused = true
                     self.voiceGuidedStep = "Adding description..."
                 }
-                // Animate text appearing character by character
-                animateText(description, to: \.description, animatedTo: \.animatedDescription, isAnimating: \.isAnimatingDescription)
+                // Skip animation for now to avoid text corruption
+                // animateText(description, to: \.description, animatedTo: \.animatedDescription, isAnimating: \.isAnimatingDescription)
 
                 let impact = UIImpactFeedbackGenerator(style: .light)
                 impact.impactOccurred()
