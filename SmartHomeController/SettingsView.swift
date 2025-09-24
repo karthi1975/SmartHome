@@ -85,6 +85,21 @@ struct SettingsView: View {
                     }
                 }
                 
+                Section(header: Text("Health Education Configuration")) {
+                    NavigationLink(destination: HealthEducationSettingsView()) {
+                        HStack {
+                            Image(systemName: "heart.text.square.fill")
+                                .foregroundColor(Color(red: 172/255, green: 32/255, blue: 41/255))
+                            Text("Health Education Settings")
+                            Spacer()
+                            if HealthEducationSettings.shared.isConfigured {
+                                Image(systemName: "checkmark.circle.fill")
+                                    .foregroundColor(.green)
+                            }
+                        }
+                    }
+                }
+                
                 Section(header: Text("Debug & Testing")) {
                     Toggle("Enable Debug Logging", isOn: $debugLoggingEnabled)
                         .onChange(of: debugLoggingEnabled) { value in
@@ -168,7 +183,6 @@ struct SettingsView: View {
                 debugLoggingEnabled = UserDefaults.standard.bool(forKey: "DebugLoggingEnabled")
             }
             }
-            GlobalMicrophoneOverlay()
         }
     }
     

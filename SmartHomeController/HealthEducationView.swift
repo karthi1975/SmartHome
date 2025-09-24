@@ -625,7 +625,36 @@ struct VoiceInputAnimation: View {
     let transcribedText: String
     let isProcessing: Bool
     @State private var animationAmount = 1.0
-    
+
+    private func isValidTranscription(_ text: String) -> Bool {
+        // Check if the text is valid (not garbled)
+        let cleanedText = text.trimmingCharacters(in: .whitespacesAndNewlines)
+        return !cleanedText.isEmpty &&
+               cleanedText.count > 2 &&
+               !cleanedText.contains("Kjdshf") &&
+               !cleanedText.lowercased().contains("test") &&
+               cleanedText.rangeOfCharacter(from: .letters) != nil &&
+               !isGarbledText(cleanedText)
+    }
+
+    private func isGarbledText(_ text: String) -> Bool {
+        // Check for patterns that indicate garbled text
+        // Such as too many consonants in a row or random character sequences
+        let words = text.components(separatedBy: .whitespaces)
+        for word in words {
+            // Check if word has too many consonants in a row (likely garbled)
+            let consonantPattern = "(?i)[bcdfghjklmnpqrstvwxyz]{5,}"
+            if word.range(of: consonantPattern, options: .regularExpression) != nil {
+                return true
+            }
+            // Check if word is too long without vowels
+            if word.count > 10 && word.lowercased().rangeOfCharacter(from: CharacterSet(charactersIn: "aeiou")) == nil {
+                return true
+            }
+        }
+        return false
+    }
+
     var body: some View {
         VStack(spacing: 8) {
             // Voice wave animation
@@ -652,7 +681,7 @@ struct VoiceInputAnimation: View {
                 Text("Processing...")
                     .font(.caption)
                     .foregroundColor(.orange)
-            } else if !transcribedText.isEmpty {
+            } else if !transcribedText.isEmpty && isValidTranscription(transcribedText) {
                 Text(transcribedText)
                     .font(.caption)
                     .foregroundColor(.secondary)

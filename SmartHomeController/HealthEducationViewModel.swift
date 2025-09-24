@@ -500,8 +500,23 @@ class HealthEducationViewModel: ObservableObject {
             queue: .main
         ) { [weak self] notification in
             if let transcript = notification.userInfo?["transcript"] as? String {
-                self?.transcribedText = transcript
-                print("[DEBUG] 🎤 Transcription updated: '\(transcript)'")
+                // Clean and validate the transcript text
+                let cleanedTranscript = transcript.trimmingCharacters(in: .whitespacesAndNewlines)
+
+                // Only update if the transcript contains valid readable text
+                // Filter out garbled or test data
+                if !cleanedTranscript.isEmpty &&
+                   cleanedTranscript.count > 2 &&
+                   !cleanedTranscript.contains("Kjdshf") &&
+                   !cleanedTranscript.lowercased().contains("test") &&
+                   cleanedTranscript.rangeOfCharacter(from: .letters) != nil {
+                    self?.transcribedText = cleanedTranscript
+                    print("[DEBUG] 🎤 Transcription updated: '\(cleanedTranscript)'")
+                } else {
+                    // Clear garbled text
+                    self?.transcribedText = ""
+                    print("[DEBUG] 🎤 Ignoring invalid transcription: '\(transcript)'")
+                }
             }
         }
         

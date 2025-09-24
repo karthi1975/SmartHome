@@ -158,10 +158,20 @@ struct RoomButton: View {
     var body: some View {
         Button(action: action) {
             VStack(spacing: 10) {
-                Image(isSelected ? room.selectedIconName : room.iconName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 38, height: 38)
+                // Check if icon exists, otherwise use SF Symbol fallback
+                if UIImage(named: isSelected ? room.selectedIconName : room.iconName) != nil {
+                    Image(isSelected ? room.selectedIconName : room.iconName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 38, height: 38)
+                } else {
+                    // Fallback for missing icons (like Health Education)
+                    Image(systemName: room.name == "Health Education" ? "heart.text.square.fill" : "questionmark.square.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 38, height: 38)
+                        .foregroundColor(isSelected ? Color(red: 172/255, green: 32/255, blue: 41/255) : .white)
+                }
                 Text(room.name)
                     .font(.system(size: 16, weight: .heavy))
                     .bold()

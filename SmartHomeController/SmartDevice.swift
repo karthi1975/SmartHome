@@ -81,6 +81,7 @@ enum DeviceType: String, Codable, CaseIterable {
     case stove
     case streamer
     case temp
+    case toaster
     case tv
     case washer
 
@@ -89,7 +90,7 @@ enum DeviceType: String, Codable, CaseIterable {
         case .lights: return "light"
         case .blinds: return "cover"
         case .temp: return "climate"
-        case .dishwasher, .fridge, .oven, .tv, .music, .stove, .streamer, .washer, .dryer, .coffeemaker, .avr: return "switch"
+        case .dishwasher, .fridge, .oven, .tv, .music, .stove, .streamer, .washer, .dryer, .coffeemaker, .avr, .toaster: return "switch"
         case .cameras: return "camera"
         case .lock: return "lock"
         default: return "switch"
@@ -112,6 +113,7 @@ enum DeviceType: String, Codable, CaseIterable {
         case .stove: return "Stove_Smarthome"
         case .streamer: return "Streamer_Smarthome"
         case .temp: return "Temp__Smarthome"
+        case .toaster: return "Toaster_Smarthome"
         case .tv: return "TV_Smarthome"
         case .washer: return "Washer_Smarthome"
         }

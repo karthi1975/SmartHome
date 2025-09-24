@@ -17,6 +17,26 @@ struct MicrophoneAnimationView: View {
     
     var body: some View {
         ZStack {
+            // Wake word indicator
+            if callManager.isWakeWordActive {
+                VStack {
+                    Spacer()
+                    HStack {
+                        Circle()
+                            .fill(Color.green)
+                            .frame(width: 8, height: 8)
+                        Text("Luna is listening")
+                            .font(.caption)
+                            .foregroundColor(.green)
+                    }
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
+                    .background(Color.black.opacity(0.7))
+                    .cornerRadius(20)
+                    .padding(.bottom, 100)
+                }
+            }
+            
             // Enhanced pulse effect with multiple expanding rings
             if shouldShowAnimation {
                 // Outer ring - largest expansion
@@ -269,10 +289,9 @@ struct FloatingMicrophoneButton: View {
                     .frame(width: 60, height: 60)
                     .shadow(radius: 8)
                 
-                // Microphone icon or animation
-                if showingAnimation {
-                    MicrophoneAnimationView()
-                        .frame(width: 50, height: 50)
+                // Microphone icon only
+                if false { // Never show animation in FloatingMicrophoneButton to prevent recursion
+                    EmptyView()
                 } else {
                     Image(systemName: callManager.isCalling ? "mic.fill" : "mic.slash.fill")
                         .font(.title2)
@@ -311,7 +330,6 @@ struct FloatingMicrophoneButton: View {
 #Preview {
     VStack(spacing: 50) {
         MicrophoneAnimationView()
-        FloatingMicrophoneButton()
     }
     .environmentObject(CallManager())
 }

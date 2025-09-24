@@ -17,7 +17,7 @@ struct AddDeviceView: View {
     var onSave: ((SmartDevice) -> Void)? = nil
     var onCancel: (() -> Void)? = nil
     // Only allow these device types
-    private let allowedTypes: [DeviceType] = [.blinds, .dishwasher, .fridge, .oven, .temp]
+    private let allowedTypes: [DeviceType] = [.blinds, .dishwasher, .fridge, .oven, .temp, .toaster]
 
     // Device-specific fields
     @State private var name: String = ""
@@ -27,6 +27,7 @@ struct AddDeviceView: View {
     @State private var blindsPosition: Int = 0
     @State private var fridgeTemp: Int = 40
     @State private var dishwasherStatus: String = "Idle"
+    @State private var toasterIsOn: Bool = false
 
     @ViewBuilder
     private func tempSettings() -> some View {
@@ -63,6 +64,11 @@ struct AddDeviceView: View {
     }
 
     @ViewBuilder
+    private func toasterSettings() -> some View {
+        Toggle("Toaster On", isOn: $toasterIsOn)
+    }
+
+    @ViewBuilder
     private func deviceSettingsSection(for type: DeviceType) -> some View {
         Section(header: Text("Device Settings")) {
             TextField("Name", text: $name)
@@ -72,6 +78,7 @@ struct AddDeviceView: View {
             case .blinds: blindsSettings()
             case .fridge: fridgeSettings()
             case .dishwasher: dishwasherSettings()
+            case .toaster: toasterSettings()
             @unknown default: EmptyView()
             }
         }
@@ -187,26 +194,52 @@ struct AddDeviceView: View {
                         } else {
                             // Create device manually
                             let type = deviceToEdit?.type ?? selectedType!
-                            device = deviceToEdit ?? SmartDevice(type: type)
+                            let deviceName = name.isEmpty ? type.rawValue.capitalized : name
+                            let room = currentRoom.isEmpty ? "Unknown" : currentRoom
+                            
+                            // Create new device with proper initialization
+                            device = SmartDevice(
+                                id: deviceToEdit?.id ?? UUID(),
+                                name: deviceName,
+                                type: type,
+                                room: room,
+                                entityId: "manual.\(type.rawValue).\(UUID().uuidString.prefix(8))",
+                                state: "unknown"
+                            )
                         }
                         
                         var finalDevice = device
-                        finalDevice.name = name.isEmpty ? device.name : name
+                        finalDevice.name = name.isEmpty ? finalDevice.name : name
+                        finalDevice.room = currentRoom.isEmpty ? finalDevice.room : currentRoom
                         
                         // Apply manual settings if not from HA
                         if selectedHADevice == nil {
                             switch finalDevice.type {
                             case .temp:
                                 finalDevice.value = "\(tempValue)"
+                                finalDevice.state = "idle"
+                                finalDevice.attributes["current_temperature"] = .double(Double(tempValue))
+                                finalDevice.attributes["target_temperature"] = .double(Double(tempValue))
                             case .oven:
                                 finalDevice.value = "\(ovenTemp)"
                                 finalDevice.isOn = ovenIsOn
+                                finalDevice.state = ovenIsOn ? "on" : "off"
+                                finalDevice.attributes["temperature"] = .int(ovenTemp)
                             case .blinds:
                                 finalDevice.value = "\(blindsPosition)"
+                                finalDevice.state = blindsPosition > 0 ? "open" : "closed"
+                                finalDevice.attributes["current_position"] = .int(blindsPosition)
                             case .fridge:
                                 finalDevice.value = "\(fridgeTemp)"
+                                finalDevice.state = "on"
+                                finalDevice.attributes["temperature"] = .int(fridgeTemp)
                             case .dishwasher:
-                                finalDevice.value = dishwasherStatus ?? ""
+                                finalDevice.value = dishwasherStatus
+                                finalDevice.state = dishwasherStatus.lowercased()
+                                finalDevice.attributes["status"] = .string(dishwasherStatus)
+                            case .toaster:
+                                finalDevice.isOn = toasterIsOn
+                                finalDevice.state = toasterIsOn ? "on" : "off"
                             @unknown default:
                                 break
                             }
@@ -247,16 +280,16 @@ struct AddDeviceView: View {
     private var isAddButtonDisabled: Bool {
         // For editing existing device
         if deviceToEdit != nil {
-            return name.trimmingCharacters(in: .whitespaces).isEmpty
+            return false // Allow saving even with empty name (will use existing name)
         }
         
         // For Home Assistant device
         if selectedHADevice != nil {
-            return currentRoom.trimmingCharacters(in: .whitespaces).isEmpty
+            return false // Room can be "Unknown" if not specified
         }
         
         // For manual device creation
-        return selectedType == nil || name.trimmingCharacters(in: .whitespaces).isEmpty
+        return selectedType == nil // Only require device type selection
     }
 }
 
