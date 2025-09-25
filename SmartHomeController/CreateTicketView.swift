@@ -982,6 +982,8 @@ struct CreateTicketView: View {
             // Animate priority selection
             if let priorityStr = userInfo["priority"] as? String,
                userInfo["animatePriority"] as? Bool == true {
+                print("[DEBUG] 🎫 ⚠️ RECEIVED PRIORITY STRING: '\(priorityStr)'")
+                print("[DEBUG] 🎫 Current view priority BEFORE change: \(self.priority)")
                 print("[DEBUG] 🎫 Animating priority selection: \(priorityStr)")
 
                 // Set the priority based on voice input
@@ -1000,12 +1002,17 @@ struct CreateTicketView: View {
 
                 print("[DEBUG] 🎫 Current priority: \(self.priority), New priority: \(newPriority)")
 
+                // Immediately update the priority
+                self.priority = newPriority
+                print("[DEBUG] 🎫 Priority immediately set to: \(self.priority)")
+
                 withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
-                    self.voiceGuidedStep = "Setting priority to \(newPriority.displayName)..."
+                    let priorityText = newPriority == .high ? "Urgent" :
+                                      newPriority == .low ? "Low" : "Normal"
+                    self.voiceGuidedStep = "Priority set to \(priorityText)"
                     self.showPrioritySelection = true
                     self.showPriorityAnimation = true
-                    self.priority = newPriority
-                    print("[DEBUG] 🎫 Priority changed to: \(self.priority)")
+                    print("[DEBUG] 🎫 Animation triggered for priority: \(self.priority)")
                 }
 
                 // Visual and haptic feedback for priority

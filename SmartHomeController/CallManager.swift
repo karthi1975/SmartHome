@@ -1664,7 +1664,8 @@ class CallManager: ObservableObject {
             let priority = extractPriority(from: input)
             pendingTicketData.priority = priority
 
-            print("[DEBUG] 🎫 Priority extracted: \(priority)")
+            print("[DEBUG] 🎫 ⚠️ CRITICAL: Priority extracted: '\(priority)' from input: '\(input)'")
+            print("[DEBUG] 🎫 ⚠️ CRITICAL: pendingTicketData.priority is now: '\(pendingTicketData.priority)'")
 
             // Animate priority selection with visual feedback
             DispatchQueue.main.async {
