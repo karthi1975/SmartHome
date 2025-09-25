@@ -989,17 +989,23 @@ struct CreateTicketView: View {
                 switch priorityStr.lowercased() {
                 case "high", "urgent":
                     newPriority = .high
+                    print("[DEBUG] 🎫 Setting HIGH priority button")
                 case "low":
                     newPriority = .low
+                    print("[DEBUG] 🎫 Setting LOW priority button")
                 default:
                     newPriority = .normal
+                    print("[DEBUG] 🎫 Setting NORMAL priority button")
                 }
+
+                print("[DEBUG] 🎫 Current priority: \(self.priority), New priority: \(newPriority)")
 
                 withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
                     self.voiceGuidedStep = "Setting priority to \(newPriority.displayName)..."
                     self.showPrioritySelection = true
                     self.showPriorityAnimation = true
                     self.priority = newPriority
+                    print("[DEBUG] 🎫 Priority changed to: \(self.priority)")
                 }
 
                 // Visual and haptic feedback for priority
@@ -1008,9 +1014,13 @@ struct CreateTicketView: View {
 
                 // Additional animation for urgent priority
                 if newPriority == .high {
-                    // Pulse animation for urgent
-                    withAnimation(.easeInOut(duration: 0.3).repeatCount(2, autoreverses: true)) {
-                        self.showPriorityAnimation = true
+                    print("[DEBUG] 🎫 Triggering HIGH priority pulse animation")
+                    // Force priority button to refresh
+                    self.showPriorityAnimation = false
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        withAnimation(.easeInOut(duration: 0.3).repeatCount(3, autoreverses: true)) {
+                            self.showPriorityAnimation = true
+                        }
                     }
                 }
 
