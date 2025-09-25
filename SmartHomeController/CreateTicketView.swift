@@ -1002,17 +1002,27 @@ struct CreateTicketView: View {
 
                 print("[DEBUG] 🎫 Current priority: \(self.priority), New priority: \(newPriority)")
 
-                // Immediately update the priority
-                self.priority = newPriority
-                print("[DEBUG] 🎫 Priority immediately set to: \(self.priority)")
-
-                withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
-                    let priorityText = newPriority == .high ? "Urgent" :
-                                      newPriority == .low ? "Low" : "Normal"
-                    self.voiceGuidedStep = "Priority set to \(priorityText)"
+                // First show the voice feedback
+                withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
                     self.showPrioritySelection = true
-                    self.showPriorityAnimation = true
-                    print("[DEBUG] 🎫 Animation triggered for priority: \(self.priority)")
+                    self.voiceGuidedStep = "Processing priority selection..."
+                }
+
+                // Then after a delay, update the priority with animation
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    // Force UI refresh by resetting priority first
+                    self.priority = .normal
+
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        withAnimation(.spring(response: 0.5, dampingFraction: 0.7)) {
+                            self.priority = newPriority
+                            let priorityText = newPriority == .high ? "Urgent" :
+                                              newPriority == .low ? "Low" : "Normal"
+                            self.voiceGuidedStep = "Priority set to \(priorityText)"
+                            self.showPriorityAnimation = true
+                            print("[DEBUG] 🎫 Priority forcefully changed to: \(self.priority) with animation")
+                        }
+                    }
                 }
 
                 // Visual and haptic feedback for priority
@@ -1022,12 +1032,17 @@ struct CreateTicketView: View {
                 // Additional animation for urgent priority
                 if newPriority == .high {
                     print("[DEBUG] 🎫 Triggering HIGH priority pulse animation")
-                    // Force priority button to refresh
-                    self.showPriorityAnimation = false
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                        withAnimation(.easeInOut(duration: 0.3).repeatCount(3, autoreverses: true)) {
+
+                    // Extra delay for urgent to make it more dramatic
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        // Pulse animation for urgent
+                        withAnimation(.easeInOut(duration: 0.4).repeatCount(3, autoreverses: true)) {
                             self.showPriorityAnimation = true
                         }
+
+                        // Extra haptic feedback for urgent
+                        let notification = UINotificationFeedbackGenerator()
+                        notification.notificationOccurred(.warning)
                     }
                 }
 
