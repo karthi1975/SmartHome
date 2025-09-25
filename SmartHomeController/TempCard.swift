@@ -142,6 +142,13 @@ struct TempCard: View {
         .onAppear {
             // Set initial temp but don't announce on startup
             lastAnnouncedTemp = viewModel.temp
+
+            // Show initial temperature animation when room loads
+            animateTemp = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                animateTemp = false
+            }
+
             // Only announce if VAPI is already connected (not on startup)
             if callManager.isCalling {
                 announceTemperature(viewModel.temp)
