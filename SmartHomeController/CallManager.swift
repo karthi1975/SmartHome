@@ -1841,11 +1841,29 @@ class CallManager: ObservableObject {
 
     private func extractPriority(from input: String) -> String {
         let lowercased = input.lowercased()
-        if lowercased.contains("urgent") || lowercased.contains("high") || lowercased.contains("emergency") {
+
+        // High priority keywords
+        if lowercased.contains("urgent") || lowercased.contains("high") ||
+           lowercased.contains("emergency") || lowercased.contains("critical") ||
+           lowercased.contains("asap") || lowercased.contains("immediately") ||
+           lowercased.contains("very important") {
             return "high"
-        } else if lowercased.contains("low") || lowercased.contains("minor") {
+        }
+
+        // Low priority keywords
+        else if lowercased.contains("low") || lowercased.contains("minor") ||
+                lowercased.contains("not urgent") || lowercased.contains("whenever") ||
+                lowercased.contains("no rush") || lowercased.contains("not important") {
             return "low"
         }
+
+        // Normal priority keywords or default
+        else if lowercased.contains("normal") || lowercased.contains("regular") ||
+                lowercased.contains("standard") || lowercased.contains("medium") {
+            return "normal"
+        }
+
+        // Default to normal if no keywords found
         return "normal"
     }
 
