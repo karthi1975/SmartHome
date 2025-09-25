@@ -1846,11 +1846,15 @@ class CallManager: ObservableObject {
     private func extractPriority(from input: String) -> String {
         let lowercased = input.lowercased()
 
-        // High priority keywords
-        if lowercased.contains("urgent") || lowercased.contains("high") ||
+        print("[DEBUG] 🎫 Extracting priority from: '\(input)' (lowercased: '\(lowercased)')")
+
+        // High priority keywords - including common speech recognition errors
+        if lowercased.contains("urgent") || lowercased.contains("ugerent") ||
+           lowercased.contains("urgently") || lowercased.contains("high") ||
            lowercased.contains("emergency") || lowercased.contains("critical") ||
            lowercased.contains("asap") || lowercased.contains("immediately") ||
-           lowercased.contains("very important") {
+           lowercased.contains("very important") || lowercased.contains("right now") {
+            print("[DEBUG] 🎫 Detected HIGH priority")
             return "high"
         }
 
@@ -1858,16 +1862,19 @@ class CallManager: ObservableObject {
         else if lowercased.contains("low") || lowercased.contains("minor") ||
                 lowercased.contains("not urgent") || lowercased.contains("whenever") ||
                 lowercased.contains("no rush") || lowercased.contains("not important") {
+            print("[DEBUG] 🎫 Detected LOW priority")
             return "low"
         }
 
         // Normal priority keywords or default
         else if lowercased.contains("normal") || lowercased.contains("regular") ||
                 lowercased.contains("standard") || lowercased.contains("medium") {
+            print("[DEBUG] 🎫 Detected NORMAL priority")
             return "normal"
         }
 
         // Default to normal if no keywords found
+        print("[DEBUG] 🎫 No priority keywords found, defaulting to NORMAL")
         return "normal"
     }
 
