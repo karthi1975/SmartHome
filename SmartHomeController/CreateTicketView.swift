@@ -1030,6 +1030,33 @@ struct CreateTicketView: View {
             }
         }
 
+        // Listen for voice command to submit ticket (when user says "submit" or "send it")
+        NotificationCenter.default.addObserver(
+            forName: NSNotification.Name("SubmitTicketVoiceCommand"),
+            object: nil,
+            queue: .main
+        ) { _ in
+            print("[DEBUG] 🎫 Voice command to submit ticket received")
+
+            // Check if form is filled
+            if !self.subject.isEmpty && !self.description.isEmpty && !self.customerEmail.isEmpty {
+                // Trigger submission
+                withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
+                    self.isVoiceGuided = true
+                    self.voiceGuidedStep = "Submitting ticket..."
+                    self.showSubmitAnimation = true
+                    self.buttonPressed = true
+                }
+
+                // Actually submit after animation
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self.submitTicket()
+                }
+            } else {
+                print("[DEBUG] ❌ Form not complete, cannot submit")
+            }
+        }
+
         // Listen for voice-guided submission
         NotificationCenter.default.addObserver(
             forName: .voiceGuidedTicketSubmit,

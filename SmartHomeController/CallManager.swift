@@ -847,6 +847,23 @@ class CallManager: ObservableObject {
             print("[DEBUG] ⚠️ NOT in active ticket flow. State: \(ticketCreationState)")
         }
 
+        // Check if user is on support page and wants to submit/send the ticket
+        if currentPage.lowercased() == "support" || currentPage.lowercased() == "create ticket" {
+            let lowerText = transcriptText.lowercased()
+            if lowerText.contains("submit") || lowerText.contains("send it") ||
+               lowerText.contains("send the ticket") || lowerText.contains("submit the ticket") ||
+               lowerText.contains("create it") || lowerText.contains("go ahead") ||
+               lowerText.contains("confirm") || lowerText.contains("yes") {
+                print("[DEBUG] 🎫 User wants to submit ticket from support page")
+                // Trigger ticket submission
+                NotificationCenter.default.post(
+                    name: NSNotification.Name("SubmitTicketVoiceCommand"),
+                    object: nil
+                )
+                return
+            }
+        }
+
         // Check for ticket creation requests (including "support page", "create ticket", etc.)
         // First check the current transcript
         if self.isTicketCreationRequest(transcriptText) {
