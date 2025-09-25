@@ -1050,7 +1050,7 @@ struct CreateTicketView: View {
 
                 // Actually submit after animation
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    self.submitTicket()
+                    self.submit()
                 }
             } else {
                 print("[DEBUG] ❌ Form not complete, cannot submit")
